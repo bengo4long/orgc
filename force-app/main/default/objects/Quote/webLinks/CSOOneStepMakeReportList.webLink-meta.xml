@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CSOOneStepMakeReportList</fullName>
+    <availability>online</availability>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>帳票出力(クラシック)</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>var records={!GETRECORDIDS($ObjectType.Quote)};var url;var canExecute = false;if (records.length &gt; 0) {var Ids;var Name;for (i=0; i &lt; records.length; i=i+1){if(Ids == null){Ids = records[i];}else{Ids += &quot;,&quot; + records[i];}}try {var obj = document.getElementsByName(&quot;fcf&quot;)[0];var viewName = obj.options[obj.selectedIndex].text;url = &quot;/apex/SOLXYZCSO001__OneStepCreateReportV2?obj=Quote&amp;Id=&quot; + Ids + &quot;&amp;name=&quot; + viewName + &quot;&amp;pagetype=listview&quot;;}catch(e) {url=&quot;/apex/SOLXYZCSO001__OneStepCreateReportV2?obj=Quote&amp;Id=&quot; + Ids + &quot;&amp;name=リストビュー&amp;pagetype=listview&quot;;}canExecute = true;}else{alert(&apos;レコードが未選択です。&apos;);}if (canExecute) {var options=&apos;width=1024,height=768,resizable=yes,menubar=no,scrollbars=yes,status=no,toolbar=no,directories=no,location=no&apos;;window.open(url, &apos;newWindow&apos;, options);}</url>
+</WebLink>

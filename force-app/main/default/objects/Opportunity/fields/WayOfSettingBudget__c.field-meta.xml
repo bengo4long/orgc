@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WayOfSettingBudget__c</fullName>
+    <externalId>false</externalId>
+    <label>予算の取り方</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>予算検討が必要</fullName>
+                <default>false</default>
+                <label>予算検討が必要</label>
+            </value>
+            <value>
+                <fullName>予算検討は必要なし</fullName>
+                <default>false</default>
+                <label>予算検討は必要なし</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

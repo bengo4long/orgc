@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DiscountAmount_Limit_UnitPrice</fullName>
+    <active>true</active>
+    <description>販売価格を超えた値引きはできない</description>
+    <errorConditionFormula>DiscountAmount__c  &gt; UnitPrice</errorConditionFormula>
+    <errorDisplayField>DiscountAmount__c</errorDisplayField>
+    <errorMessage>販売価格を上回る値引額は設定できません</errorMessage>
+</ValidationRule>

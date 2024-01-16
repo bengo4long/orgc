@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BillingRepPerson_Probability_than_08</fullName>
+    <active>true</active>
+    <description>レコードタイプ「新規」かつ商談のフェーズ「06_導入意思決定」以上にフェーズを変更する際に、商談＞請求先担当者が入っていないとエラーがでる
+ただし見ている条件値は、フェーズの確度をみているので、フェーズ追加時には注意すること</description>
+    <errorConditionFormula>AND( ISBLANK( BillingRepPerson__c ) ,Probability &gt;= 0.8, RecordTypeId = &quot;0122w000002Mx4A&quot;,ISBLANK( DateFillingData__c ))</errorConditionFormula>
+    <errorMessage>フェーズが「06_導入意思決定」以上の場合は請求先担当者を入力してください</errorMessage>
+</ValidationRule>

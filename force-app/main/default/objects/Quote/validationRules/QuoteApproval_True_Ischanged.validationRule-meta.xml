@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuoteApproval_True_Ischanged</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND($User.ProfileId&lt;&gt;&apos;00e2w000004VA9p&apos;,(QuoteApproval__c = true),
+(OR(
+ISCHANGED(Name),
+ISCHANGED(Status),
+ISCHANGED(TotalAmountListPrice__c),
+ISCHANGED(DistountAmount__c),
+ISCHANGED(LineItemCount)
+))
+)</errorConditionFormula>
+    <errorMessage>見積承認後はレコードの編集はできません</errorMessage>
+</ValidationRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SeminarDocumentSubmissionDate__c</fullName>
+    <externalId>false</externalId>
+    <label>セミナー資料送付日</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

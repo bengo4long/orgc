@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CustomerStage__c</fullName>
+    <externalId>false</externalId>
+    <label>顧客ステージ</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Stage0（未接触）</fullName>
+                <default>false</default>
+                <label>Stage0（未接触）</label>
+            </value>
+            <value>
+                <fullName>Stage1（接触 but 商談NG）</fullName>
+                <default>false</default>
+                <label>Stage1（接触 but 商談NG）</label>
+            </value>
+            <value>
+                <fullName>Stage2（商談 but ネタ以下）</fullName>
+                <default>false</default>
+                <label>Stage2（商談 but ネタ以下）</label>
+            </value>
+            <value>
+                <fullName>Stage3（ヨミ以上）</fullName>
+                <default>false</default>
+                <label>Stage3（ヨミ以上）</label>
+            </value>
+            <value>
+                <fullName>Stage4（受注）</fullName>
+                <default>false</default>
+                <label>Stage4（受注）</label>
+            </value>
+            <value>
+                <fullName>Stage5（受注後解約）</fullName>
+                <default>false</default>
+                <label>Stage5（受注後解約）</label>
+            </value>
+            <value>
+                <fullName>未フォロー</fullName>
+                <default>false</default>
+                <label>未フォロー</label>
+            </value>
+            <value>
+                <fullName>フォロー中</fullName>
+                <default>false</default>
+                <label>フォロー中</label>
+            </value>
+            <value>
+                <fullName>フォロー終了</fullName>
+                <default>false</default>
+                <label>フォロー終了</label>
+            </value>
+            <value>
+                <fullName>商談化</fullName>
+                <default>false</default>
+                <label>商談化</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

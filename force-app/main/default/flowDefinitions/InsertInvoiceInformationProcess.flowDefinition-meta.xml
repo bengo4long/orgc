@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>https://app.clickup.com/t/3703355/IID-9437</description>
+    <masterLabel>【使用しない】請求書情報作成時の処理</masterLabel>
+</FlowDefinition>

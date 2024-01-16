@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AntiCompanyCheck_Phase05_False</fullName>
+    <active>true</active>
+    <description>フェーズが&quot;稟議決裁中&quot;以上の場合は取引先の反社チェックがtrueである必要がある</description>
+    <errorConditionFormula>AND( Account.AntiCompanyCheck__c = false ,Probability &gt;= 0.3 )</errorConditionFormula>
+    <errorDisplayField>AccountId</errorDisplayField>
+    <errorMessage>&quot;稟議決裁中&quot;以上に進める場合は取引先の反社チェックフラグがtrueである必要があります。</errorMessage>
+</ValidationRule>

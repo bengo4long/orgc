@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EmployeeCountDefinition__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+OR (
+ISBLANK(EmployeeCountF__c),
+NOT ( DuplicateIdentificationResult__c = &quot;一致&quot; )
+),
+CASE( EmployeeCountSelectionList__c ,
+&quot;2000名以上&quot; ,&quot;EBU&quot;,
+&quot;500-1999名&quot; ,&quot;GB&quot;,
+&quot;100-499名&quot; ,&quot;MM&quot;,
+&quot;15-99名&quot; ,&quot;SMB&quot;,
+&quot;1-14名&quot;,&quot;ESB&quot;,&quot;&quot;),
+IF(
+EmployeeCountF__c &lt;15,&quot;ESB&quot;,
+IF(
+EmployeeCountF__c &lt;100,&quot;SMB&quot;,
+IF(
+EmployeeCountF__c &lt;500,&quot;MM&quot;,
+IF(
+EmployeeCountF__c &lt;2000,&quot;GB&quot;,
+&quot;EBU&quot;
+)))))</formula>
+    <label>従業員数（定義）</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

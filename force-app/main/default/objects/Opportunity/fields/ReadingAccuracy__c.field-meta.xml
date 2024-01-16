@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReadingAccuracy__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( TEXT(StageName)= &quot;受注&quot;, 1,
+CASE( TEXT(Reading__c) , 
+&quot;受注&quot;, 1, 
+&quot;SF承認待ち：95%&quot;, 0.95, 
+&quot;A：70%&quot;, 0.7,
+&quot;B：50%&quot;,0.5,
+&quot;C：30%&quot;,0.3,
+0)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>読み確度</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

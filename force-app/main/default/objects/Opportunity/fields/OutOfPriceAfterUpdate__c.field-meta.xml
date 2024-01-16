@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OutOfPriceAfterUpdate__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(  UpdateAfterPriceOutsideCount__c &gt; 0,true,false
+)
+
+/*20231026 修正*/
+/*if(
+ISPICKVAL(PriceAfterUpdated__c,&quot;6300&quot;),false,if(ISPICKVAL(PriceAfterUpdated__c,&quot;30000&quot;),false,true
+))*/</formula>
+    <label>更新後金額定価外</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

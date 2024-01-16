@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ShareURL__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( BEGINS($Api.Partner_Server_URL_490,&apos;https://bengo4.my.salesforce.com/&apos;) , &apos;https://bengo4.force.com/partner/&apos;, &apos;https://bengo4.my.salesforce.com/&apos; )&amp;Id</formula>
+    <label>共有URL</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

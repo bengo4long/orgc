@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FleekformCreateReportRelatedListParent</fullName>
+    <availability>online</availability>
+    <description>Parentidの値を、出力対象の親オブジェクトの“API参照名.id“に変更してください。</description>
+    <displayType>massActionButton</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>明細選択帳票出力（要修正）</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>{!URLFOR(&quot;/apex/FFCRB006Opportunity&quot;, null, [parentid=Opportunity.Id,childobj=&quot;Opportunity&quot;,name=&quot;関連リスト複数選択&quot;, pagetype=&quot;relatedlistparent&quot;], false)}</url>
+</WebLink>

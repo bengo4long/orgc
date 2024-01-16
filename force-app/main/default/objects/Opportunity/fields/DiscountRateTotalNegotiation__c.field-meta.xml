@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DiscountRateTotalNegotiation__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF (TotalAmountListPrice__c &gt; 0, 1-(DiscountAmount__c / TotalAmountListPrice__c), 0)
+
+/*20231018修正*/
+/*1-(DiscountAmount__c / TotalAmountListPrice__c)*/</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>商談全体の値引率</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

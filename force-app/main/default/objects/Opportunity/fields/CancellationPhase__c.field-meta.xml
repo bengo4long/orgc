@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CancellationPhase__c</fullName>
+    <externalId>false</externalId>
+    <label>解約フェーズ</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>解約</fullName>
+                <default>false</default>
+                <label>解約</label>
+            </value>
+            <value>
+                <fullName>継続</fullName>
+                <default>false</default>
+                <label>継続</label>
+            </value>
+            <value>
+                <fullName>アカウント数変更</fullName>
+                <default>false</default>
+                <label>アカウント数変更</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

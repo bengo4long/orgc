@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>QuoteApprovalPattern__c</fullName>
+    <description>見積側の承認パターン判定に積み上げ集計（最大）を使用しているため、見積品目＞承認ルート判定値の値を数値に変換する用の項目</description>
+    <externalId>false</externalId>
+    <label>見積承認パターン</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

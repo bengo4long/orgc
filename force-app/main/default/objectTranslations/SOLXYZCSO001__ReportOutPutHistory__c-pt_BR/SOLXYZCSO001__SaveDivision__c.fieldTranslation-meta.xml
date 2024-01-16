@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>SOLXYZCSO001__SaveDivision__c</name>
+    <picklistValues>
+        <masterLabel>スペース</masterLabel>
+        <translation>Espacio</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>フォルダ</masterLabel>
+        <translation>pasta</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>添付ファイル</masterLabel>
+        <translation>Arqivo anexado</translation>
+    </picklistValues>
+</CustomFieldTranslation>

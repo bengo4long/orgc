@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>BMSOppPath</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;&lt;u&gt;次のフェーズに進めるために必要な行動&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;先方と初回商談を行なってください&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>01_初回商談待ち</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;&lt;u&gt;次のフェーズに進めるために必要な行動&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;先方と行なった商談の内容を基に「見積」の新規作成を行なってください&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>02_初回商談済</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Reading__c</fieldNames>
+        <fieldNames>ProductType__c</fieldNames>
+        <fieldNames>NegotiationProductsStacked__c</fieldNames>
+        <info>&lt;p&gt;&lt;strong&gt;&lt;u&gt;次のフェーズに進めるために必要な行動&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&amp;quot;読み&amp;quot;項目を入力してください&lt;/li&gt;&lt;li&gt;&amp;quot;商品種別&amp;quot;項目を入力してください&lt;/li&gt;&lt;li&gt;商談商品を登録してください（&amp;quot;商談商品の積上げ&amp;quot;に総額が表示されていることを確認してください）&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>03_提案内容合意（担当者）</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;&lt;u&gt;次のフェーズに進めるために必要な行動&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;作成した見積を先方に送付し、提案内容への合意を得てください&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>04_提案内容合意（決済者）</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Reading__c</fieldNames>
+        <fieldNames>BillingRepPerson__c</fieldNames>
+        <info>&lt;p&gt;&lt;strong&gt;&lt;u&gt;次のフェーズに進めるために必要な行動&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&amp;quot;読み&amp;quot;項目をAまたはSF承認待ちにしてください&lt;/li&gt;&lt;li&gt;&amp;quot;請求先担当者&amp;quot;を入力してください（請求書の送付先となるためメールアドレスが必須です）&lt;/li&gt;&lt;li&gt;&amp;quot;特記事項文&amp;quot;に本商談の特記事項を生成してください（画面上部のボタン「特記事項自動設定」を押下してください）&lt;/li&gt;&lt;/ol&gt;</info>
+        <picklistValueName>05_稟議決裁中</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>OrderApproved__c</fieldNames>
+        <info>&lt;p&gt;&lt;strong&gt;&lt;u&gt;次のフェーズに進めるために必要な行動&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;画面上部のボタンから「申込承認」を申請してください&lt;/li&gt;&lt;li&gt;承認が完了し&amp;quot;受注承認済み&amp;quot;がTrueになっていることを確認してください&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>06_導入意思決定</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>DocumentConfirmationUrl__c</fieldNames>
+        <fieldNames>OrderApproved__c</fieldNames>
+        <info>&lt;p&gt;&lt;strong&gt;&lt;u&gt;次のフェーズに進めるために必要な行動&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;クラウドサインを締結し&amp;quot;書類確認用URL&amp;quot;を入力してください&lt;/li&gt;&lt;li&gt;画面上部のボタン「受注承認をする」を押下し申請してください&lt;/li&gt;&lt;li&gt;承認が完了し&amp;quot;受注承認済み&amp;quot;がTrueになっていることを確認してください）&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>07_契約締結</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;申込承認が差し戻されています。&lt;/p&gt;&lt;p&gt;却下時のコメント等を参照し、必要情報を更新の上で再度&amp;quot;申込承認&amp;quot;を押下してください&lt;/p&gt;</info>
+        <picklistValueName>A（差戻）</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>受注</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>失注</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>NewOpportunity</recordTypeName>
+</PathAssistant>

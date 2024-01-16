@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ApprovalRouteDecisionValue__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF (
+/*GM承認の場合1を返す*/
+ OR( 
+AND(Product2.Name  = &quot;BUSINESS LAWYERS LIBRARY ライトプラン&quot;, SellingPriceDistount__c &gt;= 5000 &amp;&amp; SellingPriceDistount__c &lt;= 5799),
+AND(Product2.Name  = &quot;BUSINESS LAWYERS LIBRARY スタンダードプラン&quot;, SellingPriceDistount__c &gt;= 20000 &amp;&amp; SellingPriceDistount__c &lt;= 24999),
+AND(Product2.Name  = &quot;BUSINESS LAWYERS COMPLIANCE 動画コンテンツ1本プラン&quot;, SellingPriceDistount__c &gt;= 300000),
+AND(Product2.Name  = &quot;BUSINESS LAWYERS COMPLIANCE 動画コンテンツ3本プラン&quot;, SellingPriceDistount__c &gt;= 900000),
+AND(Product2.Name  = &quot;BUSINESS LAWYERS COMPLIANCE 動画コンテンツ5本プラン&quot;, SellingPriceDistount__c &gt;= 1000000)
+),1,
+IF(
+/*部長承認の場合2を返す*/
+OR( 
+AND(Product2.Name  = &quot;BUSINESS LAWYERS LIBRARY ライトプラン&quot;, SellingPriceDistount__c  &lt;  5000),
+AND(Product2.Name  = &quot;BUSINESS LAWYERS LIBRARY スタンダードプラン&quot;, SellingPriceDistount__c &lt; 20000),
+Product2.Name  = &quot;BUSINESS LAWYERS LIBRARY エンタープライズプラン&quot;,
+AND(Product2.Name  = &quot;BUSINESS LAWYERS COMPLIANCE グループ企業利用オプション&quot;, SellingPriceDistount__c = 0),
+AND(Product2.Name  = &quot;BUSINESS LAWYERS COMPLIANCE 動画コンテンツ1本プラン&quot;, SellingPriceDistount__c &lt; 300000),
+AND(Product2.Name  = &quot;BUSINESS LAWYERS COMPLIANCE 動画コンテンツ3本プラン&quot;, SellingPriceDistount__c &lt; 900000),
+AND(Product2.Name  = &quot;BUSINESS LAWYERS COMPLIANCE 動画コンテンツ5本プラン&quot;, SellingPriceDistount__c &lt; 1000000),
+Product2.Name  = &quot;BUSINESSLAWYERS COMPLIANCE 買い切り型&quot;
+), 2,
+IF(
+/*事業企画・マーケティングチームマネージャー承認の場合3を返す*/
+OR( 
+Product2.Name  = &quot;BUSINESSLAWYERS COMPLIANCE ASP型&quot;,
+Product2.Name  = &quot;BUSINESSLAWYERS COMPLIANCE その他&quot;
+), 3,
+IF(
+/*ビジネスソリューショングループマネージャーまたは事業企画・マーケティングチームマネージャー承認の場合4を返す*/
+OR( 
+Product2.Name  = &quot;BUSINESS LAWYERS LIBRARY&quot;,
+Product2.Name  = &quot;BUSINESS LAWYERS COMPLIANCE マンガ動画コンテンツ1本プラン&quot;, 
+Product2.Name  = &quot;BUSINESSLAWYERS COMPLIANCE 動画コンテンツ附則資料&quot;
+), 4,0
+) 
+) 
+) 
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>承認ルート判定値</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

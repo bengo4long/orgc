@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IrregularMatter_Other_SlackURL_IsBlank</fullName>
+    <active>true</active>
+    <description>その他イレギュラ事項を入力する場合、SlackURLに記載がないとエラー</description>
+    <errorConditionFormula>if(
+NOT(ISBLANK(IrregularMatterMemo__c) 
+),
+ ISBLANK( SlackURL__c ) ,
+ false
+)</errorConditionFormula>
+    <errorDisplayField>SlackURL__c</errorDisplayField>
+    <errorMessage>「その他イレギュラ事項」を入力する場合は「SlackURL」を入力してください</errorMessage>
+</ValidationRule>

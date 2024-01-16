@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>FailureCauseDetail__c</name>
+    <picklistValues>
+        <masterLabel>その他理由</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>コンテンツによる他社決定</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>機能により他社決定</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>金額により他社決定</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

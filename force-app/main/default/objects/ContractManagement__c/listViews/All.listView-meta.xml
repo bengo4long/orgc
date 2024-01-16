@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>ApplicationFlg__c</columns>
+    <columns>ApprovedFlg__c</columns>
+    <columns>Churn__c</columns>
+    <columns>ChurnBtn__c</columns>
+    <columns>ContractRetentionMonth__c</columns>
+    <columns>ContractStartMonth__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>すべてのレコード</label>
+</ListView>

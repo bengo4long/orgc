@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>リード割り当てルール</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>miyata+c@bengo4.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>MOD( VALUE( LeadNumber__c ) ,3 ) = 0</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>sekiguchi+c@bengo4.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>MOD( VALUE( LeadNumber__c ) ,3 ) = 1</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>takahakke+c@bengo4.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>MOD( VALUE( LeadNumber__c ) ,3 ) = 2</formula>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

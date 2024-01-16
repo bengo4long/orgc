@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UpdateMonths_Other_3or6or12</fullName>
+    <active>true</active>
+    <description>更新月数に「3、6、12」以外を入力したらエラー</description>
+    <errorConditionFormula>if( ISBLANK(UpdateMonths__c) ,false,
+NOT(
+OR(
+UpdateMonths__c = 3,UpdateMonths__c = 6, UpdateMonths__c = 12
+)
+)
+)</errorConditionFormula>
+    <errorDisplayField>UpdateMonths__c</errorDisplayField>
+    <errorMessage>更新月数は「3、6、12」以外は入力できません。</errorMessage>
+</ValidationRule>

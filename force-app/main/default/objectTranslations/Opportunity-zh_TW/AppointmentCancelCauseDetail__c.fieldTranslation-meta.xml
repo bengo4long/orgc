@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>AppointmentCancelCauseDetail__c</name>
+    <picklistValues>
+        <masterLabel>01_音信不通</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>02_先方キャンセル（タイミング）</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>03_先方キャンセル（ニーズなしと言われた）</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>04_部署違い（法務を扱う部署でない）</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>05_担当違い（法務従事者だが検討権限がない）</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

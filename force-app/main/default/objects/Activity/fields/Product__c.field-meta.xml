@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product__c</fullName>
+    <externalId>false</externalId>
+    <label>商品</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>T-4OO</fullName>
+                <default>false</default>
+                <label>T-4OO</label>
+            </value>
+            <value>
+                <fullName>BUSINESS LAWYERS COMPLIANCE</fullName>
+                <default>false</default>
+                <label>BUSINESS LAWYERS COMPLIANCE</label>
+            </value>
+            <value>
+                <fullName>BUSINESS LAWYERS LIBRARY</fullName>
+                <default>false</default>
+                <label>BUSINESS LAWYERS LIBRARY</label>
+            </value>
+            <value>
+                <fullName>LAWGUE</fullName>
+                <default>false</default>
+                <label>LAWGUE</label>
+            </value>
+            <value>
+                <fullName>LegalForce</fullName>
+                <default>false</default>
+                <label>LegalForce</label>
+            </value>
+            <value>
+                <fullName>hubble</fullName>
+                <default>false</default>
+                <label>hubble</label>
+            </value>
+            <value>
+                <fullName>Net Learning</fullName>
+                <default>false</default>
+                <label>Net Learning</label>
+            </value>
+            <value>
+                <fullName>NTT data</fullName>
+                <default>false</default>
+                <label>NTT data</label>
+            </value>
+            <value>
+                <fullName>Reliefsign</fullName>
+                <default>false</default>
+                <label>Reliefsign</label>
+            </value>
+            <value>
+                <fullName>Risk Monster</fullName>
+                <default>false</default>
+                <label>Risk Monster</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

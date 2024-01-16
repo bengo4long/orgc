@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>LeadType__c</name>
+    <picklistValues>
+        <masterLabel>コールドリスト</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>リサイクル</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>新規</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

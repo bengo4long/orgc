@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UpdateMonths_3or6_AutoUpdatable_True</fullName>
+    <active>true</active>
+    <description>更新月数に「3」または「6」を入力した場合、自動更新有がTRUEになっていたらエラー</description>
+    <errorConditionFormula>if( OR( UpdateMonths__c = 3,UpdateMonths__c = 6) , AutoUpdatable__c = true,false)</errorConditionFormula>
+    <errorDisplayField>AutoUpdatable__c</errorDisplayField>
+    <errorMessage>自動更新有のチェックを外してください。更新月数が12以外の場合は自動更新できません。</errorMessage>
+</ValidationRule>

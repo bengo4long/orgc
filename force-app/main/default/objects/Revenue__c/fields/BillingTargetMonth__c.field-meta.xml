@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BillingTargetMonth__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL( Opportunity__r.CollectionMethod__c, &apos;口座振替（初回2回目振込）&apos;),
+IF( AND( ISPICKVAL( Opportunity__r.Type, &apos;新規&apos;), OR( CollectionTimes__c = 1, CollectionTimes__c = 2)),
+Opportunity__r.PostingStartDate__c,
+SalesMonth__c),
+SalesMonth__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>請求対象月</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Quote</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Quote</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Name</fieldNames>
+        <fieldNames>ContactId</fieldNames>
+        <fieldNames>Email</fieldNames>
+        <fieldNames>Description</fieldNames>
+        <info>&lt;p&gt;&lt;u&gt;見積を出力するまでの流れは以下です&lt;/u&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;画面右上のボタンから「承認申請」を押下&lt;/li&gt;&lt;li&gt;承認後、画面右上のボタンから「帳票出力」を押下&lt;/li&gt;&lt;li&gt;帳票画面で帳票名を記入し保存先&amp;quot;&lt;span style=&quot;font-size: 12px;&quot;&gt;選択した見積のメモ &amp;amp; 添付ファイル&lt;/span&gt;&amp;quot;を指定した上で保存&lt;/li&gt;&lt;li&gt;「メモ＆添付ファイル」セクションに保存した見積が添付されている&lt;/li&gt;&lt;li&gt;承認されたら&lt;span style=&quot;font-size: 13px;&quot;&gt;画面右上のボタンから「同期開始」を押下&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>作成中</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Name</fieldNames>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>Email</fieldNames>
+        <fieldNames>Description</fieldNames>
+        <info>&lt;p&gt;&lt;u&gt;見積を出力するまでの流れは以下です​&lt;/u&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;画面右上のボタンから「承認申請」を押下&lt;/li&gt;&lt;li&gt;承認後、画面右上のボタンから「帳票出力」を押下&lt;/li&gt;&lt;li&gt;帳票画面で帳票名を記入し保存先&amp;quot;&lt;span style=&quot;font-size: 12px;&quot;&gt;選択した見積のメモ &amp;amp; 添付ファイル&lt;/span&gt;&amp;quot;​を指定した上で保存&lt;/li&gt;&lt;li&gt;「メモ＆添付ファイル」セクションに保存した見積が添付されている​&lt;/li&gt;&lt;li&gt;承認されたら​&lt;span style=&quot;font-size: 13px;&quot;&gt;画面右上のボタンから「同期開始」を押下&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;​&lt;/p&gt;</info>
+        <picklistValueName>却下</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Name</fieldNames>
+        <fieldNames>ContactId</fieldNames>
+        <fieldNames>Email</fieldNames>
+        <fieldNames>Description</fieldNames>
+        <info>&lt;p&gt;&lt;u&gt;見積を出力するまでの流れは以下です​&lt;/u&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;画面右上のボタンから「承認申請」を押下&lt;/li&gt;&lt;li&gt;承認後、画面右上のボタンから「帳票出力」を押下&lt;/li&gt;&lt;li&gt;帳票画面で帳票名を記入し保存先&amp;quot;&lt;span style=&quot;font-size: 12px;&quot;&gt;選択した見積のメモ &amp;amp; 添付ファイル&lt;/span&gt;&amp;quot;​を指定した上で保存&lt;/li&gt;&lt;li&gt;「メモ＆添付ファイル」セクションに保存した見積が添付されている​&lt;/li&gt;&lt;li&gt;​承認されたら​&lt;span style=&quot;font-size: 13px;&quot;&gt;画面右上のボタンから「同期開始」を押下&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>承認待ち</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;u&gt;見積を出力するまでの流れは以下です​&lt;/u&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;画面右上のボタンから「承認申請」を押下&lt;/li&gt;&lt;li&gt;承認後、画面右上のボタンから「帳票出力」を押下&lt;/li&gt;&lt;li&gt;帳票画面で帳票名を記入し保存先&amp;quot;&lt;span style=&quot;font-size: 12px;&quot;&gt;選択した見積のメモ &amp;amp; 添付ファイル&lt;/span&gt;&amp;quot;​を指定した上で保存&lt;/li&gt;&lt;li&gt;「メモ＆添付ファイル」セクションに保存した見積が添付されている​&lt;/li&gt;&lt;li&gt;​承認されたら​&lt;span style=&quot;font-size: 13px;&quot;&gt;画面右上のボタンから「同期開始」を押下&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;</info>
+        <picklistValueName>承認済</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

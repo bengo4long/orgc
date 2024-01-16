@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ApplicationApprovalPattern__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+/*GM＞経理メンバー＞経理部長承認の場合6を返す*/
+  NOT(ISPICKVAL(NegotiationPaymentSite__c, &quot;翌月末払い&quot;)
+),6,
+IF(
+/*GM＞関口＞経理メンバー承認の場合5を返す*/
+OR(
+ ExemptionTarget__c ,
+ ExceptionBillPosting__c ,
+ NOT( ISBLANK( IrregularMatterMemo__c ) ) 
+), 5,
+IF(
+/*GM＞関口承認の場合3を返す*/
+OR( 
+ ProductDiscount__c = true,
+ OutOfPriceAfterUpdate__c = true,
+ SpecificProductsNumber__c  &gt;= 1,
+ AutoUpdatable__c = false,
+ UpdateMonths__c = 3,
+ UpdateMonths__c = 6,
+ NoticeEditExists__c = true
+), 3,
+IF (
+/*GM承認の場合1を返す*/
+ OR( 
+ ProductDiscount__c = false,
+ OutOfPriceAfterUpdate__c = false
+),1,0
+)
+) 
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>申込承認パターン</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

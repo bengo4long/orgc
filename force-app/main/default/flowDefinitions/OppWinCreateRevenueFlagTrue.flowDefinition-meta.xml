@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>2</activeVersionNumber>
+    <description>商談_受注時に売上レコード作成フラグをTrue、取引先の「取引実績あり」もTrue</description>
+    <masterLabel>商談_受注時に売上レコード作成フラグをTrue</masterLabel>
+</FlowDefinition>

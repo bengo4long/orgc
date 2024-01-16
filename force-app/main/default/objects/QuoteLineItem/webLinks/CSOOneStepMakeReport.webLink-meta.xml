@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CSOOneStepMakeReport</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>帳票出力(クラシック)</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>var url = &quot;/apex/SOLXYZCSO001__OneStepCreateReportV2?obj=QuoteLineItem&amp;Id={!QuoteLineItem.Id}&amp;name={!URLENCODE(QuoteLineItem.LineNumber)}&amp;pagetype=detailpage&quot;;var options = &apos;width=1024,height=768,resizable=yes,menubar=no,scrollbars=yes,status=no,toolbar=no,directories=no,location=no&apos;;var newWin = window.open(url, &apos;_blank&apos;, options);var nowRefreshing = false;if(!newWin.closed){setInterval(refreshJudge, 1000);}function refreshJudge(){if(newWin.closed &amp;&amp; !nowRefreshing){nowRefreshing = true;window.location.href = window.location.href;}}</url>
+</WebLink>

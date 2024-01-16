@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IntroductionOtherCompanyService__c</fullName>
+    <externalId>false</externalId>
+    <label>導入他社サービス</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>FailureCauseDetail__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>legal library</fullName>
+                <default>false</default>
+                <label>legal library</label>
+            </value>
+            <value>
+                <fullName>legalscape</fullName>
+                <default>false</default>
+                <label>legalscape</label>
+            </value>
+            <value>
+                <fullName>弁護士ドットコムライブラリー</fullName>
+                <default>false</default>
+                <label>弁護士ドットコムライブラリー</label>
+            </value>
+            <value>
+                <fullName>その他</fullName>
+                <default>false</default>
+                <label>その他</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>金額により他社決定</controllingFieldValue>
+            <controllingFieldValue>機能により他社決定</controllingFieldValue>
+            <controllingFieldValue>コンテンツによる他社決定</controllingFieldValue>
+            <controllingFieldValue>その他理由</controllingFieldValue>
+            <valueName>legal library</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>金額により他社決定</controllingFieldValue>
+            <controllingFieldValue>機能により他社決定</controllingFieldValue>
+            <controllingFieldValue>コンテンツによる他社決定</controllingFieldValue>
+            <controllingFieldValue>その他理由</controllingFieldValue>
+            <valueName>legalscape</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>金額により他社決定</controllingFieldValue>
+            <controllingFieldValue>機能により他社決定</controllingFieldValue>
+            <controllingFieldValue>コンテンツによる他社決定</controllingFieldValue>
+            <controllingFieldValue>その他理由</controllingFieldValue>
+            <valueName>弁護士ドットコムライブラリー</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>金額により他社決定</controllingFieldValue>
+            <controllingFieldValue>機能により他社決定</controllingFieldValue>
+            <controllingFieldValue>コンテンツによる他社決定</controllingFieldValue>
+            <controllingFieldValue>その他理由</controllingFieldValue>
+            <valueName>その他</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

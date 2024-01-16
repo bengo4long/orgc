@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PhaseOver07_Change_Limit</fullName>
+    <active>true</active>
+    <description>事業部メンバーによるフェーズの手動変更を制限（07_契約締結以上）</description>
+    <errorConditionFormula>Probability &gt; 0.8
+ &amp;&amp;
+ $User.ProfileId = &quot;00e1s000000Ewdd&quot;</errorConditionFormula>
+    <errorMessage>手動でフェーズを「07_契約締結」以上に挙げる権限がありません。
+申込承認をあげてください。</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SuperiorEmail__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( OwnerId == &apos;0055F000006q1lh&apos;,&apos;inui@bengo4.com&apos;, IF( Owner.Manager2__c == null , Owner.Manager3__r.Email , Owner.Manager2__r.Email ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>上長メール</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

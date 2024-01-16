@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>LegalWorkWorkers__c</name>
+    <picklistValues>
+        <masterLabel>法務従事者</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>法務従事者以外</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

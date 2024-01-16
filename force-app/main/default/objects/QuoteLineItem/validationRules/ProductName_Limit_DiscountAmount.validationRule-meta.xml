@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductName_Limit_DiscountAmount</fullName>
+    <active>true</active>
+    <description>商品などの条件で値引できる金額を制限する
+2024/01/12のMTGで金額決め打ちではなく「〜500」「〜1300」といった感じでよいと確認取れたので全面的にコメントブロック。復活の可能性があるため保存。</description>
+    <errorConditionFormula>OR(
+/*以下値引可能条件。当てはまらないものはエラー*/
+/*BLLライトプラン*/
+/*AND(
+Product2.Name  = &quot;BUSINESS LAWYERS LIBRARY ライトプラン&quot;,
+NOT(
+OR(
+DiscountAmount__c =  0,
+DiscountAmount__c =  500,
+DiscountAmount__c = 1300,
+DiscountAmount__c  &gt; 1300
+) 
+)
+),*/
+/*BLLスタンダードプラン*/
+/*AND(
+Product2.Name  = &quot;BUSINESS LAWYERS LIBRARY スタンダードプラン&quot;,
+NOT(
+OR(
+DiscountAmount__c =  0,
+DiscountAmount__c = 5000,
+DiscountAmount__c = 10000,
+DiscountAmount__c  &gt; 10000
+) 
+) 
+),*/
+/*BLLスタンダード追加プラン*/
+/*AND(
+Product2.Name  = &quot;BUSINESS LAWYERS LIBRARY スタンダードプラン 追加アカウント&quot;,
+NOT(
+OR(
+DiscountAmount__c =  0,
+DiscountAmount__c  =  1000
+)
+)
+),*/
+/*BLLグループ企業オプション*/
+/*AND(
+Product2.Name  = &quot;BUSINESS LAWYERS COMPLIANCE グループ企業利用オプション&quot;,
+NOT(
+OR(
+DiscountAmount__c =  0,
+DiscountAmount__c  =  500000
+)
+)
+) ,*/
+/*BLC動画1本*/
+/*AND(
+Product2.Name  = &quot;BUSINESS LAWYERS COMPLIANCE 動画コンテンツ1本プラン&quot;,
+NOT(
+OR(
+DiscountAmount__c =  0,
+DiscountAmount__c  =  200000
+)
+)
+) ,*/
+/*BLC動画3本*/
+/*AND(
+Product2.Name  = &quot;BUSINESS LAWYERS COMPLIANCE 動画コンテンツ3本プラン&quot;,
+NOT(
+OR(
+DiscountAmount__c =  0,
+DiscountAmount__c =  300000
+)
+)
+) ,*/
+/*BLC動画5本*/
+/*AND(
+Product2.Name  = &quot;BUSINESS LAWYERS COMPLIANCE 動画コンテンツ5本プラン&quot;,
+NOT(
+OR(
+DiscountAmount__c =  0,
+DiscountAmount__c  =  500000
+) 
+)
+)*/
+/*ここまでが条件値*/
+)</errorConditionFormula>
+    <errorMessage>この商品は値引き可能な金額が制限されています。</errorMessage>
+</ValidationRule>

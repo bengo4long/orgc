@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AccessMethod__c</fullName>
+    <externalId>false</externalId>
+    <label>アクセス手段</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>電話</fullName>
+                <default>false</default>
+                <label>電話</label>
+            </value>
+            <value>
+                <fullName>メール</fullName>
+                <default>false</default>
+                <label>メール</label>
+            </value>
+            <value>
+                <fullName>往訪</fullName>
+                <default>false</default>
+                <label>往訪</label>
+            </value>
+            <value>
+                <fullName>ベルフェイス</fullName>
+                <default>false</default>
+                <label>ベルフェイス</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NextUpdateTimeException__c</fullName>
+    <externalId>false</externalId>
+    <formula>AutoUpdatable__c = false</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>次回更新時期例外</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

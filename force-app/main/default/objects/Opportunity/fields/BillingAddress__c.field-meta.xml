@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BillingAddress__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>4/8ラベル名変更：https://app.clickup.com/t/3703355/IID-2787</description>
+    <externalId>false</externalId>
+    <inlineHelpText>請求先を取引先以外に設定したい場合に入力します。請求先が弁護士の場合は弁護士名を入力して、事務所の場合は事務所名を入力して、法人の場合は法人名を入力してください。</inlineHelpText>
+    <label>請求先（取引先以外に請求する場合）</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>商談 (請求先事務所)</relationshipLabel>
+    <relationshipName>Seikyusaki_Opportunities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

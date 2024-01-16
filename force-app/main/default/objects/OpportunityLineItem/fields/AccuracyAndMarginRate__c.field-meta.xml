@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AccuracyAndMarginRate__c</fullName>
+    <externalId>false</externalId>
+    <formula>( UnitPrice * BLANKVALUE(Opportunity.AllianceProductsMarginRate__c,1) - BLANKVALUE(Nebiki1__c,0) ) * Opportunity.Probability__c</formula>
+    <label>初月見込額（確度とマージン率）</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Currency</type>
+</CustomField>

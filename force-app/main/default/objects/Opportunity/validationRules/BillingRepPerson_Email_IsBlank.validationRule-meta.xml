@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BillingRepPerson_Email_IsBlank</fullName>
+    <active>true</active>
+    <description>請求先担当者が空欄でない場合、参照先の取引先責任者のメールアドレスが空欄ならエラー</description>
+    <errorConditionFormula>if( !ISBLANK( BillingRepPerson__c),
+ISBLANK( BillingRepPerson__r.Email ),false)</errorConditionFormula>
+    <errorDisplayField>BillingRepPerson__c</errorDisplayField>
+    <errorMessage>請求先担当者で指定する取引先責任者にはメールアドレスが登録されている必要があります</errorMessage>
+</ValidationRule>

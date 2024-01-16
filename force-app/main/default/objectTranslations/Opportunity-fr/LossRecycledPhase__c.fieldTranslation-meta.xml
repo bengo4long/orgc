@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>LossRecycledPhase__c</name>
+    <picklistValues>
+        <masterLabel>01_未対応</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>02_対応中</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>03_対応完了（アポ獲得）</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>04_対応完了（アポ獲得できず）</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductsNameModifying__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>入力した場合、帳票に反映されます。
+未入力の場合、商品マスタの商品名が表示されます。</inlineHelpText>
+    <label>商品名(修正表示)</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>standard__SalesforceCMS</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <description>Account Engagement の拡張コンテンツエクスペリエンスへのアクセス権と、Salesforce CMS ワークスペースやチャネルへのアクセス権を作成および編集します。</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Account Engagement コンテンツを作成</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>AccessContentBuilder</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>AutomateEmailContent</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ManageEmailContent</name>
+    </userPermissions>
+</PermissionSet>

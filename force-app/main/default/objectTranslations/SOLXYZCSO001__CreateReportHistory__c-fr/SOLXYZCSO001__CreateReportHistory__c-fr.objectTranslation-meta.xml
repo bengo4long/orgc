@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>History of Create Report</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>History of Create Report</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>History No.</nameFieldLabel>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>SOLXYZCSO001__HasButton</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>SOLXYZCSO001__NoButton</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label></label>
+        <name>SOLXYZCSO001__DeliveryInfo</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>SOLXYZCSO001__NewDelivery</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>SOLXYZCSO001__ReportRefer</name>
+    </webLinks>
+</CustomObjectTranslation>

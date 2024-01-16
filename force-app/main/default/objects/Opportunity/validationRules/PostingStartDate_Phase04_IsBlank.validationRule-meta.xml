@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PostingStartDate_Phase04_IsBlank</fullName>
+    <active>true</active>
+    <description>フェーズが&quot;提案内容合意（決裁者）&quot;以上の場合は掲載開始日（商品登録による自動反映項目）が必須</description>
+    <errorConditionFormula>AND( ISBLANK( PostingStartDate__c ) ,Probability &gt;= 0.25 )</errorConditionFormula>
+    <errorMessage>&quot;提案内容合意（決裁者）&quot;以上に進める場合は商品を登録してください</errorMessage>
+</ValidationRule>

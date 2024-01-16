@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllianceProductsMarginRate__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(TEXT(AllianceProduct__c),
+&apos;LAWGUE（製品版）&apos;,0.35,
+&apos;T-4OO（35%）&apos;,0.35,
+&apos;NTTデータ&apos;,0.2 ,
+&apos;LAWGUE（トライアル50%）&apos;,0.5,
+&apos;LAWGUE T-4OO&apos;,0,
+&apos;ネットラーニング&apos;,0.2,
+&apos;COTOHA&apos;,0.2,
+&apos;T-4OO&apos;,0.5,null )</formula>
+    <label>提携商品マージン率</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

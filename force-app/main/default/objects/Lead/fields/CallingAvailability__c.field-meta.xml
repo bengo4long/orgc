@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CallingAvailability__c</fullName>
+    <externalId>false</externalId>
+    <label>架電可否</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>○</fullName>
+                <default>false</default>
+                <label>○</label>
+            </value>
+            <value>
+                <fullName>海津OK</fullName>
+                <default>false</default>
+                <label>海津OK</label>
+            </value>
+            <value>
+                <fullName>山口OK</fullName>
+                <default>false</default>
+                <label>山口OK</label>
+            </value>
+            <value>
+                <fullName>NG</fullName>
+                <default>false</default>
+                <label>NG</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

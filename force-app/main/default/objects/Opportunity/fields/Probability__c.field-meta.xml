@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Probability__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Reading__c ,
+&apos;受注&apos;,1,
+&apos;A&apos;,0.95,
+&apos;B&apos;,0.75,
+&apos;C&apos;,0.5,
+&apos;D&apos;,0.2,
+&apos;優ネタ&apos;,0.2,
+&apos;良ネタ&apos;,0.05,
+&apos;SF承認待ち：95%&apos;,0.95,
+&apos;A：70%&apos;,0.70,
+&apos;B：50%&apos;,0.50,
+&apos;C：30%&apos;,0.30,0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>確度</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

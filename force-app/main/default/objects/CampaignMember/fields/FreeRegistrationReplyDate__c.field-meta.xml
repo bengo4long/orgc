@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FreeRegistrationReplyDate__c</fullName>
+    <externalId>false</externalId>
+    <label>無料登録用紙返信日</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>
