@@ -327,7 +327,7 @@
         <allowPause>true</allowPause>
         <fields>
             <name>Copy_1_of_MessageERROR</name>
-            <fieldText>&lt;p&gt;DONE&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;完了しました&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <showFooter>true</showFooter>

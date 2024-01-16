@@ -92,7 +92,7 @@ public class B54_SyncRecords {
                     Quantity,
                     ServiceDate,
                     PeriodMonths__c,
-                    Nebiki1__c,
+                    DiscountAmountSum__c,
                     Opportunity.OrgA_OpportunityId__c,
                     PricebookEntry.Product2.Name 
                     FROM OpportunityLineitem WHERE Id In: recordIds
@@ -113,6 +113,7 @@ public class B54_SyncRecords {
                     ProductFamily__c,
                     AccountTitle__c,
                     ProductName__c,
+                    FinalAccountProcess__c,
                     InvoiceInformation__r.OrgA_SeikyuId__c,
                     Opportunity__r.OrgA_OpportunityId__c
                     FROM Revenue__c WHERE Id In: recordIds
@@ -206,7 +207,7 @@ public class B54_SyncRecords {
         requestRecord.put('ServiceDate', record.ServiceDate );
         requestRecord.put('Suryo__c', record.Quantity );
         requestRecord.put('Quantity', record.PeriodMonths__c );
-        requestRecord.put('Nebiki1__c', record.Nebiki1__c );
+        requestRecord.put('Nebiki1__c', record.DiscountAmountSum__c );
         requestRecord.put('OpportunityId', record.Opportunity.OrgA_OpportunityId__c );
         requestRecord.put('Shohinmei__c', record.PricebookEntry.Product2.Name  );
         return requestRecord ;
@@ -224,6 +225,7 @@ public class B54_SyncRecords {
         requestRecord.put('KanjoKamoku__c', record.AccountTitle__c );
         requestRecord.put('Shohinmei__c', record.ProductName__c );
         requestRecord.put('Family__c', record.ProductFamily__c );
+        requestRecord.put('KessanShori__c', record.FinalAccountProcess__c );
         requestRecord.put('Opportunity__c', record.Opportunity__r.OrgA_OpportunityId__c );
         requestRecord.put('Seikyu__c', record.InvoiceInformation__r.OrgA_SeikyuId__c );
         return requestRecord ;
