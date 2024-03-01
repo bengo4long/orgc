@@ -5,6 +5,7 @@
     <label>役職（選択リスト）</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
     <type>Picklist</type>
     <valueSet>
         <restricted>true</restricted>
@@ -31,9 +32,9 @@
                 <label>部長クラス</label>
             </value>
             <value>
-                <fullName>課長クラス（マネージャー）</fullName>
+                <fullName>課長クラス</fullName>
                 <default>false</default>
-                <label>課長クラス（マネージャー）</label>
+                <label>課長クラス</label>
             </value>
             <value>
                 <fullName>係長・主任クラス</fullName>
@@ -41,9 +42,9 @@
                 <label>係長・主任クラス</label>
             </value>
             <value>
-                <fullName>一般社員</fullName>
+                <fullName>一般社員・職員</fullName>
                 <default>false</default>
-                <label>一般社員</label>
+                <label>一般社員・職員</label>
             </value>
             <value>
                 <fullName>専門職</fullName>

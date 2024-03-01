@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>BMS事業部が使っている申込書の特記事項文</description>
+    <label>特記事項文</label>
+    <visibility>Public</visibility>
+</CustomObject>

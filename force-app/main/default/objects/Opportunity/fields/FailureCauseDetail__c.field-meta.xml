@@ -9,6 +9,7 @@
     <type>Picklist</type>
     <valueSet>
         <controllingField>FailureCause__c</controllingField>
+        <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
@@ -31,7 +32,82 @@
                 <default>false</default>
                 <label>その他理由</label>
             </value>
+            <value>
+                <fullName>リサーチ必要ない</fullName>
+                <default>false</default>
+                <label>リサーチ必要ない</label>
+            </value>
+            <value>
+                <fullName>代替手段で対応できている</fullName>
+                <default>false</default>
+                <label>代替手段で対応できている</label>
+            </value>
+            <value>
+                <fullName>金額</fullName>
+                <default>false</default>
+                <label>金額</label>
+            </value>
+            <value>
+                <fullName>機能不満（UI,検索）</fullName>
+                <default>false</default>
+                <label>機能不満（UI,検索）</label>
+            </value>
+            <value>
+                <fullName>書籍</fullName>
+                <default>false</default>
+                <label>書籍</label>
+            </value>
+            <value>
+                <fullName>動画</fullName>
+                <default>false</default>
+                <label>動画</label>
+            </value>
+            <value>
+                <fullName>予算タイミング</fullName>
+                <default>false</default>
+                <label>予算タイミング</label>
+            </value>
+            <value>
+                <fullName>多忙で検討できない</fullName>
+                <default>false</default>
+                <label>多忙で検討できない</label>
+            </value>
+            <value>
+                <fullName>利用したい時期がある</fullName>
+                <default>false</default>
+                <label>利用したい時期がある</label>
+            </value>
+            <value>
+                <fullName>導入他社サービス</fullName>
+                <default>false</default>
+                <label>導入他社サービス</label>
+            </value>
         </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>05_他社決定</controllingFieldValue>
+            <controllingFieldValue>02_サービス不満</controllingFieldValue>
+            <valueName>金額</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>05_他社決定</controllingFieldValue>
+            <controllingFieldValue>02_サービス不満</controllingFieldValue>
+            <valueName>機能不満（UI,検索）</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>05_他社決定</controllingFieldValue>
+            <controllingFieldValue>02_サービス不満</controllingFieldValue>
+            <valueName>書籍</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>05_他社決定</controllingFieldValue>
+            <controllingFieldValue>02_サービス不満</controllingFieldValue>
+            <valueName>動画</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>05_他社決定</controllingFieldValue>
+            <controllingFieldValue>04_他社利用中</controllingFieldValue>
+            <valueName>導入他社サービス</valueName>
+        </valueSettings>
         <valueSettings>
             <controllingFieldValue>他社導入決定</controllingFieldValue>
             <valueName>金額により他社決定</valueName>
@@ -47,6 +123,26 @@
         <valueSettings>
             <controllingFieldValue>他社導入決定</controllingFieldValue>
             <valueName>その他理由</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>01_ニーズなし</controllingFieldValue>
+            <valueName>リサーチ必要ない</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>01_ニーズなし</controllingFieldValue>
+            <valueName>代替手段で対応できている</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>03_時期NG</controllingFieldValue>
+            <valueName>予算タイミング</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>03_時期NG</controllingFieldValue>
+            <valueName>多忙で検討できない</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>03_時期NG</controllingFieldValue>
+            <valueName>利用したい時期がある</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>

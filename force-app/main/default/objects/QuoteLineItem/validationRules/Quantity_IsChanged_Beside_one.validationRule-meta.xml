@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quantity_IsChanged_Beside_one</fullName>
+    <active>true</active>
+    <description>エンタープライズプランの時数量が1以外に変更されたらエラー</description>
+    <errorConditionFormula>AND(
+Product2.Name = &quot;BUSINESS LAWYERS LIBRARY エンタープライズプラン&quot;,
+NOT(Quantity =1) 
+)</errorConditionFormula>
+    <errorDisplayField>Quantity</errorDisplayField>
+    <errorMessage>BLLエンタープライズプランを選択する際の数量は「1」を入力してください</errorMessage>
+</ValidationRule>

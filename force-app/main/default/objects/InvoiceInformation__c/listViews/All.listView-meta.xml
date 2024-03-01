@@ -3,6 +3,9 @@
     <fullName>All</fullName>
     <columns>NAME</columns>
     <columns>Opportunity__c</columns>
+    <columns>PaymentSite__c</columns>
+    <columns>BillingPaymentMethod__c</columns>
+    <columns>PaymentDueDate__c</columns>
     <columns>CREATED_DATE</columns>
     <columns>CREATEDBY_USER</columns>
     <filterScope>Everything</filterScope>

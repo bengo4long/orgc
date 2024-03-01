@@ -4,9 +4,11 @@
     <active>true</active>
     <description>更新月数に「3、6、12」以外を入力したらエラー</description>
     <errorConditionFormula>if( ISBLANK(UpdateMonths__c) ,false,
+AND($Profile.Id &lt;&gt;&quot;00e2w000004VA9p&quot;,
 NOT(
 OR(
 UpdateMonths__c = 3,UpdateMonths__c = 6, UpdateMonths__c = 12
+)
 )
 )
 )</errorConditionFormula>

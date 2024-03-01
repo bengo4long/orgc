@@ -8,6 +8,7 @@
     <trackHistory>false</trackHistory>
     <type>Picklist</type>
     <valueSet>
+        <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
@@ -64,6 +65,48 @@
                 <fullName>櫻井彩夏</fullName>
                 <default>false</default>
                 <label>櫻井彩夏</label>
+            </value>
+            <value>
+                <fullName>0052w00000DMVDZAA5</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>0052w00000DMVDZAA5</label>
+            </value>
+            <value>
+                <fullName>0052w00000HcPUWAA3</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>0052w00000HcPUWAA3</label>
+            </value>
+            <value>
+                <fullName>0052w00000HnTGgAAN</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>0052w00000HnTGgAAN</label>
+            </value>
+            <value>
+                <fullName>佐藤 本一郎</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>佐藤 本一郎</label>
+            </value>
+            <value>
+                <fullName>山口 佳奈</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>山口 佳奈</label>
+            </value>
+            <value>
+                <fullName>海津 直央</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>海津 直央</label>
+            </value>
+            <value>
+                <fullName>阿部 亜未</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>阿部 亜未</label>
             </value>
         </valueSetDefinition>
     </valueSet>

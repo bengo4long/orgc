@@ -2,26 +2,49 @@
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>59.0</apiVersion>
     <assignments>
+        <name>AddAmount</name>
+        <label>合計金額加算</label>
+        <locationX>270</locationX>
+        <locationY>684</locationY>
+        <assignmentItems>
+            <assignToReference>ExcludingTaxAmount</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>RevenueLoop1.TotalAmountTaxExcluded__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SalesTaxAmount</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>RevenueLoop1.Tax__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>RevenueLoop1</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
         <name>AddUpdateRevenueCollection</name>
         <label>更新対象売上リストに追加</label>
         <locationX>270</locationX>
-        <locationY>1008</locationY>
+        <locationY>1416</locationY>
         <assignmentItems>
             <assignToReference>UpdateRevenueCollection</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference>RevenueLoop</elementReference>
+                <elementReference>RevenueLoop2</elementReference>
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>RevenueLoop</targetReference>
+            <targetReference>RevenueLoop2</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>Set_BillInfoCreationDate</name>
         <label>商談レコードの項目を更新</label>
         <locationX>50</locationX>
-        <locationY>1608</locationY>
+        <locationY>2016</locationY>
         <assignmentItems>
             <assignToReference>$Record.BillInfoCreationDate__c</assignToReference>
             <operator>Assign</operator>
@@ -37,12 +60,12 @@
         <name>SetInvoiceInformation</name>
         <label>請求書情報作成</label>
         <locationX>182</locationX>
-        <locationY>360</locationY>
+        <locationY>876</locationY>
         <assignmentItems>
             <assignToReference>CreateInvoiceInformation.BillingDate__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>$System.OriginDateTime</elementReference>
+                <elementReference>$Flow.CurrentDate</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -50,13 +73,6 @@
             <operator>Assign</operator>
             <value>
                 <elementReference>$Record.Id</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>CreateInvoiceInformation.TaxExcludedAmount__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>RevenueLoop.TotalAmountTaxExcluded__c</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -94,6 +110,69 @@
                 <elementReference>$Record.Contract.VirtualAccountNumber__c</elementReference>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CreateInvoiceInformation.TaxExcludedAmount__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ExcludingTaxAmount</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CreateInvoiceInformation.BillingRepName__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Contract.PrimarilyBliingContact__r.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CreateInvoiceInformation.BillingMailAddress__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Contract.PrimarilyBliingContact__r.MailAddless__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CreateInvoiceInformation.SalesTax__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>SalesTaxAmount</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CreateInvoiceInformation.TaxRate__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Contract.TaxRate__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CreateInvoiceInformation.IncludeTaxAmount__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>AddTaxAmount</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CreateInvoiceInformation.TaxAmount__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>TaxAmount</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CreateInvoiceInformation.SubscriberCode__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Contract.SubscriberCode__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CreateInvoiceInformation.SubscriberName__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Contract.SubscriberName__c</elementReference>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>InsertInvoiceInformation</targetReference>
         </connector>
@@ -102,9 +181,9 @@
         <name>SetInvoiceInformationToRevenu</name>
         <label>売上レコードに請求書情報を紐付け</label>
         <locationX>270</locationX>
-        <locationY>900</locationY>
+        <locationY>1308</locationY>
         <assignmentItems>
-            <assignToReference>RevenueLoop.InvoiceInformation__c</assignToReference>
+            <assignToReference>RevenueLoop2.InvoiceInformation__c</assignToReference>
             <operator>Assign</operator>
             <value>
                 <elementReference>CreateInvoiceInformation.Id</elementReference>
@@ -118,7 +197,7 @@
         <name>SetUpdateRevenueRecordNumber</name>
         <label>更新対象売上レコード数を取得</label>
         <locationX>182</locationX>
-        <locationY>1284</locationY>
+        <locationY>1692</locationY>
         <assignmentItems>
             <assignToReference>RecordNumber</assignToReference>
             <operator>AssignCount</operator>
@@ -134,7 +213,7 @@
         <name>CheckUpdateRevenueCollectionNumber</name>
         <label>更新対象売上レコード数チェック</label>
         <locationX>182</locationX>
-        <locationY>1392</locationY>
+        <locationY>1800</locationY>
         <defaultConnectorLabel>デフォルトの結果</defaultConnectorLabel>
         <rules>
             <name>HasUpdateRevenueRecord</name>
@@ -156,16 +235,16 @@
         <name>InvoiceInformationCheck</name>
         <label>請求書情報チェック</label>
         <locationX>402</locationX>
-        <locationY>792</locationY>
+        <locationY>1200</locationY>
         <defaultConnector>
-            <targetReference>RevenueLoop</targetReference>
+            <targetReference>RevenueLoop2</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>デフォルトの結果</defaultConnectorLabel>
         <rules>
             <name>NotInvoiceInformation</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>RevenueLoop.InvoiceInformation__c</leftValueReference>
+                <leftValueReference>RevenueLoop2.InvoiceInformation__r.Id</leftValueReference>
                 <operator>IsNull</operator>
                 <rightValue>
                     <booleanValue>true</booleanValue>
@@ -208,24 +287,50 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>SetInvoiceInformation</targetReference>
+                <targetReference>GetOldestRevenue</targetReference>
             </connector>
             <label>条件に一致</label>
         </rules>
     </decisions>
     <environments>Default</environments>
     <formulas>
+        <name>AddTaxAmount</name>
+        <dataType>Currency</dataType>
+        <expression>{!CreateInvoiceInformation.TaxExcludedAmount__c}*(1+{!CreateInvoiceInformation.TaxRate__c}/100)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
         <name>PaymentDueDate</name>
         <dataType>Date</dataType>
-        <expression>CASE({!$Record.Contract.PaymentTerms__c},&quot;当月末払い&quot;, DATE(YEAR(ADDMONTHS(TODAY(),1)),MONTH(ADDMONTHS(TODAY(),1)),1)-1, &quot;	翌月末払い&quot;,DATE(YEAR(ADDMONTHS(TODAY(),2)),MONTH(ADDMONTHS(TODAY(),2)),1)-1,&quot;翌々月末払い&quot;,DATE(YEAR(ADDMONTHS(TODAY(),3)),MONTH(ADDMONTHS(TODAY(),3)),1)-1,&quot;翌々々月末払い&quot;,DATE(YEAR(ADDMONTHS(TODAY(),4)),MONTH(ADDMONTHS(TODAY(),4)),1)-1,null)</expression>
+        <expression>CASE({!$Record.Contract.PaymentTerms__c},&quot;当月末払い&quot;, DATE(YEAR(ADDMONTHS({!GetOldestRevenue.SalesMonth__c},1)),MONTH(ADDMONTHS({!GetOldestRevenue.SalesMonth__c},1)),1)-1, &quot;翌月末払い&quot;,DATE(YEAR(ADDMONTHS({!GetOldestRevenue.SalesMonth__c},2)),MONTH(ADDMONTHS({!GetOldestRevenue.SalesMonth__c},2)),1)-1,&quot;翌々月末払い&quot;,DATE(YEAR(ADDMONTHS({!GetOldestRevenue.SalesMonth__c},3)),MONTH(ADDMONTHS({!GetOldestRevenue.SalesMonth__c},3)),1)-1,&quot;翌々々月末払い&quot;,DATE(YEAR(ADDMONTHS({!GetOldestRevenue.SalesMonth__c},4)),MONTH(ADDMONTHS({!GetOldestRevenue.SalesMonth__c},4)),1)-1,null)</expression>
+    </formulas>
+    <formulas>
+        <name>TaxAmount</name>
+        <dataType>Currency</dataType>
+        <expression>{!CreateInvoiceInformation.TaxExcludedAmount__c}*({!CreateInvoiceInformation.TaxRate__c}/100)</expression>
+        <scale>0</scale>
     </formulas>
     <interviewLabel>請求書情報レコード自動作成 {!$Flow.CurrentDateTime}</interviewLabel>
     <label>請求書情報レコード自動作成</label>
     <loops>
-        <name>RevenueLoop</name>
+        <name>RevenueLoop1</name>
         <label>売上ループ</label>
         <locationX>182</locationX>
-        <locationY>684</locationY>
+        <locationY>576</locationY>
+        <collectionReference>GetRevenue</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>AddAmount</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>SetInvoiceInformation</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>RevenueLoop2</name>
+        <label>売上ループ</label>
+        <locationX>182</locationX>
+        <locationY>1092</locationY>
         <collectionReference>GetRevenue</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -258,20 +363,43 @@
         <name>InsertInvoiceInformation</name>
         <label>請求書情報作成</label>
         <locationX>182</locationX>
-        <locationY>468</locationY>
+        <locationY>984</locationY>
         <connector>
-            <targetReference>GetRevenue</targetReference>
+            <targetReference>RevenueLoop2</targetReference>
         </connector>
         <inputReference>CreateInvoiceInformation</inputReference>
     </recordCreates>
     <recordLookups>
+        <name>GetOldestRevenue</name>
+        <label>最古売上取得</label>
+        <locationX>182</locationX>
+        <locationY>360</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>GetRevenue</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Opportunity__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Revenue__c</object>
+        <sortField>SalesMonth__c</sortField>
+        <sortOrder>Asc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
         <name>GetRevenue</name>
         <label>売上取得</label>
         <locationX>182</locationX>
-        <locationY>576</locationY>
+        <locationY>468</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>RevenueLoop</targetReference>
+            <targetReference>RevenueLoop1</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -289,14 +417,14 @@
         <name>UpdateOpportunityRecord</name>
         <label>商談レコードを更新</label>
         <locationX>50</locationX>
-        <locationY>1716</locationY>
+        <locationY>2124</locationY>
         <inputReference>$Record</inputReference>
     </recordUpdates>
     <recordUpdates>
         <name>UpdateRevenueRecord</name>
         <label>売上レコードを更新</label>
         <locationX>50</locationX>
-        <locationY>1500</locationY>
+        <locationY>1908</locationY>
         <connector>
             <targetReference>Set_BillInfoCreationDate</targetReference>
         </connector>
@@ -340,7 +468,7 @@
         <object>Opportunity</object>
         <schedule>
             <frequency>Daily</frequency>
-            <startDate>2023-12-21</startDate>
+            <startDate>2023-11-17</startDate>
             <startTime>00:00:00.000Z</startTime>
         </schedule>
         <triggerType>Scheduled</triggerType>
@@ -363,6 +491,14 @@
         <objectType>InvoiceInformation__c</objectType>
     </variables>
     <variables>
+        <name>ExcludingTaxAmount</name>
+        <dataType>Currency</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+    <variables>
         <name>InvoiceInformationNumber</name>
         <dataType>Number</dataType>
         <isCollection>false</isCollection>
@@ -373,6 +509,14 @@
     <variables>
         <name>RecordNumber</name>
         <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+    <variables>
+        <name>SalesTaxAmount</name>
+        <dataType>Currency</dataType>
         <isCollection>false</isCollection>
         <isInput>false</isInput>
         <isOutput>false</isOutput>

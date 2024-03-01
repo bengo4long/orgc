@@ -51,6 +51,10 @@
                 <behavior>Edit</behavior>
                 <field>FinalAccountProcess__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>OrganizationA_RevenueId__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

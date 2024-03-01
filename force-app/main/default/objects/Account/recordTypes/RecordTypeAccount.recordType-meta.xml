@@ -73,6 +73,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>杉山奈緒子</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>石本寛基</fullName>
             <default>false</default>
         </values>
@@ -180,6 +184,10 @@
         </values>
         <values>
             <fullName>未フォロー</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>要育成</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -383,23 +391,43 @@
     <picklistValues>
         <picklist>EmployeeCountSelectionList__c</picklist>
         <values>
+            <fullName>1-49人</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>100-299人</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1000-4999人</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10000人以上</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>1001名以上</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>101名%E3%80%9C300名</fullName>
+            <fullName>300-499人</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>1名%E3%80%9C100名</fullName>
+            <fullName>50-99人</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>301名%E3%80%9C500名</fullName>
+            <fullName>500-999人</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>501名%E3%80%9C1000名</fullName>
+            <fullName>5000-9999人</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>その他</fullName>
             <default>false</default>
         </values>
     </picklistValues>

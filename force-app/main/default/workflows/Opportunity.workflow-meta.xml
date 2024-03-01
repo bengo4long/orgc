@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
+        <fullName>ApplicationApprovalCompleteEmail</fullName>
+        <description>申込承認の承認メール</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/ApplicationApprovalCompleteTemplate</template>
+    </alerts>
+    <alerts>
         <fullName>ApplicationApprovalRejectEmail</fullName>
         <description>申込承認却下時の差し戻しメール</description>
         <protected>false</protected>
@@ -9,6 +19,16 @@
         </recipients>
         <senderType>CurrentUser</senderType>
         <template>unfiled$public/ApplicationApprovalRejectTemplate</template>
+    </alerts>
+    <alerts>
+        <fullName>CompleteAprovalEmail</fullName>
+        <description>受注承認の承認メール</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/OrderApprovalComplete</template>
     </alerts>
     <alerts>
         <fullName>RejectEmail</fullName>
@@ -20,6 +40,16 @@
         <senderType>CurrentUser</senderType>
         <template>unfiled$public/OrderApprovalRejectTemplate</template>
     </alerts>
+    <fieldUpdates>
+        <fullName>ChangeApplicationApprovedFlagToTrue</fullName>
+        <field>ApplicationApproved__c</field>
+        <literalValue>1</literalValue>
+        <name>申込承認フラグをTRUEに変更する</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
     <fieldUpdates>
         <fullName>NegotiationNameUpdate</fullName>
         <description>受注承認中の商談名の一次更新用</description>

@@ -2,11 +2,15 @@
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>SpecialInformation_Phase06_IsBlank</fullName>
     <active>true</active>
-    <description>種別がBLLかつフェーズ06以上かつ更新商談以外かつ特記事項文が空白の場合にエラー</description>
-    <errorConditionFormula>ISPICKVAL(Type, &quot;BLL&quot;)   &amp;&amp;
+    <description>種別がBLLまたはBLC、フェーズ06以上かつ更新商談以外かつ特記事項文が空白の場合にエラー</description>
+    <errorConditionFormula>$Profile.Id &lt;&gt;&quot;00e2w000004VA9p&quot; &amp;&amp; 
+OR(
+ISPICKVAL(Type, &quot;BLL&quot;),
+ISPICKVAL(Type, &quot;BLC&quot;)
+) &amp;&amp;
 Probability  &gt;= 0.8 &amp;&amp;
 ISBLANK(SpecialInformation__c ) &amp;&amp; 
 RecordType.Id  &lt;&gt; &quot;0122w000002Mx4CAAS&quot;</errorConditionFormula>
     <errorDisplayField>SpecialInformation__c</errorDisplayField>
-    <errorMessage>特記事項生成ボタンから、特記事項文を生成してください</errorMessage>
+    <errorMessage>特記事項文が空白です。「商品種別」及び「自動更新有」の項目を適切な値にしてください。</errorMessage>
 </ValidationRule>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
-    <authorizeUrl>https://test.salesforce.com/services/oauth2/authorize</authorizeUrl>
-    <consumerKey>3MVG9bFKi1uCqVFVF_VdBC.W4i8X.ijxqnVpFmacgxgMTkgb7EOSRYZhsE2_O5QfnJEpuexx9ihxCfzBN.9r4</consumerKey>
+    <consumerKey>3MVG9I1kFE5Iul2CWvpAA7xR4EOuriKGfiSFtgracJ1QuSWn.IseA_aKR6HvmFYVgYkH3LzgL4d9jMjYh5ngE</consumerKey>
     <consumerSecret>Placeholder_Value</consumerSecret>
     <defaultScopes>full api refresh_token</defaultScopes>
     <friendlyName>OrgA</friendlyName>
@@ -11,5 +10,4 @@
     <sendAccessTokenInHeader>false</sendAccessTokenInHeader>
     <sendClientCredentialsInHeader>false</sendClientCredentialsInHeader>
     <sendSecretInApis>true</sendSecretInApis>
-    <tokenUrl>https://test.salesforce.com/services/oauth2/token</tokenUrl>
 </AuthProvider>

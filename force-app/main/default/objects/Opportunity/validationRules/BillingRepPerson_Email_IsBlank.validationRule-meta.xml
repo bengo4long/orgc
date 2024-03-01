@@ -3,8 +3,15 @@
     <fullName>BillingRepPerson_Email_IsBlank</fullName>
     <active>true</active>
     <description>請求先担当者が空欄でない場合、参照先の取引先責任者のメールアドレスが空欄ならエラー</description>
-    <errorConditionFormula>if( !ISBLANK( BillingRepPerson__c),
-ISBLANK( BillingRepPerson__r.Email ),false)</errorConditionFormula>
+    <errorConditionFormula>if(
+NOT(ISBLANK( BillingRepPerson__c)),
+/*メールまたは住所(郵送先)が空欄か*/
+OR(
+ISBLANK( BillingRepPerson__r.Email ),
+ISBLANK(  BillingRepPerson__r.MailingAddress )
+) ,
+false
+)</errorConditionFormula>
     <errorDisplayField>BillingRepPerson__c</errorDisplayField>
-    <errorMessage>請求先担当者で指定する取引先責任者にはメールアドレスが登録されている必要があります</errorMessage>
+    <errorMessage>請求先担当者で指定する取引先責任者は、「メールアドレス」と「住所（郵送先）」が入力されている必要があります</errorMessage>
 </ValidationRule>

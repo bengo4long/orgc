@@ -394,6 +394,16 @@
             <field>CustomerCode__c</field>
             <table>Account</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>RosettaId__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>OrganizationA_AccountId__c</field>
+            <table>Account</table>
+        </columns>
         <masterLabel>取引先</masterLabel>
     </sections>
     <sections>
@@ -970,6 +980,61 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>OpportunityRepPerson__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>DeliveryDate__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastPhaseHistory__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastPhaseDetailHistory__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ApplicationApproved__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ApplicationRepresentative__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>OrganizationA_OpportunityId__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>MeasureList__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>OrgA_OpportunityType__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>UpdateOpportunityCreatingTargetFlag__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>PhaseDetail__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>OrganizationA_UpdateTargetFlag__c</field>
             <table>Account.Opportunities</table>
         </columns>
         <masterLabel>商談</masterLabel>

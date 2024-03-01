@@ -5,7 +5,7 @@
     <deprecated>false</deprecated>
     <description>配信管理ID</description>
     <externalId>false</externalId>
-    <inlineHelpText>配信管理ID</inlineHelpText>
+    <inlineHelpText>Delivery management ID</inlineHelpText>
     <label>配信ID</label>
     <length>50</length>
     <required>false</required>

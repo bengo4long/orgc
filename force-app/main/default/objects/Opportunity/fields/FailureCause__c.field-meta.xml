@@ -11,6 +11,7 @@
     <type>Picklist</type>
     <valueSet>
         <controllingField>StageName</controllingField>
+        <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
@@ -43,30 +44,96 @@
                 <default>false</default>
                 <label>担当違い</label>
             </value>
+            <value>
+                <fullName>01_ニーズなし</fullName>
+                <default>false</default>
+                <label>01_ニーズなし</label>
+            </value>
+            <value>
+                <fullName>02_サービス不満</fullName>
+                <default>false</default>
+                <label>02_サービス不満</label>
+            </value>
+            <value>
+                <fullName>03_時期NG</fullName>
+                <default>false</default>
+                <label>03_時期NG</label>
+            </value>
+            <value>
+                <fullName>04_他社利用中</fullName>
+                <default>false</default>
+                <label>04_他社利用中</label>
+            </value>
+            <value>
+                <fullName>05_他社決定</fullName>
+                <default>false</default>
+                <label>05_他社決定</label>
+            </value>
+            <value>
+                <fullName>06_部署違い（法務を扱う部署でない）</fullName>
+                <default>false</default>
+                <label>06_部署違い（法務を扱う部署でない）</label>
+            </value>
+            <value>
+                <fullName>07_担当違い（法務従事者だが検討権限がない）</fullName>
+                <default>false</default>
+                <label>07_担当違い（法務従事者だが検討権限がない）</label>
+            </value>
+            <value>
+                <fullName>08_音信不通</fullName>
+                <default>false</default>
+                <label>08_音信不通</label>
+            </value>
+            <value>
+                <fullName>09_個人利用問い合わせ</fullName>
+                <default>false</default>
+                <label>09_個人利用問い合わせ</label>
+            </value>
+            <value>
+                <fullName>10_その他</fullName>
+                <default>false</default>
+                <label>10_その他</label>
+            </value>
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>失注</controllingFieldValue>
-            <valueName>興味なし</valueName>
+            <valueName>01_ニーズなし</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>失注</controllingFieldValue>
-            <valueName>現状で十分</valueName>
+            <valueName>02_サービス不満</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>失注</controllingFieldValue>
-            <valueName>当期予算無し（タイミング）</valueName>
+            <valueName>03_時期NG</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>失注</controllingFieldValue>
-            <valueName>予算不足</valueName>
+            <valueName>04_他社利用中</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>失注</controllingFieldValue>
-            <valueName>他社導入決定</valueName>
+            <valueName>05_他社決定</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>失注</controllingFieldValue>
-            <valueName>担当違い</valueName>
+            <valueName>06_部署違い（法務を扱う部署でない）</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>失注</controllingFieldValue>
+            <valueName>07_担当違い（法務従事者だが検討権限がない）</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>失注</controllingFieldValue>
+            <valueName>08_音信不通</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>失注</controllingFieldValue>
+            <valueName>09_個人利用問い合わせ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>失注</controllingFieldValue>
+            <valueName>10_その他</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>

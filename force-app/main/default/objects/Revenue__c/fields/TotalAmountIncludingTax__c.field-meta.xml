@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TotalAmountIncludingTax__c</fullName>
     <externalId>false</externalId>
-    <formula>TotalAmountTaxExcluded__c + Tax__c</formula>
+    <formula>TRUNC(TotalAmountTaxExcluded__c + Tax__c,0)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>合計金額(税込)</label>
     <precision>18</precision>

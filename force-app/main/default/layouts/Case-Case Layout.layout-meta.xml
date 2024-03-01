@@ -180,7 +180,7 @@
             <sortOrder>3</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>NewTask</actionName>
+            <actionName>NewTask_BMS</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>4</sortOrder>
         </platformActionListItems>
@@ -211,7 +211,7 @@
             <quickActionName>LogACall</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
-            <quickActionName>NewTask</quickActionName>
+            <quickActionName>NewTask_BMS</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
             <quickActionName>NewEvent</quickActionName>

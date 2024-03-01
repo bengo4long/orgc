@@ -8,6 +8,7 @@
     <trackHistory>false</trackHistory>
     <type>Picklist</type>
     <valueSet>
+        <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
@@ -34,6 +35,31 @@
                 <fullName>C：30%</fullName>
                 <default>false</default>
                 <label>C：30%</label>
+            </value>
+            <value>
+                <fullName>B</fullName>
+                <default>false</default>
+                <label>B</label>
+            </value>
+            <value>
+                <fullName>D</fullName>
+                <default>false</default>
+                <label>D</label>
+            </value>
+            <value>
+                <fullName>ネタ</fullName>
+                <default>false</default>
+                <label>ネタ</label>
+            </value>
+            <value>
+                <fullName>優ネタ</fullName>
+                <default>false</default>
+                <label>優ネタ</label>
+            </value>
+            <value>
+                <fullName>良ネタ</fullName>
+                <default>false</default>
+                <label>良ネタ</label>
             </value>
         </valueSetDefinition>
     </valueSet>

@@ -42,4 +42,8 @@
         <masterLabel>未フォロー</masterLabel>
         <translation></translation>
     </picklistValues>
+    <picklistValues>
+        <masterLabel>要育成</masterLabel>
+        <translation></translation>
+    </picklistValues>
 </CustomFieldTranslation>

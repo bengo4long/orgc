@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReportOutputDate__c</fullName>
+    <description>支払い手段が「口座振替」だったら「振替日」、「請求書支払い」だったら 「入金予定日」</description>
+    <externalId>false</externalId>
+    <formula>CASE( BillingPaymentMethod__c ,
+&apos;口座振替&apos;,  TransferDate__c ,
+&apos;請求書支払い&apos;,  PaymentDueDate__c ,
+null)</formula>
+    <label>帳票出力日付</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

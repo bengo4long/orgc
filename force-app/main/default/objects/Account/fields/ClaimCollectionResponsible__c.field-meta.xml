@@ -7,6 +7,7 @@
     <trackFeedHistory>false</trackFeedHistory>
     <type>Picklist</type>
     <valueSet>
+        <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
@@ -78,6 +79,11 @@
                 <fullName>佐藤敏靖</fullName>
                 <default>false</default>
                 <label>佐藤敏靖</label>
+            </value>
+            <value>
+                <fullName>杉山奈緒子</fullName>
+                <default>false</default>
+                <label>杉山奈緒子</label>
             </value>
         </valueSetDefinition>
     </valueSet>

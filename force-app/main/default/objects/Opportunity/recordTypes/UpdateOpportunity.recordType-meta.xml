@@ -160,46 +160,86 @@
     <picklistValues>
         <picklist>FailureCauseDetail__c</picklist>
         <values>
-            <fullName>その他理由</fullName>
+            <fullName>リサーチ必要ない</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>コンテンツによる他社決定</fullName>
+            <fullName>予算タイミング</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>機能により他社決定</fullName>
+            <fullName>代替手段で対応できている</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>金額により他社決定</fullName>
+            <fullName>利用したい時期がある</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>動画</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>多忙で検討できない</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>導入他社サービス</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>書籍</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>機能不満%EF%BC%88UI%2C検索%EF%BC%89</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>金額</fullName>
             <default>false</default>
         </values>
     </picklistValues>
     <picklistValues>
         <picklist>FailureCause__c</picklist>
         <values>
-            <fullName>予算不足</fullName>
+            <fullName>01_ニーズなし</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>他社導入決定</fullName>
+            <fullName>02_サービス不満</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>当期予算無し%EF%BC%88タイミング%EF%BC%89</fullName>
+            <fullName>03_時期NG</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>担当違い</fullName>
+            <fullName>04_他社利用中</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>現状で十分</fullName>
+            <fullName>05_他社決定</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>興味なし</fullName>
+            <fullName>06_部署違い%EF%BC%88法務を扱う部署でない%EF%BC%89</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>07_担当違い%EF%BC%88法務従事者だが検討権限がない%EF%BC%89</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>08_音信不通</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>09_個人利用問い合わせ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10_その他</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -425,6 +465,93 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>MeasureList__c</picklist>
+        <values>
+            <fullName>BLL説明会閲覧</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BLL資料過去DL者%EF%BC%883ヶ月以内%EF%BC%89</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IS追客リード</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>その他</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>アポキャン</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>セミナー参加アンケート回答者</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>トラッキングリード</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ナーチャリングリード%EF%BC%88リサーチに関する無料コンテンツ配信等%EF%BC%89</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>マーケリード%EF%BC%88リサイクル%EF%BC%89</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>マーケリード%EF%BC%88広告チームリード%EF%BC%89</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>マーケリード%EF%BC%88新規%EF%BC%89</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>メールクリック</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>メール開封リード</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>メール開封者リード</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>導入事例ページ訪問者</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>広告チームイベントアンケート回答者</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>新規法人問い合わせ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>興味比較層へのリライトメールクリック</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>過去失注先</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>過去導入事例DL者</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>過去法人問い合わせ</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>NegotiationPaymentSite__c</picklist>
         <values>
             <fullName>当月末払い</fullName>
@@ -491,7 +618,58 @@
         </values>
     </picklistValues>
     <picklistValues>
+        <picklist>PhaseDetail__c</picklist>
+        <values>
+            <fullName>02-00_ニーズ非合意</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>02-01_ニーズ合意</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>02-02_サービス内容合意</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>02-03_金額について合意</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>02-04_時期について合意</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>03-00_ニーズ非合意</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>03-01_ニーズ合意</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>03-02_サービス内容合意</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>03-03_金額について合意</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>03-04_時期について合意</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>04-01_稟議時期についての会話</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
         <picklist>ProductType__c</picklist>
+        <values>
+            <fullName>BLC</fullName>
+            <default>false</default>
+        </values>
         <values>
             <fullName>BLLエンタープライズ</fullName>
             <default>false</default>
@@ -512,6 +690,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>B</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>B%EF%BC%9A50%25</fullName>
             <default>false</default>
         </values>
@@ -520,11 +702,27 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>D</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>SF承認待ち%EF%BC%9A95%25</fullName>
             <default>false</default>
         </values>
         <values>
+            <fullName>ネタ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>優ネタ</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>受注</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>良ネタ</fullName>
             <default>false</default>
         </values>
     </picklistValues>
@@ -563,6 +761,10 @@
         </values>
         <values>
             <fullName>LAWGUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>セミナー</fullName>
             <default>false</default>
         </values>
         <values>

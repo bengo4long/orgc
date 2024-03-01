@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AfterApprovalApplication_Edit_Field</fullName>
+    <active>true</active>
+    <description>申込承認後、申込に関連する項目を編集したらエラー
+ただしシステム管理者は除く</description>
+    <errorConditionFormula>AND(
+/*申込承認フラグTRUE*/
+ApplicationApproved__c ,
+/*システム管理者プロファイルは除外*/
+$Profile.Id  &lt;&gt;  &quot;00e2w000004VA9p&quot;  ,
+/*以下編集禁止項目*/
+OR(
+ISCHANGED( ProductType__c ),
+ISCHANGED( AutoUpdatable__c  ),
+ISCHANGED( SpecialInformation__c ),
+ISCHANGED( NegotiationPaymentSite__c  ),
+ISCHANGED( IrregularDetailPayment__c   ),
+ISCHANGED( ExemptionTarget__c   ),
+ISCHANGED( ExceptionBillPosting__c  ),
+ISCHANGED( IrregularMatterMemo__c   )
+)
+)</errorConditionFormula>
+    <errorMessage>申込承認後のため編集できません。</errorMessage>
+</ValidationRule>

@@ -3,9 +3,18 @@
     <fullName>PhaseOver07_Change_Limit</fullName>
     <active>true</active>
     <description>事業部メンバーによるフェーズの手動変更を制限（07_契約締結以上）</description>
-    <errorConditionFormula>Probability &gt; 0.8
- &amp;&amp;
- $User.ProfileId = &quot;00e1s000000Ewdd&quot;</errorConditionFormula>
+    <errorConditionFormula>AND(
+Probability &gt; 0.8,
+$User.ProfileId = &quot;00e2w000000g2qe&quot;,
+/*以下項目が入力されている場合は入力規則を回避*/
+ISBLANK(DocumentConfirmationUrl__c),
+ISBLANK(TEXT(CancellationPhase__c)),
+ISBLANK(TEXT(CancellationSupportedStatus__c)),
+ISBLANK(TEXT(CancellationCauseKubun__c)),
+ISBLANK(CancellationExpectedDate__c),
+ISBLANK(CancellationDate__c),
+ISBLANK(CancellationNotificationDate__c)
+)</errorConditionFormula>
     <errorMessage>手動でフェーズを「07_契約締結」以上に挙げる権限がありません。
 申込承認をあげてください。</errorMessage>
 </ValidationRule>

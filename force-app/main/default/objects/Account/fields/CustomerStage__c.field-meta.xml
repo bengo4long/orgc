@@ -7,6 +7,7 @@
     <trackFeedHistory>true</trackFeedHistory>
     <type>Picklist</type>
     <valueSet>
+        <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
@@ -58,6 +59,17 @@
                 <fullName>商談化</fullName>
                 <default>false</default>
                 <label>商談化</label>
+            </value>
+            <value>
+                <fullName>要育成</fullName>
+                <default>false</default>
+                <label>要育成</label>
+            </value>
+            <value>
+                <fullName>受注</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>受注</label>
             </value>
         </valueSetDefinition>
     </valueSet>

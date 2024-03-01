@@ -598,6 +598,7 @@
         </connector>
         <inputReference>getOpportunity</inputReference>
     </recordUpdates>
+    <runInMode>SystemModeWithoutSharing</runInMode>
     <screens>
         <name>CompletePage</name>
         <label>完了ページ</label>
@@ -637,7 +638,7 @@
             <targetReference>getOpportunity</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Obsolete</status>
     <textTemplates>
         <name>LineFeed</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>

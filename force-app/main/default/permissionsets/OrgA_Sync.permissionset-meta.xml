@@ -30,7 +30,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>OpportunityLineItem.OrgA_OpportunityLineitemId__c</field>
+        <field>OpportunityLineItem.OrgA_OpportunityLineItemId__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

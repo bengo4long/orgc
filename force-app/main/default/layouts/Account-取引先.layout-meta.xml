@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <excludeButtons>DataDotComAccountInsights</excludeButtons>
-    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>DisablePartnerPortalAccount</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
@@ -23,6 +22,10 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>AccountId__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>RosettaId__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -68,10 +71,6 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>OwnerId</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>ParentId</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -138,18 +137,11 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>BillingRepPerson__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>VirtualAccountBank__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>VirtualAccountNumber__c</field>
-            </layoutItems>
-            <layoutItems>
-                <emptySpace>true</emptySpace>
+                <field>SubscriberName__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -159,11 +151,32 @@
                 <behavior>Edit</behavior>
                 <field>ExemptionTarget__c</field>
             </layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>VirtualAccountNumber__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>SubscriberCode__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>NegotiationPaymentSite__c</field>
+            </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>AccountingMemo__c</field>
             </layoutItems>
         </layoutColumns>
+        <style>TwoColumnsLeftToRight</style>
+    </layoutSections>
+    <layoutSections>
+        <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>債権情報</label>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
@@ -171,19 +184,17 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>ClaimCollectionResponsible__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>DebtPersonItem__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>ClaimCollectionResponsible__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>ResidenceClaimDunningManagement__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>NegotiationPaymentSite__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -257,6 +268,10 @@
                 <behavior>Readonly</behavior>
                 <field>LastModifiedById</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ParentId</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
@@ -283,7 +298,7 @@
             <sortOrder>3</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>NewTask</actionName>
+            <actionName>NewTask_BMS</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>4</sortOrder>
         </platformActionListItems>
@@ -314,7 +329,7 @@
             <quickActionName>LogACall</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
-            <quickActionName>NewTask</quickActionName>
+            <quickActionName>NewTask_BMS</quickActionName>
         </quickActionListItems>
         <quickActionListItems>
             <quickActionName>NewEvent</quickActionName>
@@ -340,12 +355,16 @@
         <excludeButtons>New</excludeButtons>
         <fields>OPPORTUNITY.NAME</fields>
         <fields>OPPORTUNITY.RECORDTYPE</fields>
+        <fields>OrgA_OpportunityType__c</fields>
         <fields>OPPORTUNITY.STAGE_NAME</fields>
-        <fields>OPPORTUNITY.AMOUNT</fields>
+        <fields>DiscountAmount__c</fields>
         <fields>PostingStartDate__c</fields>
         <fields>PostingEndDate__c</fields>
         <fields>OPPORTUNITY.CLOSE_DATE</fields>
+        <fields>CONTRACT.CONTRACT_NUMBER</fields>
         <relatedList>RelatedOpportunityList</relatedList>
+        <sortField>PostingStartDate__c</sortField>
+        <sortOrder>Desc</sortOrder>
     </relatedLists>
     <relatedLists>
         <fields>CONTRACT.CONTRACT_NUMBER</fields>
@@ -392,7 +411,7 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <relatedList>BliingContact__c.AccountName__c</relatedList>
+        <relatedList>BillingContact__c.AccountName__c</relatedList>
     </relatedLists>
     <relatedObjects>ParentId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>

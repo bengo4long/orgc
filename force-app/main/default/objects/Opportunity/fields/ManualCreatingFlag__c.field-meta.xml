@@ -6,6 +6,6 @@
     <inlineHelpText>請求書を手動で作成する必要がある際にチェック</inlineHelpText>
     <label>手動作成フラグ</label>
     <trackFeedHistory>false</trackFeedHistory>
-    <trackHistory>false</trackHistory>
+    <trackHistory>true</trackHistory>
     <type>Checkbox</type>
 </CustomField>

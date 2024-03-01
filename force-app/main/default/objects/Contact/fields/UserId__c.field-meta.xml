@@ -5,6 +5,7 @@
     <formula>$User.Id</formula>
     <label>ユーザID</label>
     <required>false</required>
+    <trackHistory>false</trackHistory>
     <type>Text</type>
     <unique>false</unique>
 </CustomField>

@@ -15,10 +15,6 @@
                 <field>OpportunityId</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>ProductsNameModifying__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Required</behavior>
                 <field>UnitPrice</field>
             </layoutItems>
@@ -44,20 +40,12 @@
                 <field>ContractEndDate__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>PostingEndDate__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Required</behavior>
                 <field>PeriodMonths__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>Quantity</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>ProductsName__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
@@ -142,7 +130,6 @@
         <style>CustomLinks</style>
     </layoutSections>
     <multilineLayoutFields>Product2Id</multilineLayoutFields>
-    <multilineLayoutFields>ProductsNameModifying__c</multilineLayoutFields>
     <multilineLayoutFields>UnitPrice</multilineLayoutFields>
     <multilineLayoutFields>ServiceDate</multilineLayoutFields>
     <multilineLayoutFields>Quantity</multilineLayoutFields>

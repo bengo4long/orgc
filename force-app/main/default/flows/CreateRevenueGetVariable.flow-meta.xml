@@ -5,7 +5,7 @@
         <name>AddCreateMarginRevenue</name>
         <label>売上作成リスト追加</label>
         <locationX>836</locationX>
-        <locationY>1838</locationY>
+        <locationY>2138</locationY>
         <assignmentItems>
             <assignToReference>RevenueCollection</assignToReference>
             <operator>Add</operator>
@@ -21,7 +21,7 @@
         <name>AddCreateMarginRevenue2</name>
         <label>売上作成リスト追加</label>
         <locationX>440</locationX>
-        <locationY>1838</locationY>
+        <locationY>2138</locationY>
         <assignmentItems>
             <assignToReference>RevenueCollection</assignToReference>
             <operator>Add</operator>
@@ -38,7 +38,7 @@
         <name>AddCreateRevenue</name>
         <label>売上作成リスト追加</label>
         <locationX>1056</locationX>
-        <locationY>1406</locationY>
+        <locationY>1706</locationY>
         <assignmentItems>
             <assignToReference>RevenueCollection</assignToReference>
             <operator>Add</operator>
@@ -54,7 +54,7 @@
         <name>CreateMarginRevenue1</name>
         <label>マージン売上作成</label>
         <locationX>440</locationX>
-        <locationY>1730</locationY>
+        <locationY>2030</locationY>
         <assignmentItems>
             <assignToReference>MarginRevenue.SalesMonth__c</assignToReference>
             <operator>Assign</operator>
@@ -126,7 +126,7 @@
         <name>CreateMarginRevenue2</name>
         <label>マージン売上作成</label>
         <locationX>836</locationX>
-        <locationY>1730</locationY>
+        <locationY>2030</locationY>
         <assignmentItems>
             <assignToReference>MarginRevenue.SalesMonth__c</assignToReference>
             <operator>Assign</operator>
@@ -302,7 +302,7 @@
         <name>SetRecordNumber</name>
         <label>レコード数セット</label>
         <locationX>176</locationX>
-        <locationY>2864</locationY>
+        <locationY>3164</locationY>
         <assignmentItems>
             <assignToReference>DeleteRevenueNumber</assignToReference>
             <operator>AssignCount</operator>
@@ -335,6 +335,22 @@
         </connector>
     </assignments>
     <assignments>
+        <name>SetTaxExempt</name>
+        <label>非課税設定</label>
+        <locationX>924</locationX>
+        <locationY>1514</locationY>
+        <assignmentItems>
+            <assignToReference>Revenue.TaxRateMaster__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>非課税</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>AddCreateRevenue</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
         <name>UpdateFinalAccountProcess</name>
         <label>決算処理更新</label>
         <locationX>924</locationX>
@@ -347,14 +363,14 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>AddCreateRevenue</targetReference>
+            <targetReference>CheckTaxExempt</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>UpdateLoopCount</name>
         <label>ループ回数更新</label>
         <locationX>1056</locationX>
-        <locationY>2522</locationY>
+        <locationY>2822</locationY>
         <assignmentItems>
             <assignToReference>LoopCount</assignToReference>
             <operator>Add</operator>
@@ -371,7 +387,7 @@
         <name>UpdateMarginFinalAccountProcess</name>
         <label>決算処理更新</label>
         <locationX>704</locationX>
-        <locationY>2054</locationY>
+        <locationY>2354</locationY>
         <assignmentItems>
             <assignToReference>MarginRevenue.FinalAccountProcess__c</assignToReference>
             <operator>Assign</operator>
@@ -387,7 +403,7 @@
         <name>UpdateServiceDate</name>
         <label>売上月更新</label>
         <locationX>1056</locationX>
-        <locationY>2414</locationY>
+        <locationY>2714</locationY>
         <assignmentItems>
             <assignToReference>ServiceDate</assignToReference>
             <operator>Assign</operator>
@@ -405,7 +421,7 @@
         <locationX>1056</locationX>
         <locationY>1106</locationY>
         <defaultConnector>
-            <targetReference>AddCreateRevenue</targetReference>
+            <targetReference>CheckTaxExempt</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>デフォルトの結果</defaultConnectorLabel>
         <rules>
@@ -428,7 +444,7 @@
         <name>CheckMargin</name>
         <label>マージン判定</label>
         <locationX>1056</locationX>
-        <locationY>1514</locationY>
+        <locationY>1814</locationY>
         <defaultConnector>
             <targetReference>UpdateServiceDate</targetReference>
         </defaultConnector>
@@ -460,7 +476,7 @@
         <name>CheckMarginFinalAccountProcess</name>
         <label>決算処理判定</label>
         <locationX>836</locationX>
-        <locationY>1946</locationY>
+        <locationY>2246</locationY>
         <defaultConnector>
             <targetReference>UpdateServiceDate</targetReference>
         </defaultConnector>
@@ -485,7 +501,7 @@
         <name>CheckProduct2Family</name>
         <label>商品ファミリ判定</label>
         <locationX>792</locationX>
-        <locationY>1622</locationY>
+        <locationY>1922</locationY>
         <defaultConnector>
             <targetReference>UpdateServiceDate</targetReference>
         </defaultConnector>
@@ -519,6 +535,31 @@
                 <targetReference>CreateMarginRevenue2</targetReference>
             </connector>
             <label>ロゼッタ</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>CheckTaxExempt</name>
+        <label>非課税判定</label>
+        <locationX>1056</locationX>
+        <locationY>1406</locationY>
+        <defaultConnector>
+            <targetReference>AddCreateRevenue</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>デフォルトの結果</defaultConnectorLabel>
+        <rules>
+            <name>IsTaxExempt</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>GetOpportunity.ExemptionTarget__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetTaxExempt</targetReference>
+            </connector>
+            <label>非課税</label>
         </rules>
     </decisions>
     <decisions>

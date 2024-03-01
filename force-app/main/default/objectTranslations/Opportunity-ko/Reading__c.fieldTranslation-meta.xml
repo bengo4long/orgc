@@ -7,6 +7,10 @@
         <translation></translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>B</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>B：50%</masterLabel>
         <translation></translation>
     </picklistValues>
@@ -15,11 +19,27 @@
         <translation></translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>D</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>SF承認待ち：95%</masterLabel>
         <translation></translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>ネタ</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>優ネタ</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>受注</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>良ネタ</masterLabel>
         <translation></translation>
     </picklistValues>
 </CustomFieldTranslation>

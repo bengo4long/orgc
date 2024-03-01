@@ -4,7 +4,7 @@
     <deprecated>false</deprecated>
     <description>備考欄の内容</description>
     <externalId>false</externalId>
-    <inlineHelpText>備考欄の内容</inlineHelpText>
+    <inlineHelpText>Content of the remarks</inlineHelpText>
     <label>備考内容</label>
     <length>32000</length>
     <trackTrending>false</trackTrending>

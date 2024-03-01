@@ -4,7 +4,7 @@
     <externalId>false</externalId>
     <formula>TaxExcludedAmount__c + (TaxExcludedAmount__c* (VALUE(TEXT(CalculatingTax__c))/100) )</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <label>税込金額</label>
+    <label>【削除予定】税込金額</label>
     <precision>18</precision>
     <required>false</required>
     <scale>0</scale>

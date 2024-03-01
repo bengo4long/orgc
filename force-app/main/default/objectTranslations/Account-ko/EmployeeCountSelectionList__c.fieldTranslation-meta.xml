@@ -3,23 +3,43 @@
     <label></label>
     <name>EmployeeCountSelectionList__c</name>
     <picklistValues>
+        <masterLabel>1-49人</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>100-299人</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1000-4999人</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>10000人以上</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>1001名以上</masterLabel>
         <translation></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>101名〜300名</masterLabel>
+        <masterLabel>300-499人</masterLabel>
         <translation></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>1名〜100名</masterLabel>
+        <masterLabel>50-99人</masterLabel>
         <translation></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>301名〜500名</masterLabel>
+        <masterLabel>500-999人</masterLabel>
         <translation></translation>
     </picklistValues>
     <picklistValues>
-        <masterLabel>501名〜1000名</masterLabel>
+        <masterLabel>5000-9999人</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>その他</masterLabel>
         <translation></translation>
     </picklistValues>
 </CustomFieldTranslation>

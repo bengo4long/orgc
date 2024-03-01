@@ -4,7 +4,7 @@
     <deprecated>false</deprecated>
     <description>備考名</description>
     <externalId>false</externalId>
-    <inlineHelpText>備考名</inlineHelpText>
+    <inlineHelpText>Remarks name</inlineHelpText>
     <label>備考名</label>
     <length>50</length>
     <required>true</required>

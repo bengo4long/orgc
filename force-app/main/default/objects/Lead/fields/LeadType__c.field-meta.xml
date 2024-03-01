@@ -5,6 +5,7 @@
     <label>リード種別</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
     <type>Picklist</type>
     <valueSet>
         <restricted>true</restricted>
@@ -12,7 +13,7 @@
             <sorted>false</sorted>
             <value>
                 <fullName>新規</fullName>
-                <default>false</default>
+                <default>true</default>
                 <label>新規</label>
             </value>
             <value>

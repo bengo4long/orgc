@@ -4,9 +4,9 @@
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
     <label>主請求先担当ID</label>
-    <referenceTo>BliingContact__c</referenceTo>
+    <referenceTo>BillingContact__c</referenceTo>
     <relationshipLabel>契約</relationshipLabel>
-    <relationshipName>BliingContacts</relationshipName>
+    <relationshipName>BillingContacts</relationshipName>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

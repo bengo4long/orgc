@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>BLLスタンダード自動更新</label>
+    <protected>false</protected>
+    <values>
+        <field>Description__c</field>
+        <value xsi:type="xsd:string">※ スタンダードプランは最大5アカウントまでのご契約になります。6アカウント目以降の追加1アカウントにつき月額6,000円(税抜)を適用しています。
+※ ご利用開始月に年間分の利用料をご請求いたします。
+※ 請求書はメール送付となります。
+※ ご利用開始日はクラウドサイン 締結日の2営業日〜3営業日後となります。
+※ 次回の契約更新お手続きは不要です（同じプランの定価30,000円/月,追加アカウントは6,000円/月で1年間自動更新、以降も同様）。
+※ 更新されない場合は、有効期間満了日の1ヶ月前までに書面（Eメール可）にてご連絡ください。
+※ アカウント追加も承ります。アカウント追加は、ご利用期間(契約期間)の残日数に基づき、「追加アカウント数×月額料金（6,000円/月額）×月数」でご請求いたします。
+※ ご利用開始月の翌月末日までに上記申込金額を銀行振込にてお支払いいただきます。</value>
+    </values>
+</CustomMetadata>

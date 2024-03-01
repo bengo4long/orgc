@@ -5,6 +5,7 @@
     <label>リード 状況詳細</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
     <type>Picklist</type>
     <valueSet>
         <controllingField>Status</controllingField>

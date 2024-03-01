@@ -46,7 +46,7 @@
         <filterLogic>and</filterLogic>
         <filters>
             <field>ApplicationApprovalPattern__c</field>
-            <operator>NotEqualTo</operator>
+            <operator>GreaterThan</operator>
             <value>
                 <numberValue>1.0</numberValue>
             </value>
@@ -55,5 +55,5 @@
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordBeforeSave</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
 </Flow>

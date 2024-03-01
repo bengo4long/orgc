@@ -4,11 +4,19 @@
         <layout>デフォルト</layout>
         <sections>
             <label></label>
+            <section>IS・マーケ用</section>
+        </sections>
+        <sections>
+            <label></label>
             <section>イレギュラー事項</section>
         </sections>
         <sections>
             <label></label>
             <section>クラウドサイン連携</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>ヒアリング情報</section>
         </sections>
         <sections>
             <label></label>
@@ -106,7 +114,7 @@
         </sections>
         <sections>
             <label></label>
-            <section>組織感連携</section>
+            <section>組織間連携</section>
         </sections>
         <sections>
             <label></label>
@@ -145,7 +153,7 @@
         </sections>
         <sections>
             <label></label>
-            <section>組織感連携</section>
+            <section>組織間連携</section>
         </sections>
         <sections>
             <label></label>
@@ -181,6 +189,10 @@
         <sections>
             <label></label>
             <section>申込書情報</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>組織間連携</section>
         </sections>
         <sections>
             <label></label>
@@ -221,10 +233,6 @@
     </quickActions>
     <quickActions>
         <label></label>
-        <name>ProductTermsAutoUpdate</name>
-    </quickActions>
-    <quickActions>
-        <label></label>
         <name>SyncOrg</name>
     </quickActions>
     <recordTypes>
@@ -239,6 +247,10 @@
         <label></label>
         <name>UpdateOpportunity</name>
     </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>AfterApprovalApplication_Edit_Field</name>
+    </validationRules>
     <validationRules>
         <errorMessage></errorMessage>
         <name>AntiCompanyCheck_Phase05_False</name>
@@ -262,6 +274,10 @@
     <validationRules>
         <errorMessage></errorMessage>
         <name>PhaseOver07_Change_Limit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>PhaseOver08_Change_Limit</name>
     </validationRules>
     <validationRules>
         <errorMessage></errorMessage>
@@ -306,6 +322,10 @@
     <webLinks>
         <label></label>
         <name>FleekformCreateReportRelatedListParent</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>InvoiceInfomationCreate</name>
     </webLinks>
     <webLinks>
         <label></label>

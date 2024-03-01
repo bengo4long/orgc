@@ -3,6 +3,46 @@
     <label></label>
     <name>FailureCause__c</name>
     <picklistValues>
+        <masterLabel>01_ニーズなし</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>02_サービス不満</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>03_時期NG</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>04_他社利用中</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>05_他社決定</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>06_部署違い（法務を扱う部署でない）</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>07_担当違い（法務従事者だが検討権限がない）</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>08_音信不通</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>09_個人利用問い合わせ</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>10_その他</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>予算不足</masterLabel>
         <translation></translation>
     </picklistValues>

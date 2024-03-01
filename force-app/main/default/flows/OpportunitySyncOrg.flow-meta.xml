@@ -4,7 +4,7 @@
         <name>SyncRecords_Account</name>
         <label>SyncRecords_Account</label>
         <locationX>176</locationX>
-        <locationY>350</locationY>
+        <locationY>566</locationY>
         <actionName>B54_SyncRecords</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -18,7 +18,7 @@
         <inputParameters>
             <name>recordId</name>
             <value>
-                <elementReference>getOppLineitem.Opportunity.AccountId</elementReference>
+                <elementReference>getOpportunity.AccountId</elementReference>
             </value>
         </inputParameters>
         <nameSegment>B54_SyncRecords</nameSegment>
@@ -36,7 +36,7 @@
         <name>SyncRecords_Opportunity</name>
         <label>SyncRecords_Opportunity</label>
         <locationX>341</locationX>
-        <locationY>566</locationY>
+        <locationY>782</locationY>
         <actionName>B54_SyncRecords</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -50,7 +50,7 @@
         <inputParameters>
             <name>recordId</name>
             <value>
-                <elementReference>getOppLineitem.OpportunityId</elementReference>
+                <elementReference>recordId</elementReference>
             </value>
         </inputParameters>
         <nameSegment>B54_SyncRecords</nameSegment>
@@ -68,7 +68,7 @@
         <name>SyncRecords_OpportunityLineitem</name>
         <label>SyncRecords_OpportunityLineitem</label>
         <locationX>495</locationX>
-        <locationY>782</locationY>
+        <locationY>998</locationY>
         <actionName>B54_SyncRecords</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -76,31 +76,24 @@
         </connector>
         <dataTypeMappings>
             <typeName>T__records</typeName>
-            <typeValue>Account</typeValue>
+            <typeValue>OpportunityLineItem</typeValue>
         </dataTypeMappings>
         <flowTransactionModel>NewTransaction</flowTransactionModel>
         <inputParameters>
-            <name>recordId</name>
+            <name>records</name>
             <value>
-                <elementReference>getOppLineitem.Id</elementReference>
+                <elementReference>getOppLineitem</elementReference>
             </value>
         </inputParameters>
         <nameSegment>B54_SyncRecords</nameSegment>
-        <outputParameters>
-            <assignToReference>error</assignToReference>
-            <name>error</name>
-        </outputParameters>
-        <outputParameters>
-            <assignToReference>success</assignToReference>
-            <name>success</name>
-        </outputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
         <versionSegment>1</versionSegment>
     </actionCalls>
     <actionCalls>
         <name>SyncRecords_Uriage</name>
         <label>SyncRecords_Uriage</label>
         <locationX>627</locationX>
-        <locationY>1106</locationY>
+        <locationY>1214</locationY>
         <actionName>B54_SyncRecords</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -133,7 +126,7 @@
         <name>AccountERROR</name>
         <label>AccountERROR</label>
         <locationX>176</locationX>
-        <locationY>458</locationY>
+        <locationY>674</locationY>
         <defaultConnector>
             <targetReference>SyncRecords_Opportunity</targetReference>
         </defaultConnector>
@@ -158,9 +151,9 @@
         <name>LineitemError</name>
         <label>LineitemError</label>
         <locationX>495</locationX>
-        <locationY>890</locationY>
+        <locationY>1106</locationY>
         <defaultConnector>
-            <targetReference>getUriage</targetReference>
+            <targetReference>SyncRecords_Uriage</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>SUCCESS</defaultConnectorLabel>
         <rules>
@@ -183,7 +176,7 @@
         <name>OpportunityError</name>
         <label>OpportunityError</label>
         <locationX>341</locationX>
-        <locationY>674</locationY>
+        <locationY>890</locationY>
         <defaultConnector>
             <targetReference>SyncRecords_OpportunityLineitem</targetReference>
         </defaultConnector>
@@ -208,7 +201,7 @@
         <name>UriageError</name>
         <label>UriageError</label>
         <locationX>627</locationX>
-        <locationY>1214</locationY>
+        <locationY>1322</locationY>
         <defaultConnector>
             <targetReference>OpportunityUPdate</targetReference>
         </defaultConnector>
@@ -255,10 +248,10 @@
         <name>getOppLineitem</name>
         <label>getOppLineitem</label>
         <locationX>176</locationX>
-        <locationY>242</locationY>
+        <locationY>350</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>SyncRecords_Account</targetReference>
+            <targetReference>getUriage</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -268,18 +261,39 @@
                 <elementReference>recordId</elementReference>
             </value>
         </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
         <object>OpportunityLineItem</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>getOpportunity</name>
+        <label>getOpportunity</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>getOppLineitem</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Opportunity</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
         <name>getUriage</name>
         <label>getUriage</label>
-        <locationX>627</locationX>
-        <locationY>998</locationY>
+        <locationX>176</locationX>
+        <locationY>458</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>SyncRecords_Uriage</targetReference>
+            <targetReference>SyncRecords_Account</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -297,7 +311,7 @@
         <name>OpportunityUPdate</name>
         <label>OpportunityUPdate</label>
         <locationX>715</locationX>
-        <locationY>1322</locationY>
+        <locationY>1430</locationY>
         <connector>
             <targetReference>MessageSUCCESS</targetReference>
         </connector>
@@ -306,7 +320,7 @@
             <field>Id</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>getOppLineitem.OpportunityId</elementReference>
+                <elementReference>recordId</elementReference>
             </value>
         </filters>
         <inputAssignments>
@@ -321,7 +335,7 @@
         <name>MessageSUCCESS</name>
         <label>SUCCESS</label>
         <locationX>715</locationX>
-        <locationY>1430</locationY>
+        <locationY>1538</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -337,7 +351,7 @@
         <name>screenERROR</name>
         <label>ERROR</label>
         <locationX>176</locationX>
-        <locationY>1982</locationY>
+        <locationY>2090</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -359,7 +373,7 @@
         <allowPause>false</allowPause>
         <backButtonLabel>いいえ</backButtonLabel>
         <connector>
-            <targetReference>getOppLineitem</targetReference>
+            <targetReference>getOpportunity</targetReference>
         </connector>
         <fields>
             <name>SyncOrgCheck</name>

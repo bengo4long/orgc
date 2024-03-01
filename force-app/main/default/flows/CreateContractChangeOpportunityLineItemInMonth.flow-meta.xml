@@ -4,8 +4,8 @@
     <assignments>
         <name>AddAppropriationOpportunityLineItem</name>
         <label>作成対象商談商品リストに追加</label>
-        <locationX>176</locationX>
-        <locationY>974</locationY>
+        <locationX>402</locationX>
+        <locationY>1298</locationY>
         <assignmentItems>
             <assignToReference>CreateOpportunityLineItemCollection</assignToReference>
             <operator>Add</operator>
@@ -20,8 +20,8 @@
     <assignments>
         <name>AddDiscountOpportunityLineItem</name>
         <label>作成対象商談商品リストに追加</label>
-        <locationX>264</locationX>
-        <locationY>674</locationY>
+        <locationX>490</locationX>
+        <locationY>890</locationY>
         <assignmentItems>
             <assignToReference>CreateOpportunityLineItemCollection</assignToReference>
             <operator>Add</operator>
@@ -30,77 +30,42 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>OpportunityLineItemLoop</targetReference>
+            <targetReference>SaveServiceDate</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>SaveServiceDate</name>
+        <label>契約開始日保存</label>
+        <locationX>490</locationX>
+        <locationY>998</locationY>
+        <assignmentItems>
+            <assignToReference>ServiceDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ServiceDate1</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>ContractManagementLoop</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>SetAppropriationOpportunityLineItem</name>
         <label>充当商談商品作成</label>
-        <locationX>176</locationX>
-        <locationY>866</locationY>
+        <locationX>402</locationX>
+        <locationY>1190</locationY>
         <assignmentItems>
             <assignToReference>CreateOpportunityLineItem.Product2Id</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>GetContractManagement.Item__r.Id</elementReference>
+                <elementReference>GetOpportunityLineItems.Product2.Id</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
             <assignToReference>CreateOpportunityLineItem.ServiceDate</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>GetContractManagement.Opportunity__r.PostingStartDate__c</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>CreateOpportunityLineItem.PeriodMonths__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>PeriodMonths</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>CreateOpportunityLineItem.UnitPrice</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>UnitPrice</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>CreateOpportunityLineItem.OpportunityId</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>recordId</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>CreateOpportunityLineItem.Quantity</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>GetContractManagement.Quantity__c</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>AddAppropriationOpportunityLineItem</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>SetDiscountOpportunityLineItem</name>
-        <label>値引き商談商品作成</label>
-        <locationX>264</locationX>
-        <locationY>566</locationY>
-        <assignmentItems>
-            <assignToReference>CreateOpportunityLineItem.Product2Id</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>OpportunityLineItemLoop.Product2.Id</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>CreateOpportunityLineItem.ServiceDate</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>OpportunityLineItemLoop.Opportunity.Contract.EndDate</elementReference>
+                <elementReference>ServiceDate</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -114,7 +79,7 @@
             <assignToReference>CreateOpportunityLineItem.UnitPrice</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>UnitPrice</elementReference>
+                <elementReference>UnitPrice2</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -128,14 +93,112 @@
             <assignToReference>CreateOpportunityLineItem.Quantity</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>OpportunityLineItemLoop.Quantity</elementReference>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>AddAppropriationOpportunityLineItem</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>SetDiscountOpportunityLineItem</name>
+        <label>値引き商談商品作成</label>
+        <locationX>490</locationX>
+        <locationY>782</locationY>
+        <assignmentItems>
+            <assignToReference>CreateOpportunityLineItem.Product2Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ContractManagementLoop.Item__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CreateOpportunityLineItem.ServiceDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>GetOpportunityLineItems.ServiceDate</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CreateOpportunityLineItem.PeriodMonths__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>PeriodMonth1</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CreateOpportunityLineItem.UnitPrice</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>UnitPrice1</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CreateOpportunityLineItem.OpportunityId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CreateOpportunityLineItem.Quantity</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ContractManagementLoop.Quantity__c</elementReference>
             </value>
         </assignmentItems>
         <connector>
             <targetReference>AddDiscountOpportunityLineItem</targetReference>
         </connector>
     </assignments>
+    <assignments>
+        <name>SetRecordNumber</name>
+        <label>契約管理レコード数セット</label>
+        <locationX>226</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>RecordNumber</assignToReference>
+            <operator>AssignCount</operator>
+            <value>
+                <elementReference>GetContractManagement</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>CheckContractManagementRecordNumber</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>CheckContractManagementRecordNumber</name>
+        <label>契約管理数チェック</label>
+        <locationX>226</locationX>
+        <locationY>566</locationY>
+        <defaultConnector>
+            <targetReference>ContractManagementLoop</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>デフォルトの結果</defaultConnectorLabel>
+        <rules>
+            <name>Not1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>RecordNumber</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <numberValue>1.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ContractManagementRecordNumberError</targetReference>
+            </connector>
+            <label>1以外</label>
+        </rules>
+    </decisions>
     <environments>Default</environments>
+    <formulas>
+        <name>PeriodMonth1</name>
+        <dataType>Number</dataType>
+        <expression>(YEAR({!GetOpportunity.UpdateSourceOpportunity__r.Contract.EndDate}) - YEAR({!GetOpportunityLineItems.ServiceDate})) * 12 + (MONTH({!GetOpportunity.UpdateSourceOpportunity__r.Contract.EndDate}) - MONTH({!GetOpportunityLineItems.ServiceDate}))</expression>
+        <scale>0</scale>
+    </formulas>
     <formulas>
         <name>PeriodMonths</name>
         <dataType>Number</dataType>
@@ -143,19 +206,30 @@
         <scale>0</scale>
     </formulas>
     <formulas>
-        <name>UnitPrice</name>
+        <name>ServiceDate1</name>
+        <dataType>Date</dataType>
+        <expression>DATE(YEAR({!ContractManagementLoop.ContractRetentionMonth__c}),MONTH({!ContractManagementLoop.ContractRetentionMonth__c}),1)</expression>
+    </formulas>
+    <formulas>
+        <name>UnitPrice1</name>
         <dataType>Number</dataType>
-        <expression>-1 * {!GetContractManagement.UnitPrice__c}</expression>
+        <expression>-1 * {!ContractManagementLoop.UnitPrice__c}</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>UnitPrice2</name>
+        <dataType>Number</dataType>
+        <expression>-1 * {!GetOpportunityLineItems.SellingPriceDistount__c}</expression>
         <scale>0</scale>
     </formulas>
     <interviewLabel>月中契約変更商談商品作成 {!$Flow.CurrentDateTime}</interviewLabel>
     <label>月中契約変更商談商品作成</label>
     <loops>
-        <name>OpportunityLineItemLoop</name>
-        <label>商談商品ループ</label>
-        <locationX>176</locationX>
-        <locationY>458</locationY>
-        <collectionReference>GetOpportunityLineItems</collectionReference>
+        <name>ContractManagementLoop</name>
+        <label>契約管理ループ</label>
+        <locationX>402</locationX>
+        <locationY>674</locationY>
+        <collectionReference>GetContractManagement</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
             <targetReference>SetDiscountOpportunityLineItem</targetReference>
@@ -186,27 +260,20 @@
     <recordCreates>
         <name>InsertOpportunityLineItem</name>
         <label>商談商品作成</label>
-        <locationX>176</locationX>
-        <locationY>1082</locationY>
+        <locationX>402</locationX>
+        <locationY>1406</locationY>
         <inputReference>CreateOpportunityLineItemCollection</inputReference>
     </recordCreates>
     <recordLookups>
         <name>GetContractManagement</name>
         <label>契約管理取得</label>
-        <locationX>176</locationX>
+        <locationX>226</locationX>
         <locationY>350</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>OpportunityLineItemLoop</targetReference>
+            <targetReference>SetRecordNumber</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
-        <filters>
-            <field>Opportunity__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>GetOpportunity.UpdateSourceOpportunity__r.Id</elementReference>
-            </value>
-        </filters>
         <filters>
             <field>ValidFlagCustom__c</field>
             <operator>EqualTo</operator>
@@ -214,14 +281,21 @@
                 <booleanValue>true</booleanValue>
             </value>
         </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <filters>
+            <field>CustomContract__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>GetOpportunity.UpdateSourceOpportunity__r.Contract.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
         <object>ContractManagement__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
         <name>GetOpportunity</name>
         <label>商談取得</label>
-        <locationX>176</locationX>
+        <locationX>226</locationX>
         <locationY>134</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -242,7 +316,7 @@
     <recordLookups>
         <name>GetOpportunityLineItems</name>
         <label>商談商品取得</label>
-        <locationX>176</locationX>
+        <locationX>226</locationX>
         <locationY>242</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -256,12 +330,28 @@
                 <elementReference>recordId</elementReference>
             </value>
         </filters>
-        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
         <object>OpportunityLineItem</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
-    <start>
+    <screens>
+        <name>ContractManagementRecordNumberError</name>
+        <label>エラー</label>
         <locationX>50</locationX>
+        <locationY>674</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>ContractManagementRecordNumberErrorMessage</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(255, 0, 0);&quot;&gt;有効な契約管理レコードが0件もしくは2件以上存在しているため確認してください&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>100</locationX>
         <locationY>0</locationY>
         <connector>
             <targetReference>GetOpportunity</targetReference>
@@ -285,10 +375,35 @@
         <objectType>OpportunityLineItem</objectType>
     </variables>
     <variables>
+        <name>Produc2Ids</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
         <name>recordId</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
         <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>RecordNumber</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </variables>
+    <variables>
+        <name>ServiceDate</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
         <isOutput>false</isOutput>
     </variables>
 </Flow>

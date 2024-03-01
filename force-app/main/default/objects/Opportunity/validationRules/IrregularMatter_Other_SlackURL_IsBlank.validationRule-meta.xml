@@ -6,7 +6,7 @@
     <errorConditionFormula>if(
 NOT(ISBLANK(IrregularMatterMemo__c) 
 ),
- ISBLANK( SlackURL__c ) ,
+ AND(ISBLANK( SlackURL__c ) ,$Profile.Id &lt;&gt;&quot;00e2w000004VA9p&quot;),
  false
 )</errorConditionFormula>
     <errorDisplayField>SlackURL__c</errorDisplayField>

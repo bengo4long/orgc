@@ -47,7 +47,7 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>uatc@bengo4.com</name>
+                <name>tagami+c@bengo4.com</name>
                 <type>user</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
@@ -75,6 +75,10 @@
         </criteriaItems>
     </entryCriteria>
     <finalApprovalActions>
+        <action>
+            <name>QuoteCompleteEmail</name>
+            <type>Alert</type>
+        </action>
         <action>
             <name>QuoteStatusApprovedUpdate</name>
             <type>FieldUpdate</type>

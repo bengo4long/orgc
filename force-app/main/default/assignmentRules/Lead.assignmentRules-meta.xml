@@ -4,19 +4,29 @@
         <fullName>リード割り当てルール</fullName>
         <active>true</active>
         <ruleEntry>
-            <assignedTo>miyata+c@bengo4.com</assignedTo>
+            <assignedTo>h.imai+c@bengo4.com</assignedTo>
             <assignedToType>User</assignedToType>
-            <formula>MOD( VALUE( LeadNumber__c ) ,3 ) = 0</formula>
+            <formula>MOD( VALUE( LeadNumber__c ) ,5 ) = 0</formula>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>sekiguchi+c@bengo4.com</assignedTo>
+            <assignedTo>s.hashimoto+c@bengo4.com</assignedTo>
             <assignedToType>User</assignedToType>
-            <formula>MOD( VALUE( LeadNumber__c ) ,3 ) = 1</formula>
+            <formula>MOD( VALUE( LeadNumber__c ) ,5 ) = 1</formula>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>takahakke+c@bengo4.com</assignedTo>
+            <assignedTo>a.kaneko+c@bengo4.com</assignedTo>
             <assignedToType>User</assignedToType>
-            <formula>MOD( VALUE( LeadNumber__c ) ,3 ) = 2</formula>
+            <formula>MOD( VALUE( LeadNumber__c ) ,5 ) = 2</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>m.kanno+c@bengo4.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>MOD( VALUE( LeadNumber__c ) ,5 ) = 3</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>d.kadota+c@bengo4.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>MOD( VALUE( LeadNumber__c ) ,5 ) = 4</formula>
         </ruleEntry>
     </assignmentRule>
 </AssignmentRules>

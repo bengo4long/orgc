@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TodayCreatingBillInformation</fullName>
+    <columns>NAME</columns>
+    <columns>BillingTradingTargetName__c</columns>
+    <columns>Opportunity__c</columns>
+    <columns>TransferDeadline__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>本日作成の請求書情報</label>
+    <sharedTo>
+        <group>SystemAdministratorGroup</group>
+    </sharedTo>
+</ListView>

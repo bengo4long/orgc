@@ -8,7 +8,7 @@
         </users>
     </queueMembers>
     <queueSobject>
-        <sobjectType>BliingContact__c</sobjectType>
+        <sobjectType>BillingContact__c</sobjectType>
     </queueSobject>
     <queueSobject>
         <sobjectType>Case</sobjectType>
@@ -153,9 +153,6 @@
     </queueSobject>
     <queueSobject>
         <sobjectType>SOLXYZCSO001__WRUserRoleSynchronizationWork__c</sobjectType>
-    </queueSobject>
-    <queueSobject>
-        <sobjectType>SalesIntermediate__c</sobjectType>
     </queueSobject>
     <queueSobject>
         <sobjectType>Scorecard</sobjectType>

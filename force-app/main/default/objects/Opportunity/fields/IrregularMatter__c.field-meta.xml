@@ -8,6 +8,7 @@
     <trackHistory>false</trackHistory>
     <type>Picklist</type>
     <valueSet>
+        <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
@@ -34,6 +35,24 @@
                 <fullName>その他</fullName>
                 <default>false</default>
                 <label>その他</label>
+            </value>
+            <value>
+                <fullName>T-4OO 月間利用料</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>T-4OO 月間利用料</label>
+            </value>
+            <value>
+                <fullName>楽々明細以外</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>楽々明細以外</label>
+            </value>
+            <value>
+                <fullName>請求書郵送（紙）</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>請求書郵送（紙）</label>
             </value>
         </valueSetDefinition>
     </valueSet>

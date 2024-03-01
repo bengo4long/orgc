@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>EmailAddressOnApplication__c</fullName>
+    <description>クラウドサイン送信用の項目</description>
     <externalId>false</externalId>
     <label>申込時メールアドレス</label>
     <required>false</required>

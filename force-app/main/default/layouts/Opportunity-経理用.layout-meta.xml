@@ -15,10 +15,6 @@
                 <field>Name</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>RecordTypeId</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Required</behavior>
                 <field>AccountId</field>
             </layoutItems>
@@ -34,6 +30,18 @@
                 <behavior>Edit</behavior>
                 <field>OpportunityRepPerson__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>DeliveryDate__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>MeasureList__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>OrgA_OpportunityType__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -42,6 +50,10 @@
             <layoutItems>
                 <behavior>Required</behavior>
                 <field>StageName</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>PhaseDetail__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
@@ -72,11 +84,15 @@
                 <behavior>Edit</behavior>
                 <field>UserEmailAddress__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>BillingRepPerson__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>BillingRepPerson__c</field>
+                <field>ApplicationRepresentative__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -134,7 +150,7 @@
         <label>特記事項</label>
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>NoticeEditExists__c</field>
             </layoutItems>
             <layoutItems>
@@ -165,7 +181,7 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>ApplicationDocument__c</field>
+                <field>DocumentConfirmationUrl__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
@@ -194,8 +210,7 @@
                 <field>Description</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>DocumentConfirmationUrl__c</field>
+                <emptySpace>true</emptySpace>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
@@ -204,14 +219,6 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>ContractTerm__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>BillingCollectionSite__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>InvoiceInformation__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -327,6 +334,25 @@
     </layoutSections>
     <layoutSections>
         <customLabel>true</customLabel>
+        <detailHeading>true</detailHeading>
+        <editHeading>true</editHeading>
+        <label>組織間連携</label>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>OrgA_OpportunityId__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>OrgA_LastSyncDate__c</field>
+            </layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsLeftToRight</style>
+    </layoutSections>
+    <layoutSections>
+        <customLabel>true</customLabel>
         <detailHeading>false</detailHeading>
         <editHeading>false</editHeading>
         <label>クラウドサイン連携</label>
@@ -360,6 +386,10 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>RecordTypeId</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
                 <field>OrderApproved__c</field>
             </layoutItems>
             <layoutItems>
@@ -371,12 +401,8 @@
                 <field>NegotiationProductsStacked__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>UpdateAfterPriceOutsideCount__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
-                <field>OwnerId</field>
+                <field>OrganizationA_OpportunityId__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
@@ -386,17 +412,19 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>createRevenueFlag__c</field>
+                <field>OwnerId</field>
             </layoutItems>
             <layoutItems>
-                <emptySpace>true</emptySpace>
+                <behavior>Readonly</behavior>
+                <field>ApplicationApproved__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>UpdateAfterPriceOutsideCount__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>SalesStacked__c</field>
-            </layoutItems>
-            <layoutItems>
-                <emptySpace>true</emptySpace>
             </layoutItems>
             <layoutItems>
                 <emptySpace>true</emptySpace>
@@ -436,7 +464,7 @@
             <sortOrder>2</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>LogACall</actionName>
+            <actionName>Opportunity.CreateRevenue</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>3</sortOrder>
         </platformActionListItems>
@@ -449,21 +477,6 @@
             <actionName>DeepClone</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>5</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>Opportunity.CloudSignCoop</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>6</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>Opportunity.CreateInvoice</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>7</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>Opportunity.CreateRevenue</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>8</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <quickActionList>
@@ -496,11 +509,8 @@
         <relatedList>RelatedEntityHistoryList</relatedList>
     </relatedLists>
     <relatedLists>
-        <excludeButtons>AddProduct</excludeButtons>
         <excludeButtons>ChoosePricebook</excludeButtons>
         <excludeButtons>EditAllProduct</excludeButtons>
-        <excludeButtons>MultiAdd</excludeButtons>
-        <excludeButtons>MultiEdit</excludeButtons>
         <excludeButtons>Sort</excludeButtons>
         <excludeButtons>SortLineItem</excludeButtons>
         <fields>Product2</fields>

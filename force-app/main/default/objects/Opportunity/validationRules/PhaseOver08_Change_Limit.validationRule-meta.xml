@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PhaseOver08_Change_Limit</fullName>
+    <active>true</active>
+    <description>受注時に見積もり同期できないようにする</description>
+    <errorConditionFormula>AND(
+Probability =1,
+ISCHANGED( SyncedQuoteId ) 
+)</errorConditionFormula>
+    <errorMessage>受注後は見積もり同期できません</errorMessage>
+</ValidationRule>

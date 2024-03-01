@@ -5,6 +5,7 @@
     <label>NG理由</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
     <type>Picklist</type>
     <valueSet>
         <controllingField>LeadStatusDetail__c</controllingField>

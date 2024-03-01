@@ -2,105 +2,100 @@
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>58.0</apiVersion>
     <assignments>
-        <name>SetInvoiceInformation</name>
-        <label>請求情報を割り当て</label>
-        <locationX>264</locationX>
-        <locationY>566</locationY>
+        <name>SetCount</name>
+        <label>SetCount</label>
+        <locationX>182</locationX>
+        <locationY>350</locationY>
         <assignmentItems>
-            <assignToReference>InvoiceInformationCollection</assignToReference>
-            <operator>Add</operator>
+            <assignToReference>count</assignToReference>
+            <operator>AssignCount</operator>
             <value>
-                <elementReference>InvoiceInformation</elementReference>
+                <elementReference>GetOpportunity</elementReference>
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Loop1</targetReference>
+            <targetReference>checkIds</targetReference>
         </connector>
     </assignments>
-    <assignments>
-        <name>SetInvoiceInformationRecord</name>
-        <label>請求書情報作成</label>
-        <locationX>264</locationX>
+    <decisions>
+        <name>checkIds</name>
+        <label>checkIds</label>
+        <locationX>182</locationX>
         <locationY>458</locationY>
-        <assignmentItems>
-            <assignToReference>InvoiceInformation.Opportunity__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>Loop1.Id</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>SetInvoiceInformation</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>SetInvoiceInformationToOpportunity</name>
-        <label>商談に請求書情報を紐付け</label>
-        <locationX>264</locationX>
-        <locationY>974</locationY>
-        <assignmentItems>
-            <assignToReference>Opportunity.Id</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>Loop2.Opportunity__c</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
-            <assignToReference>Opportunity.InvoiceInformation__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>Loop2.Id</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>SetUpdateOpportunity</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>SetUpdateOpportunity</name>
-        <label>商談割り当て</label>
-        <locationX>264</locationX>
-        <locationY>1082</locationY>
-        <assignmentItems>
-            <assignToReference>UpdateOpportunityCollection</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <elementReference>Loop1</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>Loop2</targetReference>
-        </connector>
-    </assignments>
+        <defaultConnector>
+            <targetReference>ErrorScreen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>NO</defaultConnectorLabel>
+        <rules>
+            <name>YES</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>count</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SelectOpportunity</targetReference>
+            </connector>
+            <label>YES</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>CheckProfile</name>
+        <label>プロファイル確認</label>
+        <locationX>380</locationX>
+        <locationY>134</locationY>
+        <defaultConnector>
+            <targetReference>NoPermissionScreen</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>権限なし</defaultConnectorLabel>
+        <rules>
+            <name>HasPermission</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>経理</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>System Administrator</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Profile.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>システム管理者</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>GetOpportunity</targetReference>
+            </connector>
+            <label>権限あり</label>
+        </rules>
+    </decisions>
     <environments>Default</environments>
     <interviewLabel>請求書情報作成 {!$Flow.CurrentDateTime}</interviewLabel>
     <label>請求書情報作成</label>
     <loops>
-        <name>Loop1</name>
-        <label>ループ１</label>
-        <locationX>176</locationX>
-        <locationY>350</locationY>
+        <name>OpportunityLoop</name>
+        <label>商談ループ</label>
+        <locationX>50</locationX>
+        <locationY>674</locationY>
         <collectionReference>SelectedOpportunity.selectedRows</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
-            <targetReference>SetInvoiceInformationRecord</targetReference>
+            <targetReference>CreateInvoiceSub</targetReference>
         </nextValueConnector>
         <noMoreValuesConnector>
-            <targetReference>CreateInvoiceInformation</targetReference>
-        </noMoreValuesConnector>
-    </loops>
-    <loops>
-        <name>Loop2</name>
-        <label>ループ２</label>
-        <locationX>176</locationX>
-        <locationY>866</locationY>
-        <collectionReference>InvoiceInformationCollection</collectionReference>
-        <iterationOrder>Asc</iterationOrder>
-        <nextValueConnector>
-            <targetReference>SetInvoiceInformationToOpportunity</targetReference>
-        </nextValueConnector>
-        <noMoreValuesConnector>
-            <targetReference>UpdateOpportunity</targetReference>
+            <targetReference>Copy_1_of</targetReference>
         </noMoreValuesConnector>
     </loops>
     <processMetadataValues>
@@ -122,45 +117,42 @@
         </value>
     </processMetadataValues>
     <processType>Flow</processType>
-    <recordCreates>
-        <name>CreateInvoiceInformation</name>
-        <label>請求書情報作成</label>
-        <locationX>176</locationX>
-        <locationY>758</locationY>
-        <connector>
-            <targetReference>Loop2</targetReference>
-        </connector>
-        <inputReference>InvoiceInformationCollection</inputReference>
-    </recordCreates>
-    <recordCreates>
-        <name>UpdateOpportunity</name>
-        <label>商談更新</label>
-        <locationX>176</locationX>
-        <locationY>1274</locationY>
-        <inputReference>UpdateOpportunityCollection</inputReference>
-    </recordCreates>
     <recordLookups>
         <name>GetOpportunity</name>
         <label>商談取得</label>
-        <locationX>176</locationX>
-        <locationY>134</locationY>
+        <locationX>182</locationX>
+        <locationY>242</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>SelectOpportunity</targetReference>
+            <targetReference>SetCount</targetReference>
         </connector>
-        <filterLogic>or</filterLogic>
+        <filterLogic>and</filterLogic>
         <filters>
-            <field>Amount</field>
-            <operator>GreaterThanOrEqualTo</operator>
+            <field>ManualCreatingFlag__c</field>
+            <operator>EqualTo</operator>
             <value>
-                <numberValue>0.0</numberValue>
+                <booleanValue>true</booleanValue>
             </value>
         </filters>
         <filters>
-            <field>Amount</field>
+            <field>BillInfoCreationDate__c</field>
             <operator>IsNull</operator>
             <value>
                 <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>StageName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>受注</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Id</field>
+            <operator>In</operator>
+            <value>
+                <elementReference>ids</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
@@ -170,16 +162,69 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <screens>
+        <name>Copy_1_of</name>
+        <label>作成完了</label>
+        <locationX>50</locationX>
+        <locationY>974</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Done</name>
+            <fieldText>&lt;p&gt;請求作成完了&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>ErrorScreen</name>
+        <label>エラー画面</label>
+        <locationX>314</locationX>
+        <locationY>566</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>NoRecord</name>
+            <fieldText>&lt;pre class=&quot;ql-syntax&quot; spellcheck=&quot;false&quot;&gt;作成対象のレコードが選択されていません。以下条件の商談を選択してください。（複数選択可能）
+・商談＞フェーズ＝　受注
+・商談＞手動作成フラグがTRUE
+・商談＞請求書情報作成日が空白
+&lt;/pre&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>NoPermissionScreen</name>
+        <label>NoPermissionScreen</label>
+        <locationX>578</locationX>
+        <locationY>242</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>NoPermissionMes</name>
+            <fieldText>&lt;p&gt;権限がありません。&lt;/p&gt;&lt;p&gt;請求書情報を作成できるのはシステム管理者と経理部のみです。&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <nextOrFinishButtonLabel>わかりました</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
         <name>SelectOpportunity</name>
         <label>商談選択画面</label>
-        <locationX>176</locationX>
-        <locationY>242</locationY>
+        <locationX>50</locationX>
+        <locationY>566</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
         <backButtonLabel>キャンセル</backButtonLabel>
         <connector>
-            <targetReference>Loop1</targetReference>
+            <targetReference>OpportunityLoop</targetReference>
         </connector>
         <fields>
             <name>SelectedOpportunity</name>
@@ -216,7 +261,13 @@
             <inputParameters>
                 <name>columns</name>
                 <value>
-                    <stringValue>[{&quot;apiName&quot;:&quot;Name&quot;,&quot;guid&quot;:&quot;column-2ca1&quot;,&quot;editable&quot;:false,&quot;hasCustomHeaderLabel&quot;:false,&quot;customHeaderLabel&quot;:&quot;&quot;,&quot;wrapText&quot;:true,&quot;order&quot;:0,&quot;label&quot;:&quot;商談名&quot;,&quot;type&quot;:&quot;text&quot;},{&quot;apiName&quot;:&quot;StageName&quot;,&quot;guid&quot;:&quot;column-b41a&quot;,&quot;editable&quot;:false,&quot;hasCustomHeaderLabel&quot;:false,&quot;customHeaderLabel&quot;:&quot;&quot;,&quot;wrapText&quot;:true,&quot;order&quot;:1,&quot;label&quot;:&quot;フェーズ&quot;,&quot;type&quot;:&quot;text&quot;},{&quot;apiName&quot;:&quot;IsWon&quot;,&quot;guid&quot;:&quot;column-b75c&quot;,&quot;editable&quot;:false,&quot;hasCustomHeaderLabel&quot;:false,&quot;customHeaderLabel&quot;:&quot;&quot;,&quot;wrapText&quot;:true,&quot;order&quot;:2,&quot;label&quot;:&quot;成立フラグ&quot;,&quot;type&quot;:&quot;boolean&quot;},{&quot;apiName&quot;:&quot;SyncedQuoteId&quot;,&quot;guid&quot;:&quot;column-2b71&quot;,&quot;editable&quot;:false,&quot;hasCustomHeaderLabel&quot;:false,&quot;customHeaderLabel&quot;:&quot;&quot;,&quot;wrapText&quot;:true,&quot;order&quot;:3,&quot;label&quot;:&quot;見積 ID&quot;,&quot;type&quot;:&quot;customRichText&quot;}]</stringValue>
+                    <stringValue>[{&quot;apiName&quot;:&quot;Name&quot;,&quot;guid&quot;:&quot;column-2ca1&quot;,&quot;editable&quot;:false,&quot;hasCustomHeaderLabel&quot;:false,&quot;customHeaderLabel&quot;:&quot;&quot;,&quot;wrapText&quot;:true,&quot;order&quot;:0,&quot;label&quot;:&quot;商談名&quot;,&quot;type&quot;:&quot;text&quot;},{&quot;apiName&quot;:&quot;AccountName__c&quot;,&quot;guid&quot;:&quot;column-c8ce&quot;,&quot;editable&quot;:false,&quot;hasCustomHeaderLabel&quot;:false,&quot;customHeaderLabel&quot;:&quot;&quot;,&quot;wrapText&quot;:true,&quot;order&quot;:1,&quot;label&quot;:&quot;取引先名&quot;,&quot;type&quot;:&quot;customRichText&quot;},{&quot;apiName&quot;:&quot;Type&quot;,&quot;guid&quot;:&quot;column-2a06&quot;,&quot;editable&quot;:false,&quot;hasCustomHeaderLabel&quot;:false,&quot;customHeaderLabel&quot;:&quot;&quot;,&quot;wrapText&quot;:true,&quot;order&quot;:2,&quot;label&quot;:&quot;商談 種別&quot;,&quot;type&quot;:&quot;text&quot;},{&quot;apiName&quot;:&quot;PostingStartDate__c&quot;,&quot;guid&quot;:&quot;column-2850&quot;,&quot;editable&quot;:false,&quot;hasCustomHeaderLabel&quot;:false,&quot;customHeaderLabel&quot;:&quot;&quot;,&quot;wrapText&quot;:true,&quot;order&quot;:3,&quot;label&quot;:&quot;掲載開始日&quot;,&quot;type&quot;:&quot;date-local&quot;},{&quot;apiName&quot;:&quot;DiscountAmount__c&quot;,&quot;guid&quot;:&quot;column-3426&quot;,&quot;editable&quot;:false,&quot;hasCustomHeaderLabel&quot;:false,&quot;customHeaderLabel&quot;:&quot;&quot;,&quot;wrapText&quot;:true,&quot;order&quot;:4,&quot;label&quot;:&quot;合計金額（値引後）&quot;,&quot;type&quot;:&quot;currency&quot;}]</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>selectedRows</name>
+                <value>
+                    <elementReference>GetOpportunity</elementReference>
                 </value>
             </inputParameters>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
@@ -228,13 +279,68 @@
         <showHeader>true</showHeader>
     </screens>
     <start>
-        <locationX>50</locationX>
+        <locationX>254</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>GetOpportunity</targetReference>
+            <targetReference>CheckProfile</targetReference>
         </connector>
     </start>
     <status>Active</status>
+    <subflows>
+        <name>CreateInvoiceSub</name>
+        <label>請求書情報作成サブ</label>
+        <locationX>138</locationX>
+        <locationY>782</locationY>
+        <connector>
+            <targetReference>OpportunityLoop</targetReference>
+        </connector>
+        <flowName>CreateInvoiceSub</flowName>
+        <inputAssignments>
+            <name>recordId</name>
+            <value>
+                <elementReference>OpportunityLoop.Id</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <variables>
+        <name>count</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+    <variables>
+        <name>currentItemFromSourceCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <name>ExcludingTaxAmount</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+    <variables>
+        <name>ids</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>IncludingTaxAnount</name>
+        <dataType>Currency</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
     <variables>
         <name>InvoiceInformation</name>
         <dataType>SObject</dataType>
@@ -276,11 +382,35 @@
         <objectType>Opportunity</objectType>
     </variables>
     <variables>
+        <name>RecordNumber</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+    <variables>
+        <name>SalesTaxAmount</name>
+        <dataType>Currency</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+    <variables>
         <name>UpdateOpportunityCollection</name>
         <dataType>SObject</dataType>
         <isCollection>true</isCollection>
         <isInput>false</isInput>
         <isOutput>false</isOutput>
         <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <name>UpdateRevenueCollection</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Revenue__c</objectType>
     </variables>
 </Flow>

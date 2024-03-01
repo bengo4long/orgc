@@ -1,3 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata"/>
-
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>BusinessPlanningSharingRule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>BMS事業企画へレコード共有する</description>
+        <label>BMS事業企画共有ルール</label>
+        <sharedTo>
+            <group>BusinessPlanningTeam</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>NegotiationInternalSharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>全商談を全ての内部ユーザーに共有。
+別事業部が乗ってきた場合は、本ルールは利用不可となる。</description>
+        <label>商談内部共有</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>SharedToAccounting</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>経理への共有</label>
+        <sharedTo>
+            <group>Acounting</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

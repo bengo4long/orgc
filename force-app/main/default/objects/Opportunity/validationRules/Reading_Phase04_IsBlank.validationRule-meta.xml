@@ -3,7 +3,11 @@
     <fullName>Reading_Phase04_IsBlank</fullName>
     <active>true</active>
     <description>フェーズが&quot;提案内容合意（決裁者）&quot;以上の場合読みが必須</description>
-    <errorConditionFormula>AND( ISBLANK(TEXT( Reading__c )) ,Probability &gt;= 0.25 )</errorConditionFormula>
+    <errorConditionFormula>AND( 
+$Profile.Id &lt;&gt;&quot;00e2w000004VA9p&quot;,
+ISBLANK(TEXT( Reading__c )) ,
+Probability &gt;= 0.25 
+)</errorConditionFormula>
     <errorDisplayField>Reading__c</errorDisplayField>
     <errorMessage>&quot;提案内容合意（決裁者）&quot;以上に進める場合は読みを記入してください</errorMessage>
 </ValidationRule>

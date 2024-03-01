@@ -14,7 +14,7 @@
     <enableFlowNullPreviousValueFix>true</enableFlowNullPreviousValueFix>
     <enableFlowPauseEnabled>false</enableFlowPauseEnabled>
     <enableFlowReactiveScreens>false</enableFlowReactiveScreens>
-    <enableFlowUseApexExceptionEmail>false</enableFlowUseApexExceptionEmail>
+    <enableFlowUseApexExceptionEmail>true</enableFlowUseApexExceptionEmail>
     <enableFlowViaRestUsesUserCtxt>true</enableFlowViaRestUsesUserCtxt>
     <enableLightningRuntimeEnabled>true</enableLightningRuntimeEnabled>
     <isAccessToInvokedApexRequired xsi:nil="true"/>

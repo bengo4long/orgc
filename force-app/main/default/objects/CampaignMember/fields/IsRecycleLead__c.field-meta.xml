@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsRecycleLead__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND( 
+  CreatedDate &gt;= Lead.SupportedEndChangeDateTime__c,
+  OR( 
+    AND(
+      ISPICKVAL(Campaign.Category__c,&quot;比較&quot;),
+      DATEVALUE(CreatedDate) - DATEVALUE(Lead.SupportedEndChangeDateTime__c) &gt;= 6
+    ),
+    AND(
+      ISPICKVAL(Campaign.Category__c,&quot;興味&quot;) || ISPICKVAL(Campaign.Category__c,&quot;認知&quot;),
+      DATEVALUE(CreatedDate) - DATEVALUE(Lead.SupportedEndChangeDateTime__c) &gt;= 90
+    )
+  )
+)</formula>
+    <label>リードのリサイクル対象</label>
+    <type>Checkbox</type>
+</CustomField>

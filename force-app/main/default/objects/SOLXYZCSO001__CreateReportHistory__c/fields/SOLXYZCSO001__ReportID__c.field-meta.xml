@@ -5,7 +5,7 @@
     <deprecated>false</deprecated>
     <description>帳票の文書管理ID</description>
     <externalId>false</externalId>
-    <inlineHelpText>帳票の文書管理ID</inlineHelpText>
+    <inlineHelpText>Report ID</inlineHelpText>
     <label>帳票ID</label>
     <length>50</length>
     <required>false</required>

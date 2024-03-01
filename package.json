@@ -13,7 +13,10 @@
     "prettier": "prettier --write \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
     "prettier:verify": "prettier --list-different \"**/*.{cls,cmp,component,css,html,js,json,md,page,trigger,xml,yaml,yml}\"",
     "postinstall": "husky install",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "get": "sh get.sh ",
+    "open": "sh open.sh ",
+    "post": "sh post.sh "
   },
   "devDependencies": {
     "@lwc/eslint-plugin-lwc": "^1.1.2",
@@ -37,5 +40,8 @@
     "**/{aura,lwc}/**": [
       "eslint"
     ]
-  }
+  },
+  "main": "jest.config.js",
+  "author": "",
+  "license": "ISC"
 }

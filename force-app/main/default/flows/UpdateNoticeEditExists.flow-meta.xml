@@ -2,28 +2,53 @@
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>58.0</apiVersion>
     <decisions>
-        <name>CheckNewFlag</name>
-        <label>特記事項新規生成フラグ確認</label>
-        <locationX>182</locationX>
-        <locationY>323</locationY>
-        <defaultConnector>
-            <targetReference>UpdateNoticeEditExists</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>デフォルトの結果</defaultConnectorLabel>
+        <description>商品種別を変更し、デフォルト文に上書きされた時、特記事項編集有のフラグがTRUEになっているかを判定。</description>
+        <name>CheckNoticeEditExistsFlag</name>
+        <label>特記事項編集有フラグ判定</label>
+        <locationX>446</locationX>
+        <locationY>395</locationY>
+        <defaultConnectorLabel>特記事項編集有がFALSE</defaultConnectorLabel>
         <rules>
-            <name>IsNew</name>
+            <name>NoticeEditExistsFlagIsTrue</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>$Record.SpecialInformationNewFlag__c</leftValueReference>
+                <leftValueReference>$Record.NoticeEditExists__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <booleanValue>true</booleanValue>
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>NewFlagToFalse</targetReference>
+                <targetReference>ChangeNoticeEditExistsFlagToFlase</targetReference>
             </connector>
-            <label>新規</label>
+            <label>特記事項編集有がTRUE</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>特記事項がデフォルト文と異なるかを判定</description>
+        <name>CheckSpecialNote</name>
+        <label>特記事項変更判定</label>
+        <locationX>248</locationX>
+        <locationY>287</locationY>
+        <defaultConnector>
+            <targetReference>CheckNoticeEditExistsFlag</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>特記事項変更無し</defaultConnectorLabel>
+        <rules>
+            <name>SpecialNoticeIsChanged</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.SpecialInformation__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.GeneratedSpecialInformation__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>ChangeNoticeEditExistsFlagToTrue</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>特記事項変更あり</label>
         </rules>
     </decisions>
     <environments>Default</environments>
@@ -49,12 +74,12 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordUpdates>
-        <name>NewFlagToFalse</name>
-        <label>特記事項新規生成フラグを落とす</label>
-        <locationX>50</locationX>
-        <locationY>431</locationY>
+        <name>ChangeNoticeEditExistsFlagToFlase</name>
+        <label>特記事項編集有をFALSEに変更する</label>
+        <locationX>314</locationX>
+        <locationY>503</locationY>
         <inputAssignments>
-            <field>SpecialInformationNewFlag__c</field>
+            <field>NoticeEditExists__c</field>
             <value>
                 <booleanValue>false</booleanValue>
             </value>
@@ -62,10 +87,10 @@
         <inputReference>$Record</inputReference>
     </recordUpdates>
     <recordUpdates>
-        <name>UpdateNoticeEditExists</name>
-        <label>特記事項編集有</label>
-        <locationX>314</locationX>
-        <locationY>431</locationY>
+        <name>ChangeNoticeEditExistsFlagToTrue</name>
+        <label>特記事項編集有をTRUEに変更する</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
         <inputAssignments>
             <field>NoticeEditExists__c</field>
             <value>
@@ -75,10 +100,10 @@
         <inputReference>$Record</inputReference>
     </recordUpdates>
     <start>
-        <locationX>56</locationX>
+        <locationX>122</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>CheckNewFlag</targetReference>
+            <targetReference>CheckSpecialNote</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -90,7 +115,7 @@
         </filters>
         <object>Opportunity</object>
         <recordTriggerType>Update</recordTriggerType>
-        <triggerType>RecordAfterSave</triggerType>
+        <triggerType>RecordBeforeSave</triggerType>
     </start>
     <status>Active</status>
     <triggerOrder>1600</triggerOrder>

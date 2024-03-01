@@ -173,26 +173,47 @@
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
+    <profileSearchLayouts>
+        <fields>CONTRACT.CONTRACT_NUMBER</fields>
+        <fields>SALES.ACCOUNT.NAME</fields>
+        <fields>CONTRACT.NAME</fields>
+        <fields>CONTRACT.STATUS</fields>
+        <fields>CONTRACT.START_DATE</fields>
+        <fields>CONTRACT.END_DATE</fields>
+        <fields>CONTRACT_TERM</fields>
+        <profileName>System Administrator</profileName>
+    </profileSearchLayouts>
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypeTrackHistory>true</recordTypeTrackHistory>
     <searchLayouts>
         <customTabListAdditionalFields>CONTRACT.CONTRACT_NUMBER</customTabListAdditionalFields>
-        <customTabListAdditionalFields>CONTRACT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>SALES.ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTRACT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>CONTRACT.STATUS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTRACT.START_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTRACT.END_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTRACT_TERM</customTabListAdditionalFields>
         <lookupDialogsAdditionalFields>CONTRACT.CONTRACT_NUMBER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SALES.ACCOUNT.NAME</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>CONTRACT.NAME</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>CORE.USERS.ALIAS</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTRACT.STATUS</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTRACT.START_DATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTRACT.END_DATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTRACT_TERM</lookupDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CONTRACT.CONTRACT_NUMBER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SALES.ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CONTRACT.NAME</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>CORE.USERS.ALIAS</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTRACT.STATUS</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTRACT.START_DATE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTRACT.END_DATE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTRACT_TERM</lookupPhoneDialogsAdditionalFields>
         <searchResultsAdditionalFields>CONTRACT.CONTRACT_NUMBER</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CONTRACT.NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>SALES.ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTRACT.NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CONTRACT.STATUS</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CONTRACT.START_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CONTRACT.END_DATE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CONTRACT_TERM</searchResultsAdditionalFields>
     </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>Read</sharingModel>
 </CustomObject>

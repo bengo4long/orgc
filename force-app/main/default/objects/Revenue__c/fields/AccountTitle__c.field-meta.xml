@@ -8,6 +8,7 @@
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
+        <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
@@ -184,6 +185,11 @@
                 <fullName>預り金</fullName>
                 <default>false</default>
                 <label>預り金</label>
+            </value>
+            <value>
+                <fullName>ロゼッタ端数処理修正用</fullName>
+                <default>false</default>
+                <label>ロゼッタ端数処理修正用</label>
             </value>
         </valueSetDefinition>
     </valueSet>

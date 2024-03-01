@@ -11,7 +11,47 @@
         <translation></translation>
     </picklistValues>
     <picklistValues>
+        <masterLabel>リサーチ必要ない</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>予算タイミング</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>代替手段で対応できている</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>利用したい時期がある</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>動画</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>多忙で検討できない</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>導入他社サービス</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>書籍</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
         <masterLabel>機能により他社決定</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>機能不満（UI,検索）</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>金額</masterLabel>
         <translation></translation>
     </picklistValues>
     <picklistValues>

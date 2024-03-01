@@ -3,6 +3,6 @@
     <enableSocialProfiles>false</enableSocialProfiles>
     <isFacebookSocialProfilesDisabled>false</isFacebookSocialProfilesDisabled>
     <isLinkedInSocialProfilesDisabled>false</isLinkedInSocialProfilesDisabled>
-    <isTwitterSocialProfilesDisabled>false</isTwitterSocialProfilesDisabled>
-    <isYouTubeSocialProfilesDisabled>false</isYouTubeSocialProfilesDisabled>
+    <isTwitterSocialProfilesDisabled>true</isTwitterSocialProfilesDisabled>
+    <isYouTubeSocialProfilesDisabled>true</isYouTubeSocialProfilesDisabled>
 </SocialProfileSettings>

@@ -2,7 +2,8 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>UsageStartDate__c</fullName>
     <externalId>false</externalId>
-    <label>利用開始日</label>
+    <inlineHelpText>初回利用開始日</inlineHelpText>
+    <label>初回利用開始日</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

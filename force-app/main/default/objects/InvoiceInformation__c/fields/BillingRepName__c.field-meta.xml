@@ -4,7 +4,7 @@
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
     <label>請求先担当名</label>
-    <referenceTo>BliingContact__c</referenceTo>
+    <referenceTo>BillingContact__c</referenceTo>
     <relationshipLabel>請求書情報</relationshipLabel>
     <relationshipName>InvoiceInformations</relationshipName>
     <required>false</required>

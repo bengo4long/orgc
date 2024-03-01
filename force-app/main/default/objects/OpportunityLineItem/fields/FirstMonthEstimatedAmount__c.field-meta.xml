@@ -4,7 +4,7 @@
     <externalId>false</externalId>
     <formula>(UnitPrice -  Nebiki1__c) *  Opportunity.Probability</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <label>初月見込額</label>
+    <label>【削除予定】初月見込額</label>
     <precision>18</precision>
     <required>false</required>
     <scale>0</scale>

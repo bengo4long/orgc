@@ -60,6 +60,10 @@
     </entryCriteria>
     <finalApprovalActions>
         <action>
+            <name>QuoteCompleteEmail</name>
+            <type>Alert</type>
+        </action>
+        <action>
             <name>QuoteStatusApprovedUpdate</name>
             <type>FieldUpdate</type>
         </action>

@@ -3,7 +3,7 @@
     <fullName>AccuracyAndMarginRate__c</fullName>
     <externalId>false</externalId>
     <formula>( UnitPrice * BLANKVALUE(Opportunity.AllianceProductsMarginRate__c,1) - BLANKVALUE(Nebiki1__c,0) ) * Opportunity.Probability__c</formula>
-    <label>初月見込額（確度とマージン率）</label>
+    <label>【削除予定】初月見込額（確度とマージン率）</label>
     <precision>18</precision>
     <required>false</required>
     <scale>0</scale>

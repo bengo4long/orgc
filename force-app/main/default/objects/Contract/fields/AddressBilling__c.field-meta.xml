@@ -2,8 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>AddressBilling__c</fullName>
     <externalId>false</externalId>
-    <formula>PrimarilyBliingContact__r.Address__c</formula>
-    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <formula>PrimarilyBliingContact__r.PostCode__c  &amp;  PrimarilyBliingContact__r.MailingState__c  &amp;  PrimarilyBliingContact__r.MailingCity__c  &amp;  PrimarilyBliingContact__r.MailingStreet__c</formula>
     <label>住所(請求先)</label>
     <required>false</required>
     <trackHistory>false</trackHistory>

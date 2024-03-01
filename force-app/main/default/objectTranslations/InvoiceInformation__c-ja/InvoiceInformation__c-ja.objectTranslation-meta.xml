@@ -12,6 +12,10 @@
         </sections>
         <sections>
             <label></label>
+            <section>組織間連携</section>
+        </sections>
+        <sections>
+            <label></label>
             <section>請求先情報</section>
         </sections>
     </layouts>
@@ -20,6 +24,10 @@
         <sections>
             <label></label>
             <section>カスタムリンク</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>組織間連携</section>
         </sections>
         <sections>
             <label></label>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>ProductName_Limit_DiscountAmount</fullName>
-    <active>true</active>
+    <active>false</active>
     <description>商品などの条件で値引できる金額を制限する
 2024/01/12のMTGで金額決め打ちではなく「〜500」「〜1300」といった感じでよいと確認取れたので全面的にコメントブロック。復活の可能性があるため保存。</description>
     <errorConditionFormula>OR(

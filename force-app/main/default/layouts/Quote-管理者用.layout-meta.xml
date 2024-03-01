@@ -28,6 +28,10 @@
                 <behavior>Readonly</behavior>
                 <field>QuoteApprovalPattern__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>NumberOfAccount__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -67,7 +71,7 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Readonly</behavior>
-                <field>DistountAmount__c</field>
+                <field>DiscountAmount__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>

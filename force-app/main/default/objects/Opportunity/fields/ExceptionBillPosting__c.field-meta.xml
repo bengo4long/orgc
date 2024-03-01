@@ -3,8 +3,8 @@
     <fullName>ExceptionBillPosting__c</fullName>
     <defaultValue>false</defaultValue>
     <externalId>false</externalId>
-    <label>請求書郵送のみ</label>
+    <label>請求書郵送</label>
     <trackFeedHistory>false</trackFeedHistory>
-    <trackHistory>false</trackHistory>
+    <trackHistory>true</trackHistory>
     <type>Checkbox</type>
 </CustomField>

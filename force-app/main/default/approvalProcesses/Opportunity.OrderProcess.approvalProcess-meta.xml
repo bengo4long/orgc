@@ -24,7 +24,7 @@
                 <type>user</type>
             </approver>
             <approver>
-                <name>mo.sato+c@bengo4.com</name>
+                <name>komeichi+c@bengo4.com</name>
                 <type>user</type>
             </approver>
             <approver>
@@ -42,10 +42,20 @@
     <emailTemplate>unfiled$public/OrderApprovalApplication</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
+        <booleanFilter>(1 OR 2) AND 3 AND 4 AND 5</booleanFilter>
         <criteriaItems>
             <field>Opportunity.StageName</field>
             <operation>equals</operation>
             <value>07_契約締結</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>A（差戻）</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.DocumentConfirmationUrl__c</field>
+            <operation>notEqual</operation>
         </criteriaItems>
         <criteriaItems>
             <field>Opportunity.OrderApproved__c</field>
@@ -53,11 +63,16 @@
             <value>False</value>
         </criteriaItems>
         <criteriaItems>
-            <field>Opportunity.DocumentConfirmationUrl__c</field>
-            <operation>notEqual</operation>
+            <field>Opportunity.ApplicationApproved__c</field>
+            <operation>equals</operation>
+            <value>True</value>
         </criteriaItems>
     </entryCriteria>
     <finalApprovalActions>
+        <action>
+            <name>CompleteAprovalEmail</name>
+            <type>Alert</type>
+        </action>
         <action>
             <name>NegotiationNameUpdateBack</name>
             <type>FieldUpdate</type>

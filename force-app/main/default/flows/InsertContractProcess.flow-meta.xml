@@ -29,6 +29,18 @@
         <locationX>176</locationX>
         <locationY>323</locationY>
         <inputAssignments>
+            <field>SubscriberCode__c</field>
+            <value>
+                <elementReference>$Record.Account.SubscriberCode__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>SubscriberName__c</field>
+            <value>
+                <elementReference>$Record.Account.SubscriberName__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>VirtualAccountBankBranchOfficeName__c</field>
             <value>
                 <elementReference>$Record.Account.VirtualAccountBank__c</elementReference>

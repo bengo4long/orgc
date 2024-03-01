@@ -88,10 +88,6 @@
             <outputField>pi__conversion_object_name__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>JobCategoryClassification__c</inputField>
-            <outputField>JobCategoryClassification__c</outputField>
-        </mappingFields>
-        <mappingFields>
             <inputField>pi__conversion_object_type__c</inputField>
             <outputField>pi__conversion_object_type__c</outputField>
         </mappingFields>
@@ -118,10 +114,6 @@
         <mappingFields>
             <inputField>pi__utm_term__c</inputField>
             <outputField>pi__utm_term__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>Department__c</inputField>
-            <outputField>Department__c</outputField>
         </mappingFields>
         <mappingFields>
             <inputField>msclkid__c</inputField>
@@ -187,6 +179,14 @@
             <inputField>TrafficSourceMediaDetail__c</inputField>
             <outputField>TrafficSourceMediaDetail__c</outputField>
         </mappingFields>
+        <mappingFields>
+            <inputField>JobCategoryClassification__c</inputField>
+            <outputField>JobCategoryClassification__c</outputField>
+        </mappingFields>
+        <mappingFields>
+            <inputField>Department__c</inputField>
+            <outputField>Department__c</outputField>
+        </mappingFields>
         <outputObject>Contact</outputObject>
     </objectMapping>
     <objectMapping>
@@ -220,16 +220,8 @@
             <outputField>JobTitleSelectionList__c</outputField>
         </mappingFields>
         <mappingFields>
-            <inputField>EmployeeCountISEntry__c</inputField>
-            <outputField>EmployeeCountISEntry__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>EmployeeCountSelectionList__c</inputField>
-            <outputField>EmployeeCountSelectionList__c</outputField>
-        </mappingFields>
-        <mappingFields>
-            <inputField>IndustriesBL__c</inputField>
-            <outputField>IndustriesBL__c</outputField>
+            <inputField>MeasureList__c</inputField>
+            <outputField>MeasureList__c</outputField>
         </mappingFields>
         <mappingFields>
             <inputField>LegalWorkWorkersCountISEntry__c</inputField>

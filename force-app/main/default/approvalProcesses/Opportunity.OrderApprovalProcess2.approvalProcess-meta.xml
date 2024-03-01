@@ -57,11 +57,15 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>a.abe+c@bengo4.com</name>
+                <name>c.maeda+c@bengo4.com</name>
                 <type>user</type>
             </approver>
             <approver>
-                <name>takahakke+c@bengo4.com</name>
+                <name>r.sato+c@bengo4.com</name>
+                <type>user</type>
+            </approver>
+            <approver>
+                <name>s.kudo+c@bengo4.com</name>
                 <type>user</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
@@ -85,7 +89,7 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>mo.sato+c@bengo4.com</name>
+                <name>ta.sato+c@bengo4.com</name>
                 <type>user</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
@@ -131,6 +135,14 @@
     </entryCriteria>
     <finalApprovalActions>
         <action>
+            <name>ApplicationApprovalCompleteEmail</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>ChangeApplicationApprovedFlagToTrue</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
             <name>NegotiationNameUpdateBack_Application</name>
             <type>FieldUpdate</type>
         </action>
@@ -139,7 +151,7 @@
             <type>FieldUpdate</type>
         </action>
     </finalApprovalActions>
-    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
     <finalRejectionActions>
         <action>
             <name>ApplicationApprovalRejectEmail</name>

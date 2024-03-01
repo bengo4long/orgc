@@ -7,6 +7,13 @@
             <section>値引き</section>
         </sections>
     </layouts>
+    <layouts>
+        <layout>デフォルト</layout>
+        <sections>
+            <label></label>
+            <section>値引き</section>
+        </sections>
+    </layouts>
     <validationRules>
         <errorMessage></errorMessage>
         <name>DiscountAmount_Limit_UnitPrice</name>
@@ -14,6 +21,14 @@
     <validationRules>
         <errorMessage></errorMessage>
         <name>ProductName_Limit_DiscountAmount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Quantity_Except_IntegralValue</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Quantity_IsChanged_Beside_one</name>
     </validationRules>
     <validationRules>
         <errorMessage></errorMessage>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>「公開リストビューの管理」を付与。リストビューを消されるリスクを考慮し組織Cでは権限セットとしている</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>公開リストビューの管理</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>CreateCustomizeFilters</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>EditPublicFilters</name>
+    </userPermissions>
+</PermissionSet>

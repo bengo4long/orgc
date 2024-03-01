@@ -27,6 +27,11 @@
                 <default>false</default>
                 <label>BLLエンタープライズ</label>
             </value>
+            <value>
+                <fullName>BLC</fullName>
+                <default>false</default>
+                <label>BLC</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
