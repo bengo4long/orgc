@@ -228,7 +228,7 @@ public class B54_SyncRecords {
         requestRecord.put('Suryo__c', record.Quantity__c );
         requestRecord.put('Tanka__c', record.UnitPrice__c );
         requestRecord.put('ShohizeiSagakuChosei__c', record.TaxDifferenceAdjustment__c );
-        requestRecord.put('TaxRateMaster__c', record.TaxRate__c == 0 ? '非課税' : String.ValueOf(record.TaxRate__c) );
+        requestRecord.put('TaxRateMaster__c', record.TaxRate__c == null ? null : record.TaxRate__c == 0 ? '非課税' : String.ValueOf(record.TaxRate__c/100) );
         requestRecord.put('KanjoKamoku__c', record.AccountTitle__c );
         requestRecord.put('Shohinmei__c', record.ProductName__c );
         requestRecord.put('Family__c', record.ProductFamily__c );
