@@ -242,6 +242,10 @@
             <fullName>10_その他</fullName>
             <default>false</default>
         </values>
+        <values>
+            <fullName>11_商談重複のため削除予定</fullName>
+            <default>false</default>
+        </values>
     </picklistValues>
     <picklistValues>
         <picklist>ForecastCategoryName</picklist>
@@ -761,6 +765,10 @@
         </values>
         <values>
             <fullName>LAWGUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>その他</fullName>
             <default>false</default>
         </values>
         <values>

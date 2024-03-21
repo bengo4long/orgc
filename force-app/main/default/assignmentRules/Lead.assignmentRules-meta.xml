@@ -6,27 +6,32 @@
         <ruleEntry>
             <assignedTo>h.imai+c@bengo4.com</assignedTo>
             <assignedToType>User</assignedToType>
-            <formula>MOD( VALUE( LeadNumber__c ) ,5 ) = 0</formula>
+            <formula>MOD( VALUE( LeadNumber__c ) ,6 ) = 0</formula>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>s.hashimoto+c@bengo4.com</assignedTo>
             <assignedToType>User</assignedToType>
-            <formula>MOD( VALUE( LeadNumber__c ) ,5 ) = 1</formula>
+            <formula>MOD( VALUE( LeadNumber__c ) ,6 ) = 1</formula>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>a.kaneko+c@bengo4.com</assignedTo>
             <assignedToType>User</assignedToType>
-            <formula>MOD( VALUE( LeadNumber__c ) ,5 ) = 2</formula>
-        </ruleEntry>
-        <ruleEntry>
-            <assignedTo>m.kanno+c@bengo4.com</assignedTo>
-            <assignedToType>User</assignedToType>
-            <formula>MOD( VALUE( LeadNumber__c ) ,5 ) = 3</formula>
+            <formula>MOD( VALUE( LeadNumber__c ) ,6 ) = 2</formula>
         </ruleEntry>
         <ruleEntry>
             <assignedTo>d.kadota+c@bengo4.com</assignedTo>
             <assignedToType>User</assignedToType>
-            <formula>MOD( VALUE( LeadNumber__c ) ,5 ) = 4</formula>
+            <formula>MOD( VALUE( LeadNumber__c ) ,6 ) = 3</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>hitomi+c@bengo4.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>MOD( VALUE( LeadNumber__c ) ,6 ) = 4</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>nagayama+c@bengo4.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>MOD( VALUE( LeadNumber__c ) ,6 ) = 5</formula>
         </ruleEntry>
     </assignmentRule>
 </AssignmentRules>

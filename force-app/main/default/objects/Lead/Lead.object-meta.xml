@@ -271,12 +271,13 @@
         <lookupPhoneDialogsAdditionalFields>LEAD.MOBILE_PHONE</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>PhoneDivisionNumber__c</lookupPhoneDialogsAdditionalFields>
         <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LEAD.TITLE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ReceivedOrder__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LEAD.COMPANY</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LEAD.PHONE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LEAD.MOBILE_PHONE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>JobCategoryBL__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LEAD.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LeadType__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LEAD.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>NGReason__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWriteTransfer</sharingModel>

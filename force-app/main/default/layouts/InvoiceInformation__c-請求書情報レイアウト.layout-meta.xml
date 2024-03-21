@@ -129,6 +129,10 @@
                 <behavior>Edit</behavior>
                 <field>BillingMailAddress__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>BillingURLA__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>

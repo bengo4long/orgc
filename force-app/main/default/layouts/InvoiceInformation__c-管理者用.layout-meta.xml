@@ -147,6 +147,10 @@
                 <behavior>Edit</behavior>
                 <field>OrgA_SeikyuId__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>BillingURLA__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>

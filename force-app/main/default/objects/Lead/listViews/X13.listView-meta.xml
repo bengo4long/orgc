@@ -7,7 +7,7 @@
     <columns>FULL_NAME</columns>
     <columns>LEAD.PHONE</columns>
     <columns>LEAD.EMAIL</columns>
-    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ScoreBLL__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
         <field>CORE.USERS.ALIAS</field>

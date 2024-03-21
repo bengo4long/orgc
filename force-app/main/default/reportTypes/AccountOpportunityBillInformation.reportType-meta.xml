@@ -1470,6 +1470,11 @@
             <field>ImportId__c</field>
             <table>Account.Opportunities.InvoiceInformationOpportunity__r</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BillingURLA__c</field>
+            <table>Account.Opportunities.InvoiceInformationOpportunity__r</table>
+        </columns>
         <masterLabel>請求書情報</masterLabel>
     </sections>
 </ReportType>

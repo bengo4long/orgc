@@ -4,6 +4,7 @@
     <columns>NAME</columns>
     <columns>BillingTradingTargetName__c</columns>
     <columns>BillingName__c</columns>
+    <columns>BillingPaymentMethod__c</columns>
     <columns>BillingDate__c</columns>
     <columns>ReportOutputDate__c</columns>
     <columns>VirtualAccountBankBranchOfficeName__c</columns>
@@ -14,11 +15,6 @@
     <columns>ImportId__c</columns>
     <columns>ReportDataCapturingDate__c</columns>
     <filterScope>Everything</filterScope>
-    <filters>
-        <field>NAME</field>
-        <operation>equals</operation>
-        <value>202402-000137,202402-000138,202402-000166,202402-000168,202402-000167,202402-000171,202402-000169,202402-000172,202402-000147,202402-000151,202402-000173,202402-000164,202402-000165,202402-000174</value>
-    </filters>
     <label>楽楽明細取り込み手動更新</label>
     <sharedTo>
         <group>Acounting</group>

@@ -6,6 +6,7 @@
     <columns>PaymentSite__c</columns>
     <columns>BillingPaymentMethod__c</columns>
     <columns>PaymentDueDate__c</columns>
+    <columns>OrgA_SeikyuId__c</columns>
     <columns>CREATED_DATE</columns>
     <columns>CREATEDBY_USER</columns>
     <filterScope>Everything</filterScope>

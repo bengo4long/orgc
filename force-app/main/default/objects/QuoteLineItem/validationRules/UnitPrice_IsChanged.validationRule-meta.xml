@@ -2,8 +2,10 @@
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>UnitPrice_IsChanged</fullName>
     <active>true</active>
-    <description>価格変更不可商品の販売価格を変更したらエラー</description>
+    <description>価格変更不可商品の販売価格を変更したらエラー
+3/14 古明地さん除外</description>
     <errorConditionFormula>AND(
+ $User.Id  &lt;&gt; &quot;0052w00000HnTGg&quot;,
 /*販売価格が変更されたか、見積品目新規登録時に価格表エントリにのリスト価格と違う金額で登録しようとしたか*/
 OR(
 ISCHANGED(UnitPrice ),

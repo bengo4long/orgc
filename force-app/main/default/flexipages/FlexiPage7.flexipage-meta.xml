@@ -31,6 +31,9 @@
                             <value>Global.LogACall</value>
                         </valueListItems>
                         <valueListItems>
+                            <value>InvoiceInformation__c.SyncOrg</value>
+                        </valueListItems>
+                        <valueListItems>
                             <value>Global.NewOpportunity</value>
                         </valueListItems>
                         <valueListItems>
@@ -69,9 +72,6 @@
                         <valueListItems>
                             <value>Submit</value>
                         </valueListItems>
-                        <valueListItems>
-                            <value>InvoiceInformation__c.SyncOrg</value>
-                        </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -92,7 +92,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>numVisibleActions</name>
-                    <value>3</value>
+                    <value>8</value>
                 </componentInstanceProperties>
                 <componentName>force:highlightsPanel</componentName>
                 <identifier>force_highlightsPanel</identifier>

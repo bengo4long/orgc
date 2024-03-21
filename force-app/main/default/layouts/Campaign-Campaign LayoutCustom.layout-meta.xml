@@ -350,6 +350,12 @@
         <relatedList>RelatedCampaignHierarchyList</relatedList>
     </relatedLists>
     <relatedLists>
+        <fields>SNIPPET.NAME</fields>
+        <fields>SNIPPET.TYPE</fields>
+        <fields>SNIPPET.CREATED_BY</fields>
+        <relatedList>RelatedSnippetAssignmentList</relatedList>
+    </relatedLists>
+    <relatedLists>
         <fields>TASK.SUBJECT</fields>
         <fields>TASK.WHO_NAME</fields>
         <fields>ACTIVITY.TASK</fields>

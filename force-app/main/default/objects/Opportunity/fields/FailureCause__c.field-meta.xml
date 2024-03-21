@@ -94,6 +94,11 @@
                 <default>false</default>
                 <label>10_その他</label>
             </value>
+            <value>
+                <fullName>11_商談重複のため削除予定</fullName>
+                <default>false</default>
+                <label>11_商談重複のため削除予定</label>
+            </value>
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>失注</controllingFieldValue>
@@ -134,6 +139,10 @@
         <valueSettings>
             <controllingFieldValue>失注</controllingFieldValue>
             <valueName>10_その他</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>失注</controllingFieldValue>
+            <valueName>11_商談重複のため削除予定</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>

@@ -260,7 +260,10 @@
             <label>件数が200件</label>
         </rules>
     </decisions>
-    <description>開始条件の見直し。（フェーズ06以上、レコードタイプ新規で動作）</description>
+    <description>開始条件の見直し。（フェーズ06以上、レコードタイプ新規で動作）
+
+2024/3/4修正。
+開始条件の確度を80以上に変更、フェーズを変更済みを追加</description>
     <environments>Default</environments>
     <formulas>
         <name>Now</name>
@@ -395,7 +398,6 @@
         <connector>
             <targetReference>CheckVirtualAccount</targetReference>
         </connector>
-        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
         <filterLogic>and</filterLogic>
         <filters>
             <field>AccountId</field>
@@ -408,7 +410,7 @@
             <field>Probability</field>
             <operator>GreaterThanOrEqualTo</operator>
             <value>
-                <numberValue>0.8</numberValue>
+                <numberValue>80.0</numberValue>
             </value>
         </filters>
         <filters>
@@ -416,6 +418,13 @@
             <operator>EqualTo</operator>
             <value>
                 <stringValue>0122w000002Mx4AAAS</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>StageName</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
             </value>
         </filters>
         <object>Opportunity</object>

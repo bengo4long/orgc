@@ -2,8 +2,11 @@
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>DiscountAmount_Limit_UnitPrice</fullName>
     <active>true</active>
-    <description>販売価格を超えた値引きはできない</description>
-    <errorConditionFormula>DiscountAmount__c  &gt; UnitPrice</errorConditionFormula>
+    <description>販売価格を超えた値引きはできない
+3/14 古明地さん除外</description>
+    <errorConditionFormula>$User.Id &lt;&gt; &quot;0052w00000HnTGg&quot;
+ &amp;&amp; 
+DiscountAmount__c  &gt; UnitPrice</errorConditionFormula>
     <errorDisplayField>DiscountAmount__c</errorDisplayField>
     <errorMessage>販売価格を上回る値引額は設定できません</errorMessage>
 </ValidationRule>

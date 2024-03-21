@@ -97,6 +97,10 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
+        <name>standard__PardotAppV1</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
         <name>DevOps_Center</name>
         <type>ConnectedApp</type>
     </appMenuItems>

@@ -7,6 +7,12 @@
         <user>a.abe@bengo4.com</user>
     </apexEmailNotification>
     <apexEmailNotification>
+        <user>thieu@bengo4.com</user>
+    </apexEmailNotification>
+    <apexEmailNotification>
+        <user>inochi@bengo4.com</user>
+    </apexEmailNotification>
+    <apexEmailNotification>
         <email>x-aaaameewopeomim3sn4hofjuey@bengo4.slack.com</email>
     </apexEmailNotification>
 </ApexEmailNotifications>

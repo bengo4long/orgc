@@ -354,13 +354,6 @@
             </value>
         </assignmentItems>
         <assignmentItems>
-            <assignToReference>UpdateRecordTypeOpportunity.CloseDate</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>$Record.PostingEndDate__c</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
             <assignToReference>UpdateRecordTypeOpportunity.SlackURL__c</assignToReference>
             <operator>Assign</operator>
             <value>
@@ -532,7 +525,7 @@
             <assignToReference>UpdateRecordTypeOpportunity.CloseDate</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>$Record.UpdateSourceOpportunity__r.PostingEndDate__c</elementReference>
+                <elementReference>$Record.CloseDate</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>

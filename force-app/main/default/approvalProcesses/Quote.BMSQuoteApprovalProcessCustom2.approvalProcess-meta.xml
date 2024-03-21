@@ -63,7 +63,7 @@
         <allowDelegate>false</allowDelegate>
         <assignedApprover>
             <approver>
-                <name>uatc@bengo4.com</name>
+                <name>r.okamoto+c@bengo4.com</name>
                 <type>user</type>
             </approver>
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
