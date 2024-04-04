@@ -275,13 +275,6 @@
             </value>
         </assignmentItems>
         <assignmentItems>
-            <assignToReference>ContractRecord.OriginalOpportunity__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
             <assignToReference>ContractRecord.StartDate</assignToReference>
             <operator>Assign</operator>
             <value>
@@ -1228,10 +1221,10 @@
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>OriginalOpportunity__c</field>
+            <field>Id</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>$Record.Id</elementReference>
+                <elementReference>$Record.Contract.Id</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>

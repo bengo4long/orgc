@@ -260,10 +260,7 @@
             <label>件数が200件</label>
         </rules>
     </decisions>
-    <description>開始条件の見直し。（フェーズ06以上、レコードタイプ新規で動作）
-
-2024/3/4修正。
-開始条件の確度を80以上に変更、フェーズを変更済みを追加</description>
+    <description>強制的にバーチャル口座を割り当てる用</description>
     <environments>Default</environments>
     <formulas>
         <name>Now</name>
@@ -420,18 +417,11 @@
                 <stringValue>0122w000002Mx4AAAS</stringValue>
             </value>
         </filters>
-        <filters>
-            <field>StageName</field>
-            <operator>IsChanged</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
         <object>Opportunity</object>
         <recordTriggerType>Update</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <name>RecordNumber</name>
         <dataType>Number</dataType>

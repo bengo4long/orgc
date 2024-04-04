@@ -1350,6 +1350,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.PersonalityCareer__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Contact.Phone</field>
         <readable>false</readable>
@@ -1738,6 +1743,11 @@
         <editable>true</editable>
         <field>Contract.PrimarilyBliingContact__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contract.RakurakuMeisaiItemCustomerCode__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -2163,6 +2173,11 @@
         <editable>true</editable>
         <field>InvoiceInformation__c.PaymentSite__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>InvoiceInformation__c.RakurakuMeisaiItemCustomerCode__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -2811,6 +2826,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.ApplicationAppOff__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.ApplicationApprovalPattern__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2828,6 +2848,11 @@
         <editable>true</editable>
         <field>Opportunity.ApplicationRepresentative__c</field>
         <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.ApplicationWritingCreationMethod__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -3247,6 +3272,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Opportunity.Office__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.OppSfdcId__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -4183,6 +4213,21 @@
         <editable>false</editable>
         <field>QuoteLineItem.TotalPrice</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>RakurakuMeisai__c.Contract__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>RakurakuMeisai__c.Opportunity__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>RakurakuMeisai__c.Rakurakumeisai_Id__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -8521,15 +8566,15 @@
     </fieldPermissions>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>AssignRakurakumeisaiCustomerCode</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>ChangeOpportunityManualCreatingFlagToTrue</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
         <flow>CloudSignCoop</flow>
-    </flowAccesses>
-    <flowAccesses>
-        <enabled>false</enabled>
-        <flow>ContractManagementAutoCreate</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
@@ -8606,6 +8651,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>NegotiationOrderApprovalFlow</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>OppApplicationAppOff</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
@@ -8716,6 +8765,9 @@
         <layout>ContractManagement__c-契約管理レイアウト</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>FlowInterview-Flow Interviewレイアウト</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>InvoiceInformation__c-請求書情報レイアウト</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -8753,6 +8805,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>QuoteLineItem-デフォルト</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>RakurakuMeisai__c-楽楽明細レイアウト</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Revenue__c-デフォルト</layout>
@@ -8972,6 +9027,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>ProductTerms__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>RakurakuMeisai__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>

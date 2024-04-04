@@ -11,11 +11,6 @@
         <label>マーケリード（リサイクル）</label>
     </customValue>
     <customValue>
-        <fullName>マーケリード（広告チームリード）</fullName>
-        <default>false</default>
-        <label>マーケリード（広告チームリード）</label>
-    </customValue>
-    <customValue>
         <fullName>IS追客リード</fullName>
         <default>false</default>
         <label>IS追客リード</label>
@@ -26,34 +21,14 @@
         <label>過去失注先</label>
     </customValue>
     <customValue>
-        <fullName>新規法人問い合わせ</fullName>
-        <default>false</default>
-        <label>新規法人問い合わせ</label>
-    </customValue>
-    <customValue>
-        <fullName>過去法人問い合わせ</fullName>
-        <default>false</default>
-        <label>過去法人問い合わせ</label>
-    </customValue>
-    <customValue>
-        <fullName>セミナー参加アンケート回答者</fullName>
-        <default>false</default>
-        <label>セミナー参加アンケート回答者</label>
-    </customValue>
-    <customValue>
-        <fullName>広告チームイベントアンケート回答者</fullName>
-        <default>false</default>
-        <label>広告チームイベントアンケート回答者</label>
-    </customValue>
-    <customValue>
         <fullName>アポキャン</fullName>
         <default>false</default>
         <label>アポキャン</label>
     </customValue>
     <customValue>
-        <fullName>メール開封リード</fullName>
+        <fullName>メールクリックリード</fullName>
         <default>false</default>
-        <label>メール開封リード</label>
+        <label>メールクリックリード</label>
     </customValue>
     <customValue>
         <fullName>トラッキングリード</fullName>
@@ -61,49 +36,83 @@
         <label>トラッキングリード</label>
     </customValue>
     <customValue>
+        <fullName>広告チームコンテンツ申込リード</fullName>
+        <default>false</default>
+        <label>広告チームコンテンツ申込リード</label>
+    </customValue>
+    <customValue>
+        <fullName>過去法人問い合わせ</fullName>
+        <default>false</default>
+        <label>過去法人問い合わせ</label>
+    </customValue>
+    <customValue>
+        <fullName>新規法人問い合わせ</fullName>
+        <default>false</default>
+        <label>新規法人問い合わせ</label>
+    </customValue>
+    <customValue>
+        <fullName>セミナー参加アンケート回答者</fullName>
+        <default>false</default>
+        <label>セミナー参加アンケート回答者</label>
+    </customValue>
+    <customValue>
         <fullName>その他</fullName>
         <default>false</default>
         <label>その他</label>
     </customValue>
     <customValue>
-        <fullName>ナーチャリングリード（リサーチに関する無料コンテンツ配信等）</fullName>
+        <fullName>BLL説明会閲覧</fullName>
         <default>false</default>
-        <label>ナーチャリングリード（リサーチに関する無料コンテンツ配信等）</label>
-    </customValue>
-    <customValue>
-        <fullName>メールクリック</fullName>
-        <default>false</default>
-        <label>メールクリック</label>
-    </customValue>
-    <customValue>
-        <fullName>興味比較層へのリライトメールクリック</fullName>
-        <default>false</default>
-        <label>興味比較層へのリライトメールクリック</label>
-    </customValue>
-    <customValue>
-        <fullName>メール開封者リード</fullName>
-        <default>false</default>
-        <label>メール開封者リード</label>
-    </customValue>
-    <customValue>
-        <fullName>導入事例ページ訪問者</fullName>
-        <default>false</default>
-        <label>導入事例ページ訪問者</label>
+        <isActive>false</isActive>
+        <label>BLL説明会閲覧</label>
     </customValue>
     <customValue>
         <fullName>過去導入事例DL者</fullName>
         <default>false</default>
+        <isActive>false</isActive>
         <label>過去導入事例DL者</label>
     </customValue>
     <customValue>
-        <fullName>BLL説明会閲覧</fullName>
+        <fullName>興味比較層へのリライトメールクリック</fullName>
         <default>false</default>
-        <label>BLL説明会閲覧</label>
+        <isActive>false</isActive>
+        <label>興味比較層へのリライトメールクリック</label>
+    </customValue>
+    <customValue>
+        <fullName>ナーチャリングリード（リサーチに関する無料コンテンツ配信等）</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>ナーチャリングリード（リサーチに関する無料コンテンツ配信等）</label>
     </customValue>
     <customValue>
         <fullName>BLL資料過去DL者（3ヶ月以内）</fullName>
         <default>false</default>
+        <isActive>false</isActive>
         <label>BLL資料過去DL者（3ヶ月以内）</label>
+    </customValue>
+    <customValue>
+        <fullName>広告チームイベントアンケート回答者</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>広告チームイベントアンケート回答者</label>
+    </customValue>
+    <customValue>
+        <fullName>導入事例ページ訪問者</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>導入事例ページ訪問者</label>
+    </customValue>
+    <customValue>
+        <fullName>メール開封者リード</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>メール開封者リード</label>
+    </customValue>
+    <customValue>
+        <fullName>メール開封リード</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>メール開封リード</label>
     </customValue>
     <masterLabel>施策リスト</masterLabel>
     <sorted>false</sorted>

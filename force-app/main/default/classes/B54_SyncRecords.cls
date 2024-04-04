@@ -11,6 +11,7 @@ public class B54_SyncRecords {
     public String externalField_OrgA ;
     public String objectName ;
 	public String objectName_OrgA ;
+    public OrgA__c orgA = OrgA__c.getInstance();
     public LIST<Id> recordIds = new LIST<Id>() ;
     public B54_SyncRecords( List<Request> requestList ){
         for (Request request : requestList ){
@@ -187,7 +188,7 @@ public class B54_SyncRecords {
         requestRecord.put('attributes', new MAP<String,String>{ 'type' => objectName_OrgA }) ;
         requestRecord.put(externalField_OrgC, record.Id );
         requestRecord.put('Name', record.Name );
-        requestRecord.put('RecordTypeId', '012F9000000aIpn' );
+        requestRecord.put('RecordTypeId', orgA.Account_OrgC_RecordTypeId__c );
         return requestRecord ;
     }
     public MAP<String,Object> requestOpportunityRecord(Opportunity record){
@@ -202,22 +203,22 @@ public class B54_SyncRecords {
         requestRecord.put('ShiharaiSite__c', record.BillingCollectionSite__c );
         requestRecord.put('AccountId', record.Account.OrgA_AccountId__c );
         //requestRecord.put('Account', requestRecord( 'Account', record.AccountId ) );
-        requestRecord.put('RecordTypeId', '012F9000000aIpx' );
+        requestRecord.put('RecordTypeId', orgA.Opportunity_OrgC_RecordTypeId__c );
         return requestRecord ;
     }
     public MAP<String,Object> requestOpportunityLineItemRecord(OpportunityLineItem record){
         MAP<String,Object> requestRecord = new MAP<String,Object>();
         requestRecord.put('attributes', new MAP<String,String>{ 'type' => objectName_OrgA }) ;
         requestRecord.put(externalField_OrgC, record.Id );
-        requestRecord.put('PriceBookEntryId', '01uF9000009Y7s8' );
-        requestRecord.put('UnitPrice', record.UnitPrice );
+        requestRecord.put('PriceBookEntryId', orgA.PriceBookEntryId__c );
+        requestRecord.put('UnitPrice', record.UnitPrice  * record.Quantity );
         requestRecord.put('ServiceDate', record.ServiceDate );
         requestRecord.put('Suryo__c', record.Quantity );
         requestRecord.put('Quantity', record.PeriodMonths__c );
         requestRecord.put('OpportunityId', record.Opportunity.OrgA_OpportunityId__c );
         //requestRecord.put('Opportunity', requestRecord( 'Opportunity', record.OpportunityId ) );
         requestRecord.put('Shohinmei__c', record.PricebookEntry.Product2.Name  );
-        for( Integer i = 1; i <= record.PeriodMonths__c; i++ )requestRecord.put('Nebiki'+i+'__c', record.DiscountAmount__c );
+        if( record.DiscountAmount__c != null ) for( Integer i = 1; i <= record.PeriodMonths__c; i++ )requestRecord.put('Nebiki'+i+'__c', record.DiscountAmount__c * record.Quantity );
         return requestRecord ;
     }
     public MAP<String,Object> requestUriageRecord(Revenue__c record){

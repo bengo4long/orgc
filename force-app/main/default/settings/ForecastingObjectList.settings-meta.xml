@@ -222,6 +222,10 @@
             <label>申込時メールアドレス</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00N2w00000c5sUk</field>
+            <label>商談SFDC_ID</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.TYPE</field>
             <label>Type</label>
         </forecastingObjectListLabelMappings>
@@ -292,6 +296,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N2w00000c4iEf</field>
             <label>契約 期間(月)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00N2w00000c65Yr</field>
+            <label>申込承認済を戻す（営業管理専用）</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000c4iEh</field>
@@ -527,7 +535,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdO0U</field>
-            <label>SlackURL</label>
+            <label>SlackURL（営業→経理）</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdO0V</field>
@@ -580,6 +588,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdNzw</field>
             <label>提携商品</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00N2w00000c62FX</field>
+            <label>申込書面作成方法</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
@@ -777,6 +789,7 @@
             <field>00N2w00000bdO1H</field>
             <field>00N2w00000bdO1q</field>
             <field>00N2w00000bdO0R</field>
+            <field>00N2w00000c5sUk</field>
             <field>00N2w00000bdO1g</field>
             <field>00N2w00000bdO1e</field>
             <field>00N2w00000c4JK5</field>
@@ -833,8 +846,10 @@
             <field>00N2w00000c4x1Y</field>
             <field>00N2w00000bdZcU</field>
             <field>00N2w00000c5IiQ</field>
+            <field>00N2w00000c65Yr</field>
             <field>00N2w00000c5K48</field>
             <field>00N2w00000c4ogl</field>
+            <field>00N2w00000c62FX</field>
             <field>00N2w00000bdO1p</field>
             <field>00N2w00000c4ogj</field>
             <field>00N2w00000c4ogi</field>
@@ -1094,6 +1109,10 @@
             <label>申込時メールアドレス</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00N2w00000c5sUk</field>
+            <label>商談SFDC_ID</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.TYPE</field>
             <label>Type</label>
         </forecastingObjectListLabelMappings>
@@ -1164,6 +1183,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N2w00000c4iEf</field>
             <label>契約 期間(月)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00N2w00000c65Yr</field>
+            <label>申込承認済を戻す（営業管理専用）</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000c4iEh</field>
@@ -1399,7 +1422,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdO0U</field>
-            <label>SlackURL</label>
+            <label>SlackURL（営業→経理）</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdO0V</field>
@@ -1452,6 +1475,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdNzw</field>
             <label>提携商品</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00N2w00000c62FX</field>
+            <label>申込書面作成方法</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
@@ -1649,6 +1676,7 @@
             <field>00N2w00000bdO1H</field>
             <field>00N2w00000bdO1q</field>
             <field>00N2w00000bdO0R</field>
+            <field>00N2w00000c5sUk</field>
             <field>00N2w00000bdO1g</field>
             <field>00N2w00000bdO1e</field>
             <field>00N2w00000c4JK5</field>
@@ -1705,8 +1733,10 @@
             <field>00N2w00000c4x1Y</field>
             <field>00N2w00000bdZcU</field>
             <field>00N2w00000c5IiQ</field>
+            <field>00N2w00000c65Yr</field>
             <field>00N2w00000c5K48</field>
             <field>00N2w00000c4ogl</field>
+            <field>00N2w00000c62FX</field>
             <field>00N2w00000bdO1p</field>
             <field>00N2w00000c4ogj</field>
             <field>00N2w00000c4ogi</field>
@@ -1966,6 +1996,10 @@
             <label>申込時メールアドレス</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00N2w00000c5sUk</field>
+            <label>商談SFDC_ID</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.TYPE</field>
             <label>Type</label>
         </forecastingObjectListLabelMappings>
@@ -2036,6 +2070,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N2w00000c4iEf</field>
             <label>契約 期間(月)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00N2w00000c65Yr</field>
+            <label>申込承認済を戻す（営業管理専用）</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000c4iEh</field>
@@ -2275,7 +2313,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdO0U</field>
-            <label>SlackURL</label>
+            <label>SlackURL（営業→経理）</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdO0V</field>
@@ -2328,6 +2366,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdNzw</field>
             <label>提携商品</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00N2w00000c62FX</field>
+            <label>申込書面作成方法</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
@@ -2526,6 +2568,7 @@
             <field>00N2w00000bdO1H</field>
             <field>00N2w00000bdO1q</field>
             <field>00N2w00000bdO0R</field>
+            <field>00N2w00000c5sUk</field>
             <field>00N2w00000bdO1g</field>
             <field>00N2w00000bdO1e</field>
             <field>00N2w00000c4JK5</field>
@@ -2582,8 +2625,10 @@
             <field>00N2w00000c4x1Y</field>
             <field>00N2w00000bdZcU</field>
             <field>00N2w00000c5IiQ</field>
+            <field>00N2w00000c65Yr</field>
             <field>00N2w00000c5K48</field>
             <field>00N2w00000c4ogl</field>
+            <field>00N2w00000c62FX</field>
             <field>00N2w00000bdO1p</field>
             <field>00N2w00000c4ogj</field>
             <field>00N2w00000c4ogi</field>
@@ -2843,6 +2888,10 @@
             <label>申込時メールアドレス</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00N2w00000c5sUk</field>
+            <label>商談SFDC_ID</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.TYPE</field>
             <label>Type</label>
         </forecastingObjectListLabelMappings>
@@ -2913,6 +2962,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N2w00000c4iEf</field>
             <label>契約 期間(月)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00N2w00000c65Yr</field>
+            <label>申込承認済を戻す（営業管理専用）</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000c4iEh</field>
@@ -3148,7 +3201,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdO0U</field>
-            <label>SlackURL</label>
+            <label>SlackURL（営業→経理）</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdO0V</field>
@@ -3201,6 +3254,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdNzw</field>
             <label>提携商品</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00N2w00000c62FX</field>
+            <label>申込書面作成方法</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
@@ -3398,6 +3455,7 @@
             <field>00N2w00000bdO1H</field>
             <field>00N2w00000bdO1q</field>
             <field>00N2w00000bdO0R</field>
+            <field>00N2w00000c5sUk</field>
             <field>00N2w00000bdO1g</field>
             <field>00N2w00000bdO1e</field>
             <field>00N2w00000c4JK5</field>
@@ -3454,8 +3512,10 @@
             <field>00N2w00000c4x1Y</field>
             <field>00N2w00000bdZcU</field>
             <field>00N2w00000c5IiQ</field>
+            <field>00N2w00000c65Yr</field>
             <field>00N2w00000c5K48</field>
             <field>00N2w00000c4ogl</field>
+            <field>00N2w00000c62FX</field>
             <field>00N2w00000bdO1p</field>
             <field>00N2w00000c4ogj</field>
             <field>00N2w00000c4ogi</field>
@@ -3715,6 +3775,10 @@
             <label>申込時メールアドレス</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00N2w00000c5sUk</field>
+            <label>商談SFDC_ID</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.TYPE</field>
             <label>Type</label>
         </forecastingObjectListLabelMappings>
@@ -3785,6 +3849,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N2w00000c4iEf</field>
             <label>契約 期間(月)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00N2w00000c65Yr</field>
+            <label>申込承認済を戻す（営業管理専用）</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000c4iEh</field>
@@ -4024,7 +4092,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdO0U</field>
-            <label>SlackURL</label>
+            <label>SlackURL（営業→経理）</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdO0V</field>
@@ -4077,6 +4145,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdNzw</field>
             <label>提携商品</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00N2w00000c62FX</field>
+            <label>申込書面作成方法</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
@@ -4275,6 +4347,7 @@
             <field>00N2w00000bdO1H</field>
             <field>00N2w00000bdO1q</field>
             <field>00N2w00000bdO0R</field>
+            <field>00N2w00000c5sUk</field>
             <field>00N2w00000bdO1g</field>
             <field>00N2w00000bdO1e</field>
             <field>00N2w00000c4JK5</field>
@@ -4331,8 +4404,10 @@
             <field>00N2w00000c4x1Y</field>
             <field>00N2w00000bdZcU</field>
             <field>00N2w00000c5IiQ</field>
+            <field>00N2w00000c65Yr</field>
             <field>00N2w00000c5K48</field>
             <field>00N2w00000c4ogl</field>
+            <field>00N2w00000c62FX</field>
             <field>00N2w00000bdO1p</field>
             <field>00N2w00000c4ogj</field>
             <field>00N2w00000c4ogi</field>
@@ -4592,6 +4667,10 @@
             <label>申込時メールアドレス</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00N2w00000c5sUk</field>
+            <label>商談SFDC_ID</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.TYPE</field>
             <label>Type</label>
         </forecastingObjectListLabelMappings>
@@ -4662,6 +4741,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N2w00000c4iEf</field>
             <label>契約 期間(月)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00N2w00000c65Yr</field>
+            <label>申込承認済を戻す（営業管理専用）</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000c4iEh</field>
@@ -4897,7 +4980,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdO0U</field>
-            <label>SlackURL</label>
+            <label>SlackURL（営業→経理）</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdO0V</field>
@@ -4950,6 +5033,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdNzw</field>
             <label>提携商品</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00N2w00000c62FX</field>
+            <label>申込書面作成方法</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
@@ -5147,6 +5234,7 @@
             <field>00N2w00000bdO1H</field>
             <field>00N2w00000bdO1q</field>
             <field>00N2w00000bdO0R</field>
+            <field>00N2w00000c5sUk</field>
             <field>00N2w00000bdO1g</field>
             <field>00N2w00000bdO1e</field>
             <field>00N2w00000c4JK5</field>
@@ -5203,8 +5291,10 @@
             <field>00N2w00000c4x1Y</field>
             <field>00N2w00000bdZcU</field>
             <field>00N2w00000c5IiQ</field>
+            <field>00N2w00000c65Yr</field>
             <field>00N2w00000c5K48</field>
             <field>00N2w00000c4ogl</field>
+            <field>00N2w00000c62FX</field>
             <field>00N2w00000bdO1p</field>
             <field>00N2w00000c4ogj</field>
             <field>00N2w00000c4ogi</field>
@@ -5464,6 +5554,10 @@
             <label>申込時メールアドレス</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00N2w00000c5sUk</field>
+            <label>商談SFDC_ID</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.TYPE</field>
             <label>Type</label>
         </forecastingObjectListLabelMappings>
@@ -5534,6 +5628,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N2w00000c4iEf</field>
             <label>契約 期間(月)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00N2w00000c65Yr</field>
+            <label>申込承認済を戻す（営業管理専用）</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000c4iEh</field>
@@ -5773,7 +5871,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdO0U</field>
-            <label>SlackURL</label>
+            <label>SlackURL（営業→経理）</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdO0V</field>
@@ -5826,6 +5924,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdNzw</field>
             <label>提携商品</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00N2w00000c62FX</field>
+            <label>申込書面作成方法</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
@@ -6024,6 +6126,7 @@
             <field>00N2w00000bdO1H</field>
             <field>00N2w00000bdO1q</field>
             <field>00N2w00000bdO0R</field>
+            <field>00N2w00000c5sUk</field>
             <field>00N2w00000bdO1g</field>
             <field>00N2w00000bdO1e</field>
             <field>00N2w00000c4JK5</field>
@@ -6080,8 +6183,10 @@
             <field>00N2w00000c4x1Y</field>
             <field>00N2w00000bdZcU</field>
             <field>00N2w00000c5IiQ</field>
+            <field>00N2w00000c65Yr</field>
             <field>00N2w00000c5K48</field>
             <field>00N2w00000c4ogl</field>
+            <field>00N2w00000c62FX</field>
             <field>00N2w00000bdO1p</field>
             <field>00N2w00000c4ogj</field>
             <field>00N2w00000c4ogi</field>
@@ -6341,6 +6446,10 @@
             <label>申込時メールアドレス</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00N2w00000c5sUk</field>
+            <label>商談SFDC_ID</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.TYPE</field>
             <label>Type</label>
         </forecastingObjectListLabelMappings>
@@ -6411,6 +6520,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N2w00000c4iEf</field>
             <label>契約 期間(月)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00N2w00000c65Yr</field>
+            <label>申込承認済を戻す（営業管理専用）</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000c4iEh</field>
@@ -6646,7 +6759,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdO0U</field>
-            <label>SlackURL</label>
+            <label>SlackURL（営業→経理）</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdO0V</field>
@@ -6699,6 +6812,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdNzw</field>
             <label>提携商品</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00N2w00000c62FX</field>
+            <label>申込書面作成方法</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
@@ -6896,6 +7013,7 @@
             <field>00N2w00000bdO1H</field>
             <field>00N2w00000bdO1q</field>
             <field>00N2w00000bdO0R</field>
+            <field>00N2w00000c5sUk</field>
             <field>00N2w00000bdO1g</field>
             <field>00N2w00000bdO1e</field>
             <field>00N2w00000c4JK5</field>
@@ -6952,8 +7070,10 @@
             <field>00N2w00000c4x1Y</field>
             <field>00N2w00000bdZcU</field>
             <field>00N2w00000c5IiQ</field>
+            <field>00N2w00000c65Yr</field>
             <field>00N2w00000c5K48</field>
             <field>00N2w00000c4ogl</field>
+            <field>00N2w00000c62FX</field>
             <field>00N2w00000bdO1p</field>
             <field>00N2w00000c4ogj</field>
             <field>00N2w00000c4ogi</field>
@@ -7213,6 +7333,10 @@
             <label>申込時メールアドレス</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00N2w00000c5sUk</field>
+            <label>商談SFDC_ID</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.TYPE</field>
             <label>Type</label>
         </forecastingObjectListLabelMappings>
@@ -7283,6 +7407,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N2w00000c4iEf</field>
             <label>契約 期間(月)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00N2w00000c65Yr</field>
+            <label>申込承認済を戻す（営業管理専用）</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000c4iEh</field>
@@ -7522,7 +7650,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdO0U</field>
-            <label>SlackURL</label>
+            <label>SlackURL（営業→経理）</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdO0V</field>
@@ -7575,6 +7703,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdNzw</field>
             <label>提携商品</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00N2w00000c62FX</field>
+            <label>申込書面作成方法</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
@@ -7773,6 +7905,7 @@
             <field>00N2w00000bdO1H</field>
             <field>00N2w00000bdO1q</field>
             <field>00N2w00000bdO0R</field>
+            <field>00N2w00000c5sUk</field>
             <field>00N2w00000bdO1g</field>
             <field>00N2w00000bdO1e</field>
             <field>00N2w00000c4JK5</field>
@@ -7829,8 +7962,10 @@
             <field>00N2w00000c4x1Y</field>
             <field>00N2w00000bdZcU</field>
             <field>00N2w00000c5IiQ</field>
+            <field>00N2w00000c65Yr</field>
             <field>00N2w00000c5K48</field>
             <field>00N2w00000c4ogl</field>
+            <field>00N2w00000c62FX</field>
             <field>00N2w00000bdO1p</field>
             <field>00N2w00000c4ogj</field>
             <field>00N2w00000c4ogi</field>
@@ -8090,6 +8225,10 @@
             <label>申込時メールアドレス</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00N2w00000c5sUk</field>
+            <label>商談SFDC_ID</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.TYPE</field>
             <label>Type</label>
         </forecastingObjectListLabelMappings>
@@ -8160,6 +8299,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N2w00000c4iEf</field>
             <label>契約 期間(月)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00N2w00000c65Yr</field>
+            <label>申込承認済を戻す（営業管理専用）</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000c4iEh</field>
@@ -8395,7 +8538,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdO0U</field>
-            <label>SlackURL</label>
+            <label>SlackURL（営業→経理）</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdO0V</field>
@@ -8448,6 +8591,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdNzw</field>
             <label>提携商品</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00N2w00000c62FX</field>
+            <label>申込書面作成方法</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
@@ -8645,6 +8792,7 @@
             <field>00N2w00000bdO1H</field>
             <field>00N2w00000bdO1q</field>
             <field>00N2w00000bdO0R</field>
+            <field>00N2w00000c5sUk</field>
             <field>00N2w00000bdO1g</field>
             <field>00N2w00000bdO1e</field>
             <field>00N2w00000c4JK5</field>
@@ -8701,8 +8849,10 @@
             <field>00N2w00000c4x1Y</field>
             <field>00N2w00000bdZcU</field>
             <field>00N2w00000c5IiQ</field>
+            <field>00N2w00000c65Yr</field>
             <field>00N2w00000c5K48</field>
             <field>00N2w00000c4ogl</field>
+            <field>00N2w00000c62FX</field>
             <field>00N2w00000bdO1p</field>
             <field>00N2w00000c4ogj</field>
             <field>00N2w00000c4ogi</field>
@@ -8962,6 +9112,10 @@
             <label>申込時メールアドレス</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00N2w00000c5sUk</field>
+            <label>商談SFDC_ID</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.TYPE</field>
             <label>Type</label>
         </forecastingObjectListLabelMappings>
@@ -9032,6 +9186,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N2w00000c4iEf</field>
             <label>契約 期間(月)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00N2w00000c65Yr</field>
+            <label>申込承認済を戻す（営業管理専用）</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000c4iEh</field>
@@ -9271,7 +9429,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdO0U</field>
-            <label>SlackURL</label>
+            <label>SlackURL（営業→経理）</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdO0V</field>
@@ -9324,6 +9482,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdNzw</field>
             <label>提携商品</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00N2w00000c62FX</field>
+            <label>申込書面作成方法</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
@@ -9522,6 +9684,7 @@
             <field>00N2w00000bdO1H</field>
             <field>00N2w00000bdO1q</field>
             <field>00N2w00000bdO0R</field>
+            <field>00N2w00000c5sUk</field>
             <field>00N2w00000bdO1g</field>
             <field>00N2w00000bdO1e</field>
             <field>00N2w00000c4JK5</field>
@@ -9578,8 +9741,10 @@
             <field>00N2w00000c4x1Y</field>
             <field>00N2w00000bdZcU</field>
             <field>00N2w00000c5IiQ</field>
+            <field>00N2w00000c65Yr</field>
             <field>00N2w00000c5K48</field>
             <field>00N2w00000c4ogl</field>
+            <field>00N2w00000c62FX</field>
             <field>00N2w00000bdO1p</field>
             <field>00N2w00000c4ogj</field>
             <field>00N2w00000c4ogi</field>
@@ -9839,6 +10004,10 @@
             <label>申込時メールアドレス</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
+            <field>00N2w00000c5sUk</field>
+            <label>商談SFDC_ID</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.TYPE</field>
             <label>Type</label>
         </forecastingObjectListLabelMappings>
@@ -9909,6 +10078,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N2w00000c4iEf</field>
             <label>契約 期間(月)</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00N2w00000c65Yr</field>
+            <label>申込承認済を戻す（営業管理専用）</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000c4iEh</field>
@@ -10144,7 +10317,7 @@
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdO0U</field>
-            <label>SlackURL</label>
+            <label>SlackURL（営業→経理）</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdO0V</field>
@@ -10197,6 +10370,10 @@
         <forecastingObjectListLabelMappings>
             <field>00N2w00000bdNzw</field>
             <label>提携商品</label>
+        </forecastingObjectListLabelMappings>
+        <forecastingObjectListLabelMappings>
+            <field>00N2w00000c62FX</field>
+            <label>申込書面作成方法</label>
         </forecastingObjectListLabelMappings>
         <forecastingObjectListLabelMappings>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
@@ -10394,6 +10571,7 @@
             <field>00N2w00000bdO1H</field>
             <field>00N2w00000bdO1q</field>
             <field>00N2w00000bdO0R</field>
+            <field>00N2w00000c5sUk</field>
             <field>00N2w00000bdO1g</field>
             <field>00N2w00000bdO1e</field>
             <field>00N2w00000c4JK5</field>
@@ -10450,8 +10628,10 @@
             <field>00N2w00000c4x1Y</field>
             <field>00N2w00000bdZcU</field>
             <field>00N2w00000c5IiQ</field>
+            <field>00N2w00000c65Yr</field>
             <field>00N2w00000c5K48</field>
             <field>00N2w00000c4ogl</field>
+            <field>00N2w00000c62FX</field>
             <field>00N2w00000bdO1p</field>
             <field>00N2w00000c4ogj</field>
             <field>00N2w00000c4ogi</field>

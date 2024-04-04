@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>ManualCreatingList</fullName>
+    <columns>ApplicationApprovalPattern__c</columns>
+    <columns>PostingStartDate__c</columns>
+    <columns>OPPORTUNITY.TYPE</columns>
     <columns>OPPORTUNITY.NAME</columns>
     <columns>ACCOUNT.NAME</columns>
+    <columns>DiscountAmount__c</columns>
     <columns>OPPORTUNITY.STAGE_NAME</columns>
-    <columns>OpportunityRepPerson__c</columns>
-    <columns>OPPORTUNITY.AMOUNT</columns>
     <columns>OrderApproved__c</columns>
     <columns>ApplicationApproved__c</columns>
     <columns>CORE.USERS.ALIAS</columns>

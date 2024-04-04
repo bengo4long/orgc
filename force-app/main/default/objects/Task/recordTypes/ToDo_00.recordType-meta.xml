@@ -153,27 +153,39 @@
     <picklistValues>
         <picklist>MeasureList__c</picklist>
         <values>
-            <fullName>BLL説明会閲覧</fullName>
+            <fullName>IS追客リード</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>BLL資料過去DL者%EF%BC%883ヶ月以内%EF%BC%89</fullName>
+            <fullName>その他</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>ナーチャリングリード%EF%BC%88リサーチに関する無料コンテンツ配信等%EF%BC%89</fullName>
+            <fullName>アポキャン</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>メールクリック</fullName>
+            <fullName>セミナー参加アンケート回答者</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>導入事例ページ訪問者</fullName>
+            <fullName>トラッキングリード</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>広告チームイベントアンケート回答者</fullName>
+            <fullName>マーケリード%EF%BC%88リサイクル%EF%BC%89</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>マーケリード%EF%BC%88新規%EF%BC%89</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>メールクリックリード</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>広告チームコンテンツ申込リード</fullName>
             <default>false</default>
         </values>
         <values>
@@ -181,27 +193,7 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>有料セミナー申込</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>興味比較層へのリライトメールクリック</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>過去BLL説明会参加者</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>過去セミナー参加アンケート興味あり回答者</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>過去失注先</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>過去導入事例DL者</fullName>
             <default>false</default>
         </values>
         <values>

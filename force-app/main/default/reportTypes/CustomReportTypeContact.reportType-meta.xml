@@ -536,6 +536,11 @@
             <field>OrganizationA_ContactId__c</field>
             <table>Contact</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>PersonalityCareer__c</field>
+            <table>Contact</table>
+        </columns>
         <masterLabel>取引先責任者</masterLabel>
     </sections>
 </ReportType>

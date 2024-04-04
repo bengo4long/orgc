@@ -69,6 +69,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>ApplicationAppOff__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>MeasureList__c</field>
             </layoutItems>
             <layoutItems>
@@ -150,6 +154,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>ApplicationRepresentative__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ApplicationWritingCreationMethod__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -452,6 +460,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>RecordTypeId</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>OppSfdcId__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>

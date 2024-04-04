@@ -59,7 +59,7 @@
     <filters>
         <field>NGReason__c</field>
         <operation>notEqual</operation>
-        <value>取引実績あり,重複リード,対象外（個人/学生/外国人/その他）,連絡先不可,過去クレーム（窓口統一/架電不可）,受付ブロック,その他</value>
+        <value>取引実績あり,重複リード,対象外（個人/学生/外国人/その他）,連絡先不可,過去クレーム（窓口統一/架電不可）,その他</value>
     </filters>
     <label>【今井】新規（優先度1）</label>
 </ListView>

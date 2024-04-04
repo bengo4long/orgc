@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View8</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATE</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>対応終了</value>
+    </filters>
+    <filters>
+        <field>LeadType__c</field>
+        <operation>equals</operation>
+        <value>リサイクル</value>
+    </filters>
+    <filters>
+        <field>RecyclingChangeTime__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>3/1/2024 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>SupportedEndChangeDateTime__c</field>
+        <operation>lessOrEqual</operation>
+        <value>3/1/2024 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>ReceivedOrder__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>ScoreBLL__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <label>リサイクル切り替えるやつ</label>
+</ListView>

@@ -76,6 +76,10 @@
                 <behavior>Edit</behavior>
                 <field>OwnerId</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>PersonalityCareer__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -292,7 +296,7 @@
     </relatedLists>
     <relatedLists>
         <fields>CAMPAIGN.NAME</fields>
-        <fields>CAMPAIGN.START_DATE</fields>
+        <fields>CM.FIRST_ASSOCIATED_DATE</fields>
         <fields>CAMPAIGN.CAMPAIGN_TYPE</fields>
         <fields>CM.STATUS</fields>
         <fields>CM.RESPONDED</fields>

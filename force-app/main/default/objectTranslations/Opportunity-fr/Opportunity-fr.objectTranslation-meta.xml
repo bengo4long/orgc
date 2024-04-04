@@ -257,6 +257,10 @@
     </validationRules>
     <validationRules>
         <errorMessage></errorMessage>
+        <name>ApplicationCreateMethod_IsBlank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
         <name>BillingRepPerson_Email_IsBlank</name>
     </validationRules>
     <validationRules>

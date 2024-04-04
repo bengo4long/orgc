@@ -201,6 +201,46 @@
             <field>BillingURLA__c</field>
             <table>InvoiceInformation__c</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BillingRepName__c.AccountName__c.BillingCity</field>
+            <table>InvoiceInformation__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BillingRepName__c.AccountName__c.BillingStreet</field>
+            <table>InvoiceInformation__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BillingRepName__c.AccountName__c.BillingState</field>
+            <table>InvoiceInformation__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BillingRepName__c.AccountName__c.BillingPostalCode</field>
+            <table>InvoiceInformation__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Opportunity__c.Contract.PrimarilyBliingContact__c</field>
+            <table>InvoiceInformation__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BillingRepName__c.BillingContactID18__c</field>
+            <table>InvoiceInformation__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>BillingRepName__c.MailAddless__c</field>
+            <table>InvoiceInformation__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Opportunity__c.Account.CustomerCode__c</field>
+            <table>InvoiceInformation__c</table>
+        </columns>
         <masterLabel>請求書情報</masterLabel>
     </sections>
     <sections>
@@ -1020,5 +1060,33 @@
             <table>InvoiceInformation__c</table>
         </columns>
         <masterLabel>商談</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Opportunity__c.UpdateSourceOpportunity__c.Contract</field>
+            <table>InvoiceInformation__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Opportunity__c.Contract.PaymentTerms__c</field>
+            <table>InvoiceInformation__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Opportunity__c.Contract.VirtualAccountNumber__c</field>
+            <table>InvoiceInformation__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Opportunity__c.Contract.VirtualAccountBankBranchOfficeName__c</field>
+            <table>InvoiceInformation__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Opportunity__c.Contract.BillingPaymentMethod__c</field>
+            <table>InvoiceInformation__c</table>
+        </columns>
+        <masterLabel>契約</masterLabel>
     </sections>
 </ReportType>

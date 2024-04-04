@@ -169,10 +169,6 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>OriginalOpportunity__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
                 <field>UsageStartDate__c</field>
             </layoutItems>
             <layoutItems>

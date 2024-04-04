@@ -11,7 +11,8 @@ IF(
 OR(
  ExemptionTarget__c ,
  ExceptionBillPosting__c ,
- NOT( ISBLANK( IrregularMatterMemo__c ) ) 
+ NOT( ISBLANK( IrregularMatterMemo__c ) ) ,
+ NoticeEditExists__c 
 ), 5,
 IF(
 /*GM＞関口承認の場合3を返す*/
@@ -21,8 +22,7 @@ OR(
  SpecificProductsNumber__c  &gt;= 1,
  AutoUpdatable__c = false,
  UpdateMonths__c = 3,
- UpdateMonths__c = 6,
- NoticeEditExists__c = true
+ UpdateMonths__c = 6
 ), 3,
 IF (
 /*GM承認の場合1を返す*/

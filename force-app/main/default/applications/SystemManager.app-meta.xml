@@ -32,6 +32,7 @@
     <tabs>ContractManagement__c</tabs>
     <tabs>InvoiceInformation__c</tabs>
     <tabs>BillingContact__c</tabs>
+    <tabs>RakurakuMeisai__c</tabs>
     <tabs>standard-Pricebook2</tabs>
     <tabs>standard-Campaign</tabs>
     <tabs>standard-report</tabs>

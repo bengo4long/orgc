@@ -3,7 +3,7 @@
     <fullName>OriginalOpportunity__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <externalId>false</externalId>
-    <label>直近の受注商談</label>
+    <label>OLD_直近の受注商談</label>
     <referenceTo>Opportunity</referenceTo>
     <relationshipLabel>契約</relationshipLabel>
     <relationshipName>Contacts</relationshipName>

@@ -1267,6 +1267,36 @@
             <field>OrganizationA_UpdateTargetFlag__c</field>
             <table>Account.Opportunities</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>OppSfdcId__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>UpdateSourceOpportunity__c.Contract.ID18__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>UpdateSourceOpportunity__c.Contract.Name</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>UpdateSourceOpportunity__c.Contract.ContractNumber</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ApplicationWritingCreationMethod__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ApplicationAppOff__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
         <masterLabel>商談</masterLabel>
     </sections>
     <sections>

@@ -503,7 +503,7 @@
     <formulas>
         <name>UpdateRecordTypeOpportunityLineItemServiceDate</name>
         <dataType>Date</dataType>
-        <expression>ADDMONTHS({!OpportunityLineItemLoop2.ServiceDate},12)</expression>
+        <expression>{!OpportunityLineItemLoop2.PostingEndDate__c}+1</expression>
     </formulas>
     <formulas>
         <name>UpdateSourceOpportunity</name>

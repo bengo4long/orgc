@@ -185,6 +185,7 @@
 		<members>In_App_Checklist_Settings__c</members>
 		<members>InvoiceInformation__c</members>
 		<members>Lead</members>
+		<members>LeadHeadCount__c</members>
 		<members>LearningAssignment</members>
 		<members>LearningAssignmentProgress</members>
 		<members>LearningItem</members>
@@ -224,6 +225,7 @@
 		<members>QuickTextUsage</members>
 		<members>Quote</members>
 		<members>QuoteLineItem</members>
+		<members>RakurakuMeisai__c</members>
 		<members>Recommendation</members>
 		<members>RecordAction</members>
 		<members>RecordMergeHistory</members>

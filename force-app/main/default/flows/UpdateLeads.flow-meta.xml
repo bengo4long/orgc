@@ -93,6 +93,12 @@
             </value>
         </inputAssignments>
         <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>未着手</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
             <field>SupportedEndChangeDateTime__c</field>
         </inputAssignments>
         <inputReference>$Record</inputReference>

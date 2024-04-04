@@ -130,6 +130,10 @@
                 <behavior>Edit</behavior>
                 <field>UserEmailAddress__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ApplicationWritingCreationMethod__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -439,6 +443,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
+                <field>OppSfdcId__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
                 <field>OrderApproved__c</field>
             </layoutItems>
             <layoutItems>
@@ -465,6 +473,10 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>ApplicationApproved__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ApplicationAppOff__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>

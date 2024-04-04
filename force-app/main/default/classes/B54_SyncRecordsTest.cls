@@ -20,7 +20,7 @@ private class B54_SyncRecordsTest {
         sync.requestOpportunityRecord(new Opportunity());
         sync.sync();
         sync.objectName = 'OpportunityLineItem' ;
-        sync.requestOpportunityLineItemRecord(new OpportunityLineItem());
+        sync.requestOpportunityLineItemRecord(new OpportunityLineItem(Quantity = 1, UnitPrice = 1));
         sync.sync();
         sync.objectName = 'Revenue__c' ;
         sync.requestUriageRecord(new Revenue__c());
