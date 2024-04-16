@@ -45,6 +45,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>pregrant__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>TrialKahi__c</field>
             </layoutItems>
             <layoutItems>
@@ -78,6 +82,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>OrgA_OpportunityType__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>AppRecognition__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -204,6 +212,10 @@
                 <field>DocumentConfirmationUrl__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Edit</behavior>
+                <field>SigningMethodExceptCloudSign__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>PostingStartDate__c</field>
             </layoutItems>
@@ -228,6 +240,9 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Description</field>
+            </layoutItems>
+            <layoutItems>
+                <emptySpace>true</emptySpace>
             </layoutItems>
             <layoutItems>
                 <emptySpace>true</emptySpace>

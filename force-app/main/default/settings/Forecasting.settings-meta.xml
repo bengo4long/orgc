@@ -321,6 +321,10 @@
             <label>イレギュラ頻度</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000bdO4o</field>
+            <label>クラウドサインURL</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2w00000c4xH7</field>
             <label>データ流し込み日</label>
         </opportunityListFieldsLabelMappings>
@@ -377,6 +381,10 @@
             <label>予算検討予定日の最終更新日</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c6D1l</field>
+            <label>事前付与</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO1l</field>
             <label>事務所</label>
         </opportunityListFieldsLabelMappings>
@@ -399,6 +407,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000c5CMw</field>
             <label>取引先名</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c699C</field>
+            <label>受注の承認申請</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO0Q</field>
@@ -583,10 +595,6 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO0c</field>
             <label>更新連絡先（メールアドレス）</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N2w00000bdO4o</field>
-            <label>書類確認用URL</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000c5E5E</field>
@@ -781,6 +789,10 @@
             <label>非課税対象</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c695e</field>
+            <label>（クラウドサイン以外の場合）締結方法</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <label>Important</label>
         </opportunityListFieldsLabelMappings>
@@ -862,6 +874,7 @@
             <field>00N2w00000c4ogd</field>
             <field>00N2w00000bdO0G</field>
             <field>00N2w00000bdO0H</field>
+            <field>00N2w00000bdO4o</field>
             <field>00N2w00000c4xH7</field>
             <field>00N2w00000bdO0Z</field>
             <field>00N2w00000bdO0a</field>
@@ -876,12 +889,14 @@
             <field>00N2w00000c4ogf</field>
             <field>00N2w00000c4ogg</field>
             <field>00N2w00000c4ogh</field>
+            <field>00N2w00000c6D1l</field>
             <field>00N2w00000bdO1l</field>
             <field>00N2w00000bdO0T</field>
             <field>00N2w00000bdO0f</field>
             <field>00N2w00000bdO0E</field>
             <field>00N2w00000bdO0h</field>
             <field>00N2w00000c5CMw</field>
+            <field>00N2w00000c699C</field>
             <field>00N2w00000bdO0Q</field>
             <field>00N2w00000bdO1D</field>
             <field>00N2w00000bdO1I</field>
@@ -928,7 +943,6 @@
             <field>00N2w00000bdO0e</field>
             <field>00N2w00000bdO0d</field>
             <field>00N2w00000bdO0c</field>
-            <field>00N2w00000bdO4o</field>
             <field>00N2w00000c5E5E</field>
             <field>00N2w00000c5E5J</field>
             <field>00N2w00000bdO1F</field>
@@ -977,6 +991,7 @@
             <field>00N2w00000c4xTS</field>
             <field>00N2w00000c4ogk</field>
             <field>00N2w00000c4Xfe</field>
+            <field>00N2w00000c695e</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -1230,6 +1245,10 @@
             <label>イレギュラ頻度</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000bdO4o</field>
+            <label>クラウドサインURL</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2w00000c4xH7</field>
             <label>データ流し込み日</label>
         </opportunityListFieldsLabelMappings>
@@ -1286,6 +1305,10 @@
             <label>予算検討予定日の最終更新日</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c6D1l</field>
+            <label>事前付与</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO1l</field>
             <label>事務所</label>
         </opportunityListFieldsLabelMappings>
@@ -1308,6 +1331,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000c5CMw</field>
             <label>取引先名</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c699C</field>
+            <label>受注の承認申請</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO0Q</field>
@@ -1492,10 +1519,6 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO0c</field>
             <label>更新連絡先（メールアドレス）</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N2w00000bdO4o</field>
-            <label>書類確認用URL</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000c5E5E</field>
@@ -1690,6 +1713,10 @@
             <label>非課税対象</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c695e</field>
+            <label>（クラウドサイン以外の場合）締結方法</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <label>Important</label>
         </opportunityListFieldsLabelMappings>
@@ -1771,6 +1798,7 @@
             <field>00N2w00000c4ogd</field>
             <field>00N2w00000bdO0G</field>
             <field>00N2w00000bdO0H</field>
+            <field>00N2w00000bdO4o</field>
             <field>00N2w00000c4xH7</field>
             <field>00N2w00000bdO0Z</field>
             <field>00N2w00000bdO0a</field>
@@ -1785,12 +1813,14 @@
             <field>00N2w00000c4ogf</field>
             <field>00N2w00000c4ogg</field>
             <field>00N2w00000c4ogh</field>
+            <field>00N2w00000c6D1l</field>
             <field>00N2w00000bdO1l</field>
             <field>00N2w00000bdO0T</field>
             <field>00N2w00000bdO0f</field>
             <field>00N2w00000bdO0E</field>
             <field>00N2w00000bdO0h</field>
             <field>00N2w00000c5CMw</field>
+            <field>00N2w00000c699C</field>
             <field>00N2w00000bdO0Q</field>
             <field>00N2w00000bdO1D</field>
             <field>00N2w00000bdO1I</field>
@@ -1837,7 +1867,6 @@
             <field>00N2w00000bdO0e</field>
             <field>00N2w00000bdO0d</field>
             <field>00N2w00000bdO0c</field>
-            <field>00N2w00000bdO4o</field>
             <field>00N2w00000c5E5E</field>
             <field>00N2w00000c5E5J</field>
             <field>00N2w00000bdO1F</field>
@@ -1886,6 +1915,7 @@
             <field>00N2w00000c4xTS</field>
             <field>00N2w00000c4ogk</field>
             <field>00N2w00000c4Xfe</field>
+            <field>00N2w00000c695e</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -2143,6 +2173,10 @@
             <label>イレギュラ頻度</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000bdO4o</field>
+            <label>クラウドサインURL</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2w00000c4xH7</field>
             <label>データ流し込み日</label>
         </opportunityListFieldsLabelMappings>
@@ -2199,6 +2233,10 @@
             <label>予算検討予定日の最終更新日</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c6D1l</field>
+            <label>事前付与</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO1l</field>
             <label>事務所</label>
         </opportunityListFieldsLabelMappings>
@@ -2221,6 +2259,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000c5CMw</field>
             <label>取引先名</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c699C</field>
+            <label>受注の承認申請</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO0Q</field>
@@ -2405,10 +2447,6 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO0c</field>
             <label>更新連絡先（メールアドレス）</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N2w00000bdO4o</field>
-            <label>書類確認用URL</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000c5E5E</field>
@@ -2603,6 +2641,10 @@
             <label>非課税対象</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c695e</field>
+            <label>（クラウドサイン以外の場合）締結方法</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <label>Important</label>
         </opportunityListFieldsLabelMappings>
@@ -2685,6 +2727,7 @@
             <field>00N2w00000c4ogd</field>
             <field>00N2w00000bdO0G</field>
             <field>00N2w00000bdO0H</field>
+            <field>00N2w00000bdO4o</field>
             <field>00N2w00000c4xH7</field>
             <field>00N2w00000bdO0Z</field>
             <field>00N2w00000bdO0a</field>
@@ -2699,12 +2742,14 @@
             <field>00N2w00000c4ogf</field>
             <field>00N2w00000c4ogg</field>
             <field>00N2w00000c4ogh</field>
+            <field>00N2w00000c6D1l</field>
             <field>00N2w00000bdO1l</field>
             <field>00N2w00000bdO0T</field>
             <field>00N2w00000bdO0f</field>
             <field>00N2w00000bdO0E</field>
             <field>00N2w00000bdO0h</field>
             <field>00N2w00000c5CMw</field>
+            <field>00N2w00000c699C</field>
             <field>00N2w00000bdO0Q</field>
             <field>00N2w00000bdO1D</field>
             <field>00N2w00000bdO1I</field>
@@ -2751,7 +2796,6 @@
             <field>00N2w00000bdO0e</field>
             <field>00N2w00000bdO0d</field>
             <field>00N2w00000bdO0c</field>
-            <field>00N2w00000bdO4o</field>
             <field>00N2w00000c5E5E</field>
             <field>00N2w00000c5E5J</field>
             <field>00N2w00000bdO1F</field>
@@ -2800,6 +2844,7 @@
             <field>00N2w00000c4xTS</field>
             <field>00N2w00000c4ogk</field>
             <field>00N2w00000c4Xfe</field>
+            <field>00N2w00000c695e</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -3053,6 +3098,10 @@
             <label>イレギュラ頻度</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000bdO4o</field>
+            <label>クラウドサインURL</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2w00000c4xH7</field>
             <label>データ流し込み日</label>
         </opportunityListFieldsLabelMappings>
@@ -3109,6 +3158,10 @@
             <label>予算検討予定日の最終更新日</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c6D1l</field>
+            <label>事前付与</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO1l</field>
             <label>事務所</label>
         </opportunityListFieldsLabelMappings>
@@ -3131,6 +3184,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000c5CMw</field>
             <label>取引先名</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c699C</field>
+            <label>受注の承認申請</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO0Q</field>
@@ -3315,10 +3372,6 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO0c</field>
             <label>更新連絡先（メールアドレス）</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N2w00000bdO4o</field>
-            <label>書類確認用URL</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000c5E5E</field>
@@ -3513,6 +3566,10 @@
             <label>非課税対象</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c695e</field>
+            <label>（クラウドサイン以外の場合）締結方法</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <label>Important</label>
         </opportunityListFieldsLabelMappings>
@@ -3594,6 +3651,7 @@
             <field>00N2w00000c4ogd</field>
             <field>00N2w00000bdO0G</field>
             <field>00N2w00000bdO0H</field>
+            <field>00N2w00000bdO4o</field>
             <field>00N2w00000c4xH7</field>
             <field>00N2w00000bdO0Z</field>
             <field>00N2w00000bdO0a</field>
@@ -3608,12 +3666,14 @@
             <field>00N2w00000c4ogf</field>
             <field>00N2w00000c4ogg</field>
             <field>00N2w00000c4ogh</field>
+            <field>00N2w00000c6D1l</field>
             <field>00N2w00000bdO1l</field>
             <field>00N2w00000bdO0T</field>
             <field>00N2w00000bdO0f</field>
             <field>00N2w00000bdO0E</field>
             <field>00N2w00000bdO0h</field>
             <field>00N2w00000c5CMw</field>
+            <field>00N2w00000c699C</field>
             <field>00N2w00000bdO0Q</field>
             <field>00N2w00000bdO1D</field>
             <field>00N2w00000bdO1I</field>
@@ -3660,7 +3720,6 @@
             <field>00N2w00000bdO0e</field>
             <field>00N2w00000bdO0d</field>
             <field>00N2w00000bdO0c</field>
-            <field>00N2w00000bdO4o</field>
             <field>00N2w00000c5E5E</field>
             <field>00N2w00000c5E5J</field>
             <field>00N2w00000bdO1F</field>
@@ -3709,6 +3768,7 @@
             <field>00N2w00000c4xTS</field>
             <field>00N2w00000c4ogk</field>
             <field>00N2w00000c4Xfe</field>
+            <field>00N2w00000c695e</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -3966,6 +4026,10 @@
             <label>イレギュラ頻度</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000bdO4o</field>
+            <label>クラウドサインURL</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2w00000c4xH7</field>
             <label>データ流し込み日</label>
         </opportunityListFieldsLabelMappings>
@@ -4022,6 +4086,10 @@
             <label>予算検討予定日の最終更新日</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c6D1l</field>
+            <label>事前付与</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO1l</field>
             <label>事務所</label>
         </opportunityListFieldsLabelMappings>
@@ -4044,6 +4112,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000c5CMw</field>
             <label>取引先名</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c699C</field>
+            <label>受注の承認申請</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO0Q</field>
@@ -4228,10 +4300,6 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO0c</field>
             <label>更新連絡先（メールアドレス）</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N2w00000bdO4o</field>
-            <label>書類確認用URL</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000c5E5E</field>
@@ -4426,6 +4494,10 @@
             <label>非課税対象</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c695e</field>
+            <label>（クラウドサイン以外の場合）締結方法</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <label>Important</label>
         </opportunityListFieldsLabelMappings>
@@ -4508,6 +4580,7 @@
             <field>00N2w00000c4ogd</field>
             <field>00N2w00000bdO0G</field>
             <field>00N2w00000bdO0H</field>
+            <field>00N2w00000bdO4o</field>
             <field>00N2w00000c4xH7</field>
             <field>00N2w00000bdO0Z</field>
             <field>00N2w00000bdO0a</field>
@@ -4522,12 +4595,14 @@
             <field>00N2w00000c4ogf</field>
             <field>00N2w00000c4ogg</field>
             <field>00N2w00000c4ogh</field>
+            <field>00N2w00000c6D1l</field>
             <field>00N2w00000bdO1l</field>
             <field>00N2w00000bdO0T</field>
             <field>00N2w00000bdO0f</field>
             <field>00N2w00000bdO0E</field>
             <field>00N2w00000bdO0h</field>
             <field>00N2w00000c5CMw</field>
+            <field>00N2w00000c699C</field>
             <field>00N2w00000bdO0Q</field>
             <field>00N2w00000bdO1D</field>
             <field>00N2w00000bdO1I</field>
@@ -4574,7 +4649,6 @@
             <field>00N2w00000bdO0e</field>
             <field>00N2w00000bdO0d</field>
             <field>00N2w00000bdO0c</field>
-            <field>00N2w00000bdO4o</field>
             <field>00N2w00000c5E5E</field>
             <field>00N2w00000c5E5J</field>
             <field>00N2w00000bdO1F</field>
@@ -4623,6 +4697,7 @@
             <field>00N2w00000c4xTS</field>
             <field>00N2w00000c4ogk</field>
             <field>00N2w00000c4Xfe</field>
+            <field>00N2w00000c695e</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -4876,6 +4951,10 @@
             <label>イレギュラ頻度</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000bdO4o</field>
+            <label>クラウドサインURL</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2w00000c4xH7</field>
             <label>データ流し込み日</label>
         </opportunityListFieldsLabelMappings>
@@ -4932,6 +5011,10 @@
             <label>予算検討予定日の最終更新日</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c6D1l</field>
+            <label>事前付与</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO1l</field>
             <label>事務所</label>
         </opportunityListFieldsLabelMappings>
@@ -4954,6 +5037,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000c5CMw</field>
             <label>取引先名</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c699C</field>
+            <label>受注の承認申請</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO0Q</field>
@@ -5138,10 +5225,6 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO0c</field>
             <label>更新連絡先（メールアドレス）</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N2w00000bdO4o</field>
-            <label>書類確認用URL</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000c5E5E</field>
@@ -5336,6 +5419,10 @@
             <label>非課税対象</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c695e</field>
+            <label>（クラウドサイン以外の場合）締結方法</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <label>Important</label>
         </opportunityListFieldsLabelMappings>
@@ -5417,6 +5504,7 @@
             <field>00N2w00000c4ogd</field>
             <field>00N2w00000bdO0G</field>
             <field>00N2w00000bdO0H</field>
+            <field>00N2w00000bdO4o</field>
             <field>00N2w00000c4xH7</field>
             <field>00N2w00000bdO0Z</field>
             <field>00N2w00000bdO0a</field>
@@ -5431,12 +5519,14 @@
             <field>00N2w00000c4ogf</field>
             <field>00N2w00000c4ogg</field>
             <field>00N2w00000c4ogh</field>
+            <field>00N2w00000c6D1l</field>
             <field>00N2w00000bdO1l</field>
             <field>00N2w00000bdO0T</field>
             <field>00N2w00000bdO0f</field>
             <field>00N2w00000bdO0E</field>
             <field>00N2w00000bdO0h</field>
             <field>00N2w00000c5CMw</field>
+            <field>00N2w00000c699C</field>
             <field>00N2w00000bdO0Q</field>
             <field>00N2w00000bdO1D</field>
             <field>00N2w00000bdO1I</field>
@@ -5483,7 +5573,6 @@
             <field>00N2w00000bdO0e</field>
             <field>00N2w00000bdO0d</field>
             <field>00N2w00000bdO0c</field>
-            <field>00N2w00000bdO4o</field>
             <field>00N2w00000c5E5E</field>
             <field>00N2w00000c5E5J</field>
             <field>00N2w00000bdO1F</field>
@@ -5532,6 +5621,7 @@
             <field>00N2w00000c4xTS</field>
             <field>00N2w00000c4ogk</field>
             <field>00N2w00000c4Xfe</field>
+            <field>00N2w00000c695e</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -5789,6 +5879,10 @@
             <label>イレギュラ頻度</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000bdO4o</field>
+            <label>クラウドサインURL</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2w00000c4xH7</field>
             <label>データ流し込み日</label>
         </opportunityListFieldsLabelMappings>
@@ -5845,6 +5939,10 @@
             <label>予算検討予定日の最終更新日</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c6D1l</field>
+            <label>事前付与</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO1l</field>
             <label>事務所</label>
         </opportunityListFieldsLabelMappings>
@@ -5867,6 +5965,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000c5CMw</field>
             <label>取引先名</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c699C</field>
+            <label>受注の承認申請</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO0Q</field>
@@ -6051,10 +6153,6 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO0c</field>
             <label>更新連絡先（メールアドレス）</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N2w00000bdO4o</field>
-            <label>書類確認用URL</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000c5E5E</field>
@@ -6249,6 +6347,10 @@
             <label>非課税対象</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c695e</field>
+            <label>（クラウドサイン以外の場合）締結方法</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <label>Important</label>
         </opportunityListFieldsLabelMappings>
@@ -6331,6 +6433,7 @@
             <field>00N2w00000c4ogd</field>
             <field>00N2w00000bdO0G</field>
             <field>00N2w00000bdO0H</field>
+            <field>00N2w00000bdO4o</field>
             <field>00N2w00000c4xH7</field>
             <field>00N2w00000bdO0Z</field>
             <field>00N2w00000bdO0a</field>
@@ -6345,12 +6448,14 @@
             <field>00N2w00000c4ogf</field>
             <field>00N2w00000c4ogg</field>
             <field>00N2w00000c4ogh</field>
+            <field>00N2w00000c6D1l</field>
             <field>00N2w00000bdO1l</field>
             <field>00N2w00000bdO0T</field>
             <field>00N2w00000bdO0f</field>
             <field>00N2w00000bdO0E</field>
             <field>00N2w00000bdO0h</field>
             <field>00N2w00000c5CMw</field>
+            <field>00N2w00000c699C</field>
             <field>00N2w00000bdO0Q</field>
             <field>00N2w00000bdO1D</field>
             <field>00N2w00000bdO1I</field>
@@ -6397,7 +6502,6 @@
             <field>00N2w00000bdO0e</field>
             <field>00N2w00000bdO0d</field>
             <field>00N2w00000bdO0c</field>
-            <field>00N2w00000bdO4o</field>
             <field>00N2w00000c5E5E</field>
             <field>00N2w00000c5E5J</field>
             <field>00N2w00000bdO1F</field>
@@ -6446,6 +6550,7 @@
             <field>00N2w00000c4xTS</field>
             <field>00N2w00000c4ogk</field>
             <field>00N2w00000c4Xfe</field>
+            <field>00N2w00000c695e</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -6699,6 +6804,10 @@
             <label>イレギュラ頻度</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000bdO4o</field>
+            <label>クラウドサインURL</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2w00000c4xH7</field>
             <label>データ流し込み日</label>
         </opportunityListFieldsLabelMappings>
@@ -6755,6 +6864,10 @@
             <label>予算検討予定日の最終更新日</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c6D1l</field>
+            <label>事前付与</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO1l</field>
             <label>事務所</label>
         </opportunityListFieldsLabelMappings>
@@ -6777,6 +6890,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000c5CMw</field>
             <label>取引先名</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c699C</field>
+            <label>受注の承認申請</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO0Q</field>
@@ -6961,10 +7078,6 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO0c</field>
             <label>更新連絡先（メールアドレス）</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N2w00000bdO4o</field>
-            <label>書類確認用URL</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000c5E5E</field>
@@ -7159,6 +7272,10 @@
             <label>非課税対象</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c695e</field>
+            <label>（クラウドサイン以外の場合）締結方法</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <label>Important</label>
         </opportunityListFieldsLabelMappings>
@@ -7240,6 +7357,7 @@
             <field>00N2w00000c4ogd</field>
             <field>00N2w00000bdO0G</field>
             <field>00N2w00000bdO0H</field>
+            <field>00N2w00000bdO4o</field>
             <field>00N2w00000c4xH7</field>
             <field>00N2w00000bdO0Z</field>
             <field>00N2w00000bdO0a</field>
@@ -7254,12 +7372,14 @@
             <field>00N2w00000c4ogf</field>
             <field>00N2w00000c4ogg</field>
             <field>00N2w00000c4ogh</field>
+            <field>00N2w00000c6D1l</field>
             <field>00N2w00000bdO1l</field>
             <field>00N2w00000bdO0T</field>
             <field>00N2w00000bdO0f</field>
             <field>00N2w00000bdO0E</field>
             <field>00N2w00000bdO0h</field>
             <field>00N2w00000c5CMw</field>
+            <field>00N2w00000c699C</field>
             <field>00N2w00000bdO0Q</field>
             <field>00N2w00000bdO1D</field>
             <field>00N2w00000bdO1I</field>
@@ -7306,7 +7426,6 @@
             <field>00N2w00000bdO0e</field>
             <field>00N2w00000bdO0d</field>
             <field>00N2w00000bdO0c</field>
-            <field>00N2w00000bdO4o</field>
             <field>00N2w00000c5E5E</field>
             <field>00N2w00000c5E5J</field>
             <field>00N2w00000bdO1F</field>
@@ -7355,6 +7474,7 @@
             <field>00N2w00000c4xTS</field>
             <field>00N2w00000c4ogk</field>
             <field>00N2w00000c4Xfe</field>
+            <field>00N2w00000c695e</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -7612,6 +7732,10 @@
             <label>イレギュラ頻度</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000bdO4o</field>
+            <label>クラウドサインURL</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2w00000c4xH7</field>
             <label>データ流し込み日</label>
         </opportunityListFieldsLabelMappings>
@@ -7668,6 +7792,10 @@
             <label>予算検討予定日の最終更新日</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c6D1l</field>
+            <label>事前付与</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO1l</field>
             <label>事務所</label>
         </opportunityListFieldsLabelMappings>
@@ -7690,6 +7818,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000c5CMw</field>
             <label>取引先名</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c699C</field>
+            <label>受注の承認申請</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO0Q</field>
@@ -7874,10 +8006,6 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO0c</field>
             <label>更新連絡先（メールアドレス）</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N2w00000bdO4o</field>
-            <label>書類確認用URL</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000c5E5E</field>
@@ -8072,6 +8200,10 @@
             <label>非課税対象</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c695e</field>
+            <label>（クラウドサイン以外の場合）締結方法</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <label>Important</label>
         </opportunityListFieldsLabelMappings>
@@ -8154,6 +8286,7 @@
             <field>00N2w00000c4ogd</field>
             <field>00N2w00000bdO0G</field>
             <field>00N2w00000bdO0H</field>
+            <field>00N2w00000bdO4o</field>
             <field>00N2w00000c4xH7</field>
             <field>00N2w00000bdO0Z</field>
             <field>00N2w00000bdO0a</field>
@@ -8168,12 +8301,14 @@
             <field>00N2w00000c4ogf</field>
             <field>00N2w00000c4ogg</field>
             <field>00N2w00000c4ogh</field>
+            <field>00N2w00000c6D1l</field>
             <field>00N2w00000bdO1l</field>
             <field>00N2w00000bdO0T</field>
             <field>00N2w00000bdO0f</field>
             <field>00N2w00000bdO0E</field>
             <field>00N2w00000bdO0h</field>
             <field>00N2w00000c5CMw</field>
+            <field>00N2w00000c699C</field>
             <field>00N2w00000bdO0Q</field>
             <field>00N2w00000bdO1D</field>
             <field>00N2w00000bdO1I</field>
@@ -8220,7 +8355,6 @@
             <field>00N2w00000bdO0e</field>
             <field>00N2w00000bdO0d</field>
             <field>00N2w00000bdO0c</field>
-            <field>00N2w00000bdO4o</field>
             <field>00N2w00000c5E5E</field>
             <field>00N2w00000c5E5J</field>
             <field>00N2w00000bdO1F</field>
@@ -8269,6 +8403,7 @@
             <field>00N2w00000c4xTS</field>
             <field>00N2w00000c4ogk</field>
             <field>00N2w00000c4Xfe</field>
+            <field>00N2w00000c695e</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -8522,6 +8657,10 @@
             <label>イレギュラ頻度</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000bdO4o</field>
+            <label>クラウドサインURL</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2w00000c4xH7</field>
             <label>データ流し込み日</label>
         </opportunityListFieldsLabelMappings>
@@ -8578,6 +8717,10 @@
             <label>予算検討予定日の最終更新日</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c6D1l</field>
+            <label>事前付与</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO1l</field>
             <label>事務所</label>
         </opportunityListFieldsLabelMappings>
@@ -8600,6 +8743,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000c5CMw</field>
             <label>取引先名</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c699C</field>
+            <label>受注の承認申請</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO0Q</field>
@@ -8784,10 +8931,6 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO0c</field>
             <label>更新連絡先（メールアドレス）</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N2w00000bdO4o</field>
-            <label>書類確認用URL</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000c5E5E</field>
@@ -8982,6 +9125,10 @@
             <label>非課税対象</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c695e</field>
+            <label>（クラウドサイン以外の場合）締結方法</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <label>Important</label>
         </opportunityListFieldsLabelMappings>
@@ -9063,6 +9210,7 @@
             <field>00N2w00000c4ogd</field>
             <field>00N2w00000bdO0G</field>
             <field>00N2w00000bdO0H</field>
+            <field>00N2w00000bdO4o</field>
             <field>00N2w00000c4xH7</field>
             <field>00N2w00000bdO0Z</field>
             <field>00N2w00000bdO0a</field>
@@ -9077,12 +9225,14 @@
             <field>00N2w00000c4ogf</field>
             <field>00N2w00000c4ogg</field>
             <field>00N2w00000c4ogh</field>
+            <field>00N2w00000c6D1l</field>
             <field>00N2w00000bdO1l</field>
             <field>00N2w00000bdO0T</field>
             <field>00N2w00000bdO0f</field>
             <field>00N2w00000bdO0E</field>
             <field>00N2w00000bdO0h</field>
             <field>00N2w00000c5CMw</field>
+            <field>00N2w00000c699C</field>
             <field>00N2w00000bdO0Q</field>
             <field>00N2w00000bdO1D</field>
             <field>00N2w00000bdO1I</field>
@@ -9129,7 +9279,6 @@
             <field>00N2w00000bdO0e</field>
             <field>00N2w00000bdO0d</field>
             <field>00N2w00000bdO0c</field>
-            <field>00N2w00000bdO4o</field>
             <field>00N2w00000c5E5E</field>
             <field>00N2w00000c5E5J</field>
             <field>00N2w00000bdO1F</field>
@@ -9178,6 +9327,7 @@
             <field>00N2w00000c4xTS</field>
             <field>00N2w00000c4ogk</field>
             <field>00N2w00000c4Xfe</field>
+            <field>00N2w00000c695e</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -9435,6 +9585,10 @@
             <label>イレギュラ頻度</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000bdO4o</field>
+            <label>クラウドサインURL</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2w00000c4xH7</field>
             <label>データ流し込み日</label>
         </opportunityListFieldsLabelMappings>
@@ -9491,6 +9645,10 @@
             <label>予算検討予定日の最終更新日</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c6D1l</field>
+            <label>事前付与</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO1l</field>
             <label>事務所</label>
         </opportunityListFieldsLabelMappings>
@@ -9513,6 +9671,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000c5CMw</field>
             <label>取引先名</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c699C</field>
+            <label>受注の承認申請</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO0Q</field>
@@ -9697,10 +9859,6 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO0c</field>
             <label>更新連絡先（メールアドレス）</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N2w00000bdO4o</field>
-            <label>書類確認用URL</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000c5E5E</field>
@@ -9895,6 +10053,10 @@
             <label>非課税対象</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c695e</field>
+            <label>（クラウドサイン以外の場合）締結方法</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <label>Important</label>
         </opportunityListFieldsLabelMappings>
@@ -9977,6 +10139,7 @@
             <field>00N2w00000c4ogd</field>
             <field>00N2w00000bdO0G</field>
             <field>00N2w00000bdO0H</field>
+            <field>00N2w00000bdO4o</field>
             <field>00N2w00000c4xH7</field>
             <field>00N2w00000bdO0Z</field>
             <field>00N2w00000bdO0a</field>
@@ -9991,12 +10154,14 @@
             <field>00N2w00000c4ogf</field>
             <field>00N2w00000c4ogg</field>
             <field>00N2w00000c4ogh</field>
+            <field>00N2w00000c6D1l</field>
             <field>00N2w00000bdO1l</field>
             <field>00N2w00000bdO0T</field>
             <field>00N2w00000bdO0f</field>
             <field>00N2w00000bdO0E</field>
             <field>00N2w00000bdO0h</field>
             <field>00N2w00000c5CMw</field>
+            <field>00N2w00000c699C</field>
             <field>00N2w00000bdO0Q</field>
             <field>00N2w00000bdO1D</field>
             <field>00N2w00000bdO1I</field>
@@ -10043,7 +10208,6 @@
             <field>00N2w00000bdO0e</field>
             <field>00N2w00000bdO0d</field>
             <field>00N2w00000bdO0c</field>
-            <field>00N2w00000bdO4o</field>
             <field>00N2w00000c5E5E</field>
             <field>00N2w00000c5E5J</field>
             <field>00N2w00000bdO1F</field>
@@ -10092,6 +10256,7 @@
             <field>00N2w00000c4xTS</field>
             <field>00N2w00000c4ogk</field>
             <field>00N2w00000c4Xfe</field>
+            <field>00N2w00000c695e</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>
@@ -10345,6 +10510,10 @@
             <label>イレギュラ頻度</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000bdO4o</field>
+            <label>クラウドサインURL</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2w00000c4xH7</field>
             <label>データ流し込み日</label>
         </opportunityListFieldsLabelMappings>
@@ -10401,6 +10570,10 @@
             <label>予算検討予定日の最終更新日</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c6D1l</field>
+            <label>事前付与</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO1l</field>
             <label>事務所</label>
         </opportunityListFieldsLabelMappings>
@@ -10423,6 +10596,10 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000c5CMw</field>
             <label>取引先名</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c699C</field>
+            <label>受注の承認申請</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO0Q</field>
@@ -10607,10 +10784,6 @@
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000bdO0c</field>
             <label>更新連絡先（メールアドレス）</label>
-        </opportunityListFieldsLabelMappings>
-        <opportunityListFieldsLabelMappings>
-            <field>00N2w00000bdO4o</field>
-            <label>書類確認用URL</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00N2w00000c5E5E</field>
@@ -10805,6 +10978,10 @@
             <label>非課税対象</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N2w00000c695e</field>
+            <label>（クラウドサイン以外の場合）締結方法</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <label>Important</label>
         </opportunityListFieldsLabelMappings>
@@ -10886,6 +11063,7 @@
             <field>00N2w00000c4ogd</field>
             <field>00N2w00000bdO0G</field>
             <field>00N2w00000bdO0H</field>
+            <field>00N2w00000bdO4o</field>
             <field>00N2w00000c4xH7</field>
             <field>00N2w00000bdO0Z</field>
             <field>00N2w00000bdO0a</field>
@@ -10900,12 +11078,14 @@
             <field>00N2w00000c4ogf</field>
             <field>00N2w00000c4ogg</field>
             <field>00N2w00000c4ogh</field>
+            <field>00N2w00000c6D1l</field>
             <field>00N2w00000bdO1l</field>
             <field>00N2w00000bdO0T</field>
             <field>00N2w00000bdO0f</field>
             <field>00N2w00000bdO0E</field>
             <field>00N2w00000bdO0h</field>
             <field>00N2w00000c5CMw</field>
+            <field>00N2w00000c699C</field>
             <field>00N2w00000bdO0Q</field>
             <field>00N2w00000bdO1D</field>
             <field>00N2w00000bdO1I</field>
@@ -10952,7 +11132,6 @@
             <field>00N2w00000bdO0e</field>
             <field>00N2w00000bdO0d</field>
             <field>00N2w00000bdO0c</field>
-            <field>00N2w00000bdO4o</field>
             <field>00N2w00000c5E5E</field>
             <field>00N2w00000c5E5J</field>
             <field>00N2w00000bdO1F</field>
@@ -11001,6 +11180,7 @@
             <field>00N2w00000c4xTS</field>
             <field>00N2w00000c4ogk</field>
             <field>00N2w00000c4Xfe</field>
+            <field>00N2w00000c695e</field>
             <field>OPPORTUNITY.ISPRIORITYRECORD</field>
             <field>OPPORTUNITY.LAST_STG_CHG_DAYS</field>
             <field>OPPORTUNITY.LAST_ACTIVITY_DAYS</field>

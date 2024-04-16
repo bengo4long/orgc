@@ -45,6 +45,10 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
+                <field>pregrant__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
                 <field>TrialKahi__c</field>
             </layoutItems>
             <layoutItems>
@@ -185,6 +189,10 @@
                 <field>DocumentConfirmationUrl__c</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Edit</behavior>
+                <field>SigningMethodExceptCloudSign__c</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>PostingStartDate__c</field>
             </layoutItems>
@@ -204,6 +212,9 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>CollectionMethod__c</field>
+            </layoutItems>
+            <layoutItems>
+                <emptySpace>true</emptySpace>
             </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>

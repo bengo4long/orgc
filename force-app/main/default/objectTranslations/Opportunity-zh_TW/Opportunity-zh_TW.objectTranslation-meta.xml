@@ -307,6 +307,10 @@
         <errorMessage></errorMessage>
         <name>UpdateMonths_Other_3or6or12</name>
     </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>cloudSign_URL_Limit</name>
+    </validationRules>
     <webLinks>
         <label></label>
         <name>CSOOneStepMakeReport</name>

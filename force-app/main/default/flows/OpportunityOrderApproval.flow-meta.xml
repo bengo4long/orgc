@@ -23,31 +23,40 @@
     </actionCalls>
     <apiVersion>58.0</apiVersion>
     <decisions>
-        <description>書類確認用URLが空欄ならエラー</description>
         <name>DocumentConfirmationUrlExistence</name>
-        <label>書類確認用URLの有無</label>
+        <label>締結書類URLの有無</label>
         <locationX>182</locationX>
         <locationY>242</locationY>
         <defaultConnector>
             <targetReference>DocumentConfirmationUrlSpaces</targetReference>
         </defaultConnector>
-        <defaultConnectorLabel>デフォルトの結果</defaultConnectorLabel>
+        <defaultConnectorLabel>締結書類関連項目がどちらも空欄</defaultConnectorLabel>
         <rules>
             <name>DocumentConfirmationUrlExistenceTrue</name>
-            <conditionLogic>and</conditionLogic>
+            <conditionLogic>or</conditionLogic>
             <conditions>
-                <leftValueReference>NegotiationProductsAndSalesAmount.DocumentConfirmationUrl__c</leftValueReference>
-                <operator>NotEqualTo</operator>
+                <leftValueReference>getOpportunityRecord.DocumentConfirmationUrl__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>getOpportunityRecord.SigningMethodExceptCloudSign__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
             </conditions>
             <connector>
                 <targetReference>NegotiationOrderApprovalProcess</targetReference>
             </connector>
-            <label>書類確認用URLが空欄ではない</label>
+            <label>締結書類関連項目が空欄ではない</label>
         </rules>
     </decisions>
     <environments>Default</environments>
     <interviewLabel>商談の受注承認 {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>商談の受注承認</label>
+    <label>商談受注承認</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -68,8 +77,8 @@
     </processMetadataValues>
     <processType>Flow</processType>
     <recordLookups>
-        <name>NegotiationProductsAndSalesAmount</name>
-        <label>商談商品と売上金額の確認画面</label>
+        <name>getOpportunityRecord</name>
+        <label>商談レコードを取得</label>
         <locationX>182</locationX>
         <locationY>134</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
@@ -99,7 +108,7 @@
         <allowPause>false</allowPause>
         <fields>
             <name>X2_ApprovalApplicationComplete</name>
-            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 16px; color: rgb(255, 0, 0);&quot;&gt;書類確認用URLが登録されていません。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px; color: rgb(255, 0, 0);&quot;&gt;登録の上で再申請してください。&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;font-size: 16px; color: rgb(255, 0, 0);&quot;&gt;「クラウドサインURL」または「（クラウドサイン以外の場合）締結方法」が空白になっています。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 16px; color: rgb(255, 0, 0);&quot;&gt;入力の上、再申請してください。&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <nextOrFinishButtonLabel>わかりました</nextOrFinishButtonLabel>
@@ -127,7 +136,7 @@
         <locationX>56</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>NegotiationProductsAndSalesAmount</targetReference>
+            <targetReference>getOpportunityRecord</targetReference>
         </connector>
     </start>
     <status>Active</status>

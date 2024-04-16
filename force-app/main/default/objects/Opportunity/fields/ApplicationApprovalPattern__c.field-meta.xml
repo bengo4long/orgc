@@ -12,7 +12,8 @@ OR(
  ExemptionTarget__c ,
  ExceptionBillPosting__c ,
  NOT( ISBLANK( IrregularMatterMemo__c ) ) ,
- NoticeEditExists__c 
+ NoticeEditExists__c ,
+ ISPICKVAL( ApplicationWritingCreationMethod__c ,&quot;営業事務&quot;)
 ), 5,
 IF(
 /*GM＞関口承認の場合3を返す*/

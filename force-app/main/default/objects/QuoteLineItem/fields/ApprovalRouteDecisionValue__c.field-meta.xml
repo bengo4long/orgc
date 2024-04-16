@@ -5,8 +5,9 @@
     <formula>IF (
 /*GM承認の場合1を返す*/
  OR( 
-AND(Product2.Name  = &quot;BUSINESS LAWYERS LIBRARY ライトプラン&quot;, SellingPriceDistount__c &gt;= 5000 &amp;&amp; SellingPriceDistount__c &lt;= 5799),
-AND(Product2.Name  = &quot;BUSINESS LAWYERS LIBRARY スタンダードプラン&quot;, SellingPriceDistount__c &gt;= 20000 &amp;&amp; SellingPriceDistount__c &lt;= 24999),
+AND(Product2.Name  = &quot;BUSINESS LAWYERS LIBRARY ライトプラン&quot;, SellingPriceDistount__c &gt;= 5000 &amp;&amp; SellingPriceDistount__c &lt; 5800),
+AND(Product2.Name  = &quot;BUSINESS LAWYERS LIBRARY スタンダードプラン&quot;, SellingPriceDistount__c &gt;= 20000 &amp;&amp; SellingPriceDistount__c &lt; 25000),
+AND(Product2.Name  = &quot;BUSINESS LAWYERS LIBRARY スタンダードプラン 追加アカウント&quot;, SellingPriceDistount__c &gt;= 4000 &amp;&amp; SellingPriceDistount__c &lt; 5000 ),
 AND(Product2.Name  = &quot;BUSINESS LAWYERS COMPLIANCE 動画コンテンツ1本プラン&quot;, SellingPriceDistount__c &gt;= 300000),
 AND(Product2.Name  = &quot;BUSINESS LAWYERS COMPLIANCE 動画コンテンツ3本プラン&quot;, SellingPriceDistount__c &gt;= 900000),
 AND(Product2.Name  = &quot;BUSINESS LAWYERS COMPLIANCE 動画コンテンツ5本プラン&quot;, SellingPriceDistount__c &gt;= 1000000)
@@ -16,6 +17,7 @@ IF(
 OR( 
 AND(Product2.Name  = &quot;BUSINESS LAWYERS LIBRARY ライトプラン&quot;, SellingPriceDistount__c  &lt;  5000),
 AND(Product2.Name  = &quot;BUSINESS LAWYERS LIBRARY スタンダードプラン&quot;, SellingPriceDistount__c &lt; 20000),
+AND(Product2.Name  = &quot;BUSINESS LAWYERS LIBRARY スタンダードプラン 追加アカウント&quot;, SellingPriceDistount__c &lt; 4000),
 Product2.Name  = &quot;BUSINESS LAWYERS LIBRARY エンタープライズプラン&quot;,
 AND(Product2.Name  = &quot;BUSINESS LAWYERS COMPLIANCE グループ企業利用オプション&quot;, SellingPriceDistount__c = 0),
 AND(Product2.Name  = &quot;BUSINESS LAWYERS COMPLIANCE 動画コンテンツ1本プラン&quot;, SellingPriceDistount__c &lt; 300000),

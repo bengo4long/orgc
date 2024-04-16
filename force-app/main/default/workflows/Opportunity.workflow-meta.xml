@@ -41,6 +41,16 @@
         <template>unfiled$public/OrderApprovalRejectTemplate</template>
     </alerts>
     <fieldUpdates>
+        <fullName>ApprovalOn</fullName>
+        <field>AppRecognition__c</field>
+        <literalValue>1</literalValue>
+        <name>承認申請された</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>ChangeApplicationApprovedFlagToTrue</fullName>
         <field>ApplicationApproved__c</field>
         <literalValue>1</literalValue>

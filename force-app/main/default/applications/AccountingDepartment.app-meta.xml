@@ -31,20 +31,10 @@
     <navType>Standard</navType>
     <tabs>standard-home</tabs>
     <tabs>standard-Account</tabs>
-    <tabs>standard-Contact</tabs>
-    <tabs>standard-Quote</tabs>
+    <tabs>standard-report</tabs>
     <tabs>standard-Opportunity</tabs>
     <tabs>standard-Product2</tabs>
-    <tabs>standard-Pricebook2</tabs>
-    <tabs>standard-Contract</tabs>
-    <tabs>ContractManagement__c</tabs>
-    <tabs>Revenue__c</tabs>
-    <tabs>BillingContact__c</tabs>
     <tabs>InvoiceInformation__c</tabs>
-    <tabs>standard-report</tabs>
-    <tabs>standard-Dashboard</tabs>
-    <tabs>standard-Task</tabs>
-    <tabs>VirtualBankAccount__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>UtilityBar3</utilityBar>
 </CustomApplication>

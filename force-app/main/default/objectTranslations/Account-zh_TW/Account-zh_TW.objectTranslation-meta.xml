@@ -53,6 +53,10 @@
         </sections>
         <sections>
             <label></label>
+            <section>商談状況</section>
+        </sections>
+        <sections>
+            <label></label>
             <section>請求情報</section>
         </sections>
     </layouts>

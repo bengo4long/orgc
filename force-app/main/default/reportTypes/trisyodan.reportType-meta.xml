@@ -430,6 +430,21 @@
             <field>OrganizationA_AccountId__c</field>
             <table>Account</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>OppStatusBLL__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>OppStatusBLC__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>OppStatusOther__c</field>
+            <table>Account</table>
+        </columns>
         <masterLabel>取引先</masterLabel>
     </sections>
     <sections>
@@ -1291,6 +1306,31 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>ApplicationAppOff__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SigningMethodExceptCloudSign__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AppRecognition__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contract.Id</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contract.OppType__c</field>
+            <table>Account.Opportunities</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>pregrant__c</field>
             <table>Account.Opportunities</table>
         </columns>
         <masterLabel>商談</masterLabel>

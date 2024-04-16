@@ -451,6 +451,21 @@
             <field>ApplicationAppOff__c</field>
             <table>Opportunity</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SigningMethodExceptCloudSign__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AppRecognition__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>pregrant__c</field>
+            <table>Opportunity</table>
+        </columns>
         <masterLabel>商談</masterLabel>
     </sections>
     <sections>

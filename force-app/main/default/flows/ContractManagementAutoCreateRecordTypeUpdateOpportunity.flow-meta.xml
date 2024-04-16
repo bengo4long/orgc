@@ -162,13 +162,6 @@
             </value>
         </assignmentItems>
         <assignmentItems>
-            <assignToReference>ContractRecord.OriginalOpportunity__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
             <assignToReference>ContractRecord.Pricebook2Id</assignToReference>
             <operator>Assign</operator>
             <value>
@@ -204,13 +197,6 @@
             </value>
         </assignmentItems>
         <assignmentItems>
-            <assignToReference>ContractRecord.OriginalOpportunity__c</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </assignmentItems>
-        <assignmentItems>
             <assignToReference>ContractRecord.ExceptionBillPosting__c</assignToReference>
             <operator>Assign</operator>
             <value>
@@ -229,6 +215,13 @@
             <operator>Assign</operator>
             <value>
                 <elementReference>$Record.NegotiationPaymentSite__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ContractRecord.Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Activated</stringValue>
             </value>
         </assignmentItems>
         <connector>

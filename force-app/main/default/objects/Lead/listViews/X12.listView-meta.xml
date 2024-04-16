@@ -52,11 +52,6 @@
         <value>10</value>
     </filters>
     <filters>
-        <field>JobCategoryBL__c</field>
-        <operation>notContain</operation>
-        <value>営業,セールス,マーケ,経理,財務,研究</value>
-    </filters>
-    <filters>
         <field>NGReason__c</field>
         <operation>notEqual</operation>
         <value>取引実績あり,重複リード,対象外（個人/学生/外国人/その他）,連絡先不可,過去クレーム（窓口統一/架電不可）,その他</value>

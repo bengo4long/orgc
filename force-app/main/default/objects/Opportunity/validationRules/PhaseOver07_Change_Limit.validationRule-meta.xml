@@ -8,6 +8,7 @@ Probability &gt; 0.8,
 $User.ProfileId = &quot;00e2w000000g2qe&quot;,
 /*以下項目が入力されている場合は入力規則を回避*/
 ISBLANK(DocumentConfirmationUrl__c),
+ISBLANK(SigningMethodExceptCloudSign__c),
 ISBLANK(TEXT(CancellationPhase__c)),
 ISBLANK(TEXT(CancellationSupportedStatus__c)),
 ISBLANK(TEXT(CancellationCauseKubun__c)),

@@ -42,7 +42,7 @@
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
         <description>受注承認チームの承認（いずれか）</description>
-        <label>受注承認チーム承認</label>
+        <label>受注承認チーム受注承認</label>
         <name>Step1</name>
     </approvalStep>
     <approvalStep>
@@ -69,7 +69,7 @@
                 <value>BLC</value>
             </criteriaItems>
         </entryCriteria>
-        <label>経理・販売管理チーム承認</label>
+        <label>経理・販売管理チーム受注承認</label>
         <name>Step2</name>
         <rejectBehavior>
             <type>RejectRequest</type>
@@ -80,7 +80,7 @@
     <emailTemplate>unfiled$public/OrderApprovalApplication</emailTemplate>
     <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
     <entryCriteria>
-        <booleanFilter>(1 OR 2) AND 3 AND 4 AND 5</booleanFilter>
+        <booleanFilter>(1 OR 2) AND 3 AND 4 AND (5 OR 6)</booleanFilter>
         <criteriaItems>
             <field>Opportunity.StageName</field>
             <operation>equals</operation>
@@ -92,10 +92,6 @@
             <value>A（差戻）</value>
         </criteriaItems>
         <criteriaItems>
-            <field>Opportunity.DocumentConfirmationUrl__c</field>
-            <operation>notEqual</operation>
-        </criteriaItems>
-        <criteriaItems>
             <field>Opportunity.OrderApproved__c</field>
             <operation>equals</operation>
             <value>False</value>
@@ -104,6 +100,14 @@
             <field>Opportunity.ApplicationApproved__c</field>
             <operation>equals</operation>
             <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.DocumentConfirmationUrl__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.SigningMethodExceptCloudSign__c</field>
+            <operation>notEqual</operation>
         </criteriaItems>
     </entryCriteria>
     <finalApprovalActions>
@@ -141,6 +145,10 @@
     </finalRejectionActions>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
     <initialSubmissionActions>
+        <action>
+            <name>ApprovalOn</name>
+            <type>FieldUpdate</type>
+        </action>
         <action>
             <name>NegotiationNameUpdate</name>
             <type>FieldUpdate</type>

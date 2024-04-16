@@ -5,7 +5,7 @@
         <name>AddContractManagement</name>
         <label>契約管理追加</label>
         <locationX>138</locationX>
-        <locationY>1403</locationY>
+        <locationY>1511</locationY>
         <assignmentItems>
             <assignToReference>InsertContractManagementCollection</assignToReference>
             <operator>Add</operator>
@@ -21,7 +21,7 @@
         <name>AddUpdateRecordTypeOpportunityLineItem</name>
         <label>更新商談商品追加</label>
         <locationX>138</locationX>
-        <locationY>2459</locationY>
+        <locationY>2567</locationY>
         <assignmentItems>
             <assignToReference>UpdateRecordTypeOpportunityLineItemCollection</assignToReference>
             <operator>Add</operator>
@@ -37,7 +37,7 @@
         <name>ContractActivate</name>
         <label>契約を有効化</label>
         <locationX>50</locationX>
-        <locationY>863</locationY>
+        <locationY>971</locationY>
         <assignmentItems>
             <assignToReference>ContractRecord.Status</assignToReference>
             <operator>Assign</operator>
@@ -53,7 +53,7 @@
         <name>GetDeleteBilingContactRecordNumber</name>
         <label>削除対象請求先担当者レコード数取得</label>
         <locationX>446</locationX>
-        <locationY>1463</locationY>
+        <locationY>863</locationY>
         <assignmentItems>
             <assignToReference>RecordNumber</assignToReference>
             <operator>AssignCount</operator>
@@ -66,42 +66,10 @@
         </connector>
     </assignments>
     <assignments>
-        <name>GetDeleteContractManagementRecordNumber</name>
-        <label>削除対象契約管理レコード数取得</label>
-        <locationX>446</locationX>
-        <locationY>539</locationY>
-        <assignmentItems>
-            <assignToReference>RecordNumber</assignToReference>
-            <operator>AssignCount</operator>
-            <value>
-                <elementReference>GetDeleteContractManagement</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>CheckDeleteContractManagement</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
-        <name>GetDeleteContractRecordNumber</name>
-        <label>削除対象契約レコード数取得</label>
-        <locationX>446</locationX>
-        <locationY>1871</locationY>
-        <assignmentItems>
-            <assignToReference>RecordNumber</assignToReference>
-            <operator>AssignCount</operator>
-            <value>
-                <elementReference>GetDeleteContract</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>CheckDeleteContractRecordNumber</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
         <name>SetBliingContact</name>
         <label>請求先担当者作成</label>
         <locationX>50</locationX>
-        <locationY>431</locationY>
+        <locationY>539</locationY>
         <assignmentItems>
             <assignToReference>BliingContact.Name__c</assignToReference>
             <operator>Assign</operator>
@@ -166,7 +134,7 @@
         <name>SetContractManagement</name>
         <label>契約管理作成</label>
         <locationX>138</locationX>
-        <locationY>1295</locationY>
+        <locationY>1403</locationY>
         <assignmentItems>
             <assignToReference>ContractManagement.Opportunity__c</assignToReference>
             <operator>Assign</operator>
@@ -252,7 +220,7 @@
         <name>SetContractRecord</name>
         <label>契約レコード作成</label>
         <locationX>50</locationX>
-        <locationY>647</locationY>
+        <locationY>755</locationY>
         <assignmentItems>
             <assignToReference>ContractRecord.AccountId</assignToReference>
             <operator>Assign</operator>
@@ -358,6 +326,13 @@
                 <elementReference>$Record.IrregularMatterMemo__c</elementReference>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ContractRecord.OppType__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Type</elementReference>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>CreateContractRecord</targetReference>
         </connector>
@@ -366,7 +341,7 @@
         <name>SetContractRecord3</name>
         <label>契約レコード更新</label>
         <locationX>72</locationX>
-        <locationY>3167</locationY>
+        <locationY>3275</locationY>
         <assignmentItems>
             <assignToReference>GetContractRecord.CancellationNotificationDate__c</assignToReference>
             <operator>Assign</operator>
@@ -403,7 +378,7 @@
         <name>SetContractToBillingContact</name>
         <label>請求先担当者に契約を紐付け</label>
         <locationX>50</locationX>
-        <locationY>1703</locationY>
+        <locationY>1811</locationY>
         <assignmentItems>
             <assignToReference>BliingContact.Contract__c</assignToReference>
             <operator>Assign</operator>
@@ -418,8 +393,8 @@
     <assignments>
         <name>SetDeleteBilingContactCollection</name>
         <label>削除対象請求先担当者割り当て</label>
-        <locationX>534</locationX>
-        <locationY>1271</locationY>
+        <locationX>446</locationX>
+        <locationY>755</locationY>
         <assignmentItems>
             <assignToReference>DeleteBilingContactCollection</assignToReference>
             <operator>Add</operator>
@@ -428,14 +403,14 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>DeleteContractLoop</targetReference>
+            <targetReference>GetDeleteBilingContactRecordNumber</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>SetUpdateRecordTypeOpportunity</name>
         <label>更新商談作成</label>
         <locationX>50</locationX>
-        <locationY>2027</locationY>
+        <locationY>2135</locationY>
         <assignmentItems>
             <assignToReference>UpdateRecordTypeOpportunity.Name</assignToReference>
             <operator>Assign</operator>
@@ -794,7 +769,7 @@
         <name>SetUpdateRecordTypeOpportunityLineItem</name>
         <label>更新商談商品作成</label>
         <locationX>138</locationX>
-        <locationY>2351</locationY>
+        <locationY>2459</locationY>
         <assignmentItems>
             <assignToReference>UpdateRecordTypeOpportunityLineItem.Product2Id</assignToReference>
             <operator>Assign</operator>
@@ -866,7 +841,7 @@
         <name>CancellationPhaseCancel</name>
         <label>解約フェーズ：解約</label>
         <locationX>204</locationX>
-        <locationY>3059</locationY>
+        <locationY>3167</locationY>
         <defaultConnectorLabel>デフォルトの結果</defaultConnectorLabel>
         <rules>
             <name>IsCancel</name>
@@ -888,13 +863,13 @@
         <name>CheckContractRecord</name>
         <label>契約レコード確認</label>
         <locationX>402</locationX>
-        <locationY>2951</locationY>
+        <locationY>3059</locationY>
         <defaultConnectorLabel>デフォルトの結果</defaultConnectorLabel>
         <rules>
             <name>hasContract</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>GetContractRecord.Id</leftValueReference>
+                <leftValueReference>getContract.Id</leftValueReference>
                 <operator>IsNull</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
@@ -908,11 +883,11 @@
     </decisions>
     <decisions>
         <name>CheckDeleteBilingContactRecordNumber</name>
-        <label>削除対象契約管理有無チェック</label>
+        <label>削除対象請求先担当者有無チェック</label>
         <locationX>446</locationX>
-        <locationY>1571</locationY>
+        <locationY>971</locationY>
         <defaultConnector>
-            <targetReference>GetDeleteContractRecordNumber</targetReference>
+            <targetReference>DeleteContract</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>デフォルトの結果</defaultConnectorLabel>
         <rules>
@@ -932,60 +907,10 @@
         </rules>
     </decisions>
     <decisions>
-        <name>CheckDeleteContractManagement</name>
-        <label>削除対象契約管理有無チェック</label>
-        <locationX>446</locationX>
-        <locationY>647</locationY>
-        <defaultConnector>
-            <targetReference>GetDeleteContract</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>デフォルトの結果</defaultConnectorLabel>
-        <rules>
-            <name>HasRecord</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>RecordNumber</leftValueReference>
-                <operator>GreaterThanOrEqualTo</operator>
-                <rightValue>
-                    <numberValue>1.0</numberValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>DeleteContractManagement</targetReference>
-            </connector>
-            <label>レコードあり</label>
-        </rules>
-    </decisions>
-    <decisions>
-        <name>CheckDeleteContractRecordNumber</name>
-        <label>削除対象契約管理有無チェック</label>
-        <locationX>446</locationX>
-        <locationY>1979</locationY>
-        <defaultConnector>
-            <targetReference>GetContractRecord</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>デフォルトの結果</defaultConnectorLabel>
-        <rules>
-            <name>HasRecord3</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>RecordNumber</leftValueReference>
-                <operator>GreaterThanOrEqualTo</operator>
-                <rightValue>
-                    <numberValue>1.0</numberValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>DeleteContract</targetReference>
-            </connector>
-            <label>レコードあり</label>
-        </rules>
-    </decisions>
-    <decisions>
         <name>CheckStageName</name>
         <label>商談フェーズ確認</label>
         <locationX>402</locationX>
-        <locationY>323</locationY>
+        <locationY>431</locationY>
         <defaultConnector>
             <targetReference>GetContractRecord</targetReference>
         </defaultConnector>
@@ -1030,7 +955,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>GetDeleteContractManagement</targetReference>
+                <targetReference>GetDeleteContract</targetReference>
             </connector>
             <label>受注 -&gt; 受注以外</label>
         </rules>
@@ -1070,24 +995,10 @@
     <interviewLabel>契約管理自動生成_新規 {!$Flow.CurrentDateTime}</interviewLabel>
     <label>契約管理自動生成_新規</label>
     <loops>
-        <name>DeleteContractLoop</name>
-        <label>契約ループ</label>
-        <locationX>446</locationX>
-        <locationY>1055</locationY>
-        <collectionReference>GetDeleteContract</collectionReference>
-        <iterationOrder>Asc</iterationOrder>
-        <nextValueConnector>
-            <targetReference>GetDeleteBilingContact</targetReference>
-        </nextValueConnector>
-        <noMoreValuesConnector>
-            <targetReference>GetDeleteBilingContactRecordNumber</targetReference>
-        </noMoreValuesConnector>
-    </loops>
-    <loops>
         <name>OpportunityLineItemLoop</name>
         <label>商談商品ループ</label>
         <locationX>50</locationX>
-        <locationY>1187</locationY>
+        <locationY>1295</locationY>
         <collectionReference>GetOpportunityLineItems</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1101,7 +1012,7 @@
         <name>OpportunityLineItemLoop2</name>
         <label>商談商品ループ</label>
         <locationX>50</locationX>
-        <locationY>2243</locationY>
+        <locationY>2351</locationY>
         <collectionReference>GetOpportunityLineItems</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -1134,7 +1045,7 @@
         <name>CreateBliingContact</name>
         <label>請求先担当者作成</label>
         <locationX>50</locationX>
-        <locationY>539</locationY>
+        <locationY>647</locationY>
         <connector>
             <targetReference>SetContractRecord</targetReference>
         </connector>
@@ -1144,7 +1055,7 @@
         <name>CreateContractRecord</name>
         <label>契約レコード作成</label>
         <locationX>50</locationX>
-        <locationY>755</locationY>
+        <locationY>863</locationY>
         <connector>
             <targetReference>ContractActivate</targetReference>
         </connector>
@@ -1154,7 +1065,7 @@
         <name>CreateUpdateOpportunity</name>
         <label>更新商談作成</label>
         <locationX>50</locationX>
-        <locationY>2135</locationY>
+        <locationY>2243</locationY>
         <connector>
             <targetReference>OpportunityLineItemLoop2</targetReference>
         </connector>
@@ -1164,7 +1075,7 @@
         <name>InsertContractManagements</name>
         <label>契約管理作成</label>
         <locationX>50</locationX>
-        <locationY>1595</locationY>
+        <locationY>1703</locationY>
         <connector>
             <targetReference>SetContractToBillingContact</targetReference>
         </connector>
@@ -1174,7 +1085,7 @@
         <name>InsertUpdateRecordTypeOpportunityLineItem</name>
         <label>更新商談商品作成</label>
         <locationX>50</locationX>
-        <locationY>2651</locationY>
+        <locationY>2759</locationY>
         <connector>
             <targetReference>GetContractRecord</targetReference>
         </connector>
@@ -1184,37 +1095,48 @@
         <name>DeleteBilingContact</name>
         <label>請求先担当者削除</label>
         <locationX>314</locationX>
-        <locationY>1679</locationY>
+        <locationY>1079</locationY>
         <connector>
-            <targetReference>GetDeleteContractRecordNumber</targetReference>
+            <targetReference>DeleteContract</targetReference>
         </connector>
         <inputReference>DeleteBilingContactCollection</inputReference>
     </recordDeletes>
     <recordDeletes>
         <name>DeleteContract</name>
         <label>契約レコード削除</label>
-        <locationX>314</locationX>
-        <locationY>2087</locationY>
+        <locationX>446</locationX>
+        <locationY>1271</locationY>
         <connector>
             <targetReference>GetContractRecord</targetReference>
         </connector>
-        <inputReference>GetDeleteContract</inputReference>
+        <inputReference>getContract</inputReference>
     </recordDeletes>
-    <recordDeletes>
-        <name>DeleteContractManagement</name>
-        <label>契約管理レコード削除</label>
-        <locationX>314</locationX>
-        <locationY>755</locationY>
+    <recordLookups>
+        <name>getContract</name>
+        <label>商談の契約レコード取得</label>
+        <locationX>402</locationX>
+        <locationY>323</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>GetDeleteContract</targetReference>
+            <targetReference>CheckStageName</targetReference>
         </connector>
-        <inputReference>GetDeleteContractManagement</inputReference>
-    </recordDeletes>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>OriginalOpportunity__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contract</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <recordLookups>
         <name>GetContractRecord</name>
         <label>契約レコード取得</label>
         <locationX>402</locationX>
-        <locationY>2843</locationY>
+        <locationY>2951</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>CheckContractRecord</targetReference>
@@ -1224,7 +1146,7 @@
             <field>Id</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>$Record.Contract.Id</elementReference>
+                <elementReference>$Record.ContractId</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
@@ -1234,8 +1156,8 @@
     <recordLookups>
         <name>GetDeleteBilingContact</name>
         <label>削除対象請求先担当者取得</label>
-        <locationX>534</locationX>
-        <locationY>1163</locationY>
+        <locationX>446</locationX>
+        <locationY>647</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>SetDeleteBilingContactCollection</targetReference>
@@ -1245,7 +1167,7 @@
             <field>Contract__c</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>DeleteContractLoop.Id</elementReference>
+                <elementReference>getContract.Id</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
@@ -1256,10 +1178,10 @@
         <name>GetDeleteContract</name>
         <label>削除対象契約レコード取得</label>
         <locationX>446</locationX>
-        <locationY>947</locationY>
+        <locationY>539</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>DeleteContractLoop</targetReference>
+            <targetReference>GetDeleteBilingContact</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -1269,36 +1191,15 @@
                 <elementReference>$Record.Id</elementReference>
             </value>
         </filters>
-        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
         <object>Contract</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordLookups>
-        <name>GetDeleteContractManagement</name>
-        <label>削除対象契約管理レコード取得</label>
-        <locationX>446</locationX>
-        <locationY>431</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>GetDeleteContractManagementRecordNumber</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Opportunity__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>$Record.Id</elementReference>
-            </value>
-        </filters>
-        <getFirstRecordOnly>false</getFirstRecordOnly>
-        <object>ContractManagement__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
         <name>GetOpportunityLineItems</name>
         <label>商談商品取得</label>
         <locationX>50</locationX>
-        <locationY>1079</locationY>
+        <locationY>1187</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>OpportunityLineItemLoop</targetReference>
@@ -1319,7 +1220,7 @@
         <name>UpdateBilingContact</name>
         <label>請求先担当者を更新</label>
         <locationX>50</locationX>
-        <locationY>1811</locationY>
+        <locationY>1919</locationY>
         <connector>
             <targetReference>UpdateOpportunity</targetReference>
         </connector>
@@ -1329,14 +1230,14 @@
         <name>UpdateContractRecord2</name>
         <label>契約レコード更新</label>
         <locationX>72</locationX>
-        <locationY>3275</locationY>
+        <locationY>3383</locationY>
         <inputReference>GetContractRecord</inputReference>
     </recordUpdates>
     <recordUpdates>
         <name>UpdateContractRecord3</name>
         <label>契約を有効化</label>
         <locationX>50</locationX>
-        <locationY>971</locationY>
+        <locationY>1079</locationY>
         <connector>
             <targetReference>GetOpportunityLineItems</targetReference>
         </connector>
@@ -1346,7 +1247,7 @@
         <name>UpdateOpportunity</name>
         <label>商談更新</label>
         <locationX>50</locationX>
-        <locationY>1919</locationY>
+        <locationY>2027</locationY>
         <connector>
             <targetReference>SetUpdateRecordTypeOpportunity</targetReference>
         </connector>
@@ -1362,7 +1263,7 @@
         <locationX>276</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>CheckStageName</targetReference>
+            <targetReference>getContract</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -1376,7 +1277,7 @@
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <variables>
         <name>BliingContact</name>
         <dataType>SObject</dataType>

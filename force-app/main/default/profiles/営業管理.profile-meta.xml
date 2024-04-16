@@ -357,6 +357,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.OppStatusBLC__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.OppStatusBLL__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.OppStatusOther__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Account.OrgA_AccountId__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1217,6 +1232,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Contact.ContactStatusDetails__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.ContactStatusIS__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Contact.Department</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -1269,6 +1294,11 @@
         <editable>false</editable>
         <field>Contact.HomePhone</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.ISEnd__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -1333,6 +1363,21 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Contact.MobilePhone</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.OppStatusBLC__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.OppStatusBLL__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.OppStatusOther__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1716,6 +1761,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Contract.OppType__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Contract.OrganizationA_ContractId__c</field>
         <readable>false</readable>
@@ -1853,11 +1903,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>ContractManagement__c.ContractStartMonth__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ContractManagement__c.CustomContract__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -2827,6 +2872,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Opportunity.AppRecognition__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.ApplicationAppOff__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -2851,9 +2901,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
+        <editable>true</editable>
         <field>Opportunity.ApplicationWritingCreationMethod__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -3397,6 +3447,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Opportunity.SigningMethodExceptCloudSign__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.SlackURL__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -3538,6 +3593,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.msclkid__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.pregrant__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -8579,6 +8639,10 @@
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
+        <flow>ContactEndOfSupport</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
         <flow>ContractManagementAutoCreateRecordTypeNewOpportunity</flow>
     </flowAccesses>
     <flowAccesses>
@@ -8628,6 +8692,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>CreateUpdateOpportunity</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>InsertContract</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>
@@ -8724,6 +8792,10 @@
     <flowAccesses>
         <enabled>false</enabled>
         <flow>UpdateRepresentProductsFamily</flow>
+    </flowAccesses>
+    <flowAccesses>
+        <enabled>false</enabled>
+        <flow>setOppStatus</flow>
     </flowAccesses>
     <flowAccesses>
         <enabled>false</enabled>

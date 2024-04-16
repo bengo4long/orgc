@@ -23,9 +23,6 @@
         <sobjectType>ContactRequest</sobjectType>
     </queueSobject>
     <queueSobject>
-        <sobjectType>ContractManagement__c</sobjectType>
-    </queueSobject>
-    <queueSobject>
         <sobjectType>Image</sobjectType>
     </queueSobject>
     <queueSobject>

@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>デフォルト</layout>
+        <sections>
+            <label></label>
+            <section>対応状況</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>管理者用</layout>
+        <sections>
+            <label></label>
+            <section>新規セクション</section>
+        </sections>
+    </layouts>
     <webLinks>
         <label></label>
         <name>GoogleMaps</name>

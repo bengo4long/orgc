@@ -3,7 +3,7 @@
     <fullName>DocumentConfirmationUrl__c</fullName>
     <externalId>false</externalId>
     <inlineHelpText>クラウドサイン締結したURLのみを入力してください</inlineHelpText>
-    <label>書類確認用URL</label>
+    <label>クラウドサインURL</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>true</trackHistory>

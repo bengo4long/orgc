@@ -68,7 +68,9 @@ public class B54_SyncRecords {
                     SELECT 
                     Id, 
                     Name,
-                    OrgA_AccountId__c
+                    OrgA_AccountId__c,
+                    VirtualAccountBank__c,
+                    VirtualAccountNumber__c
                     FROM Account WHERE Id In: recordIds ] ) requestRecords.add(requestAccountRecord(record));
             }
             when 'Opportunity' {
@@ -189,6 +191,8 @@ public class B54_SyncRecords {
         requestRecord.put(externalField_OrgC, record.Id );
         requestRecord.put('Name', record.Name );
         requestRecord.put('RecordTypeId', orgA.Account_OrgC_RecordTypeId__c );
+        requestRecord.put('GinkoShitenmei__c', record.VirtualAccountBank__c );
+        requestRecord.put('KozaBango__c', record.VirtualAccountNumber__c );
         return requestRecord ;
     }
     public MAP<String,Object> requestOpportunityRecord(Opportunity record){
@@ -252,7 +256,7 @@ public class B54_SyncRecords {
         requestRecord.put('UriageTax__c', record.SalesTax__c );
         requestRecord.put('Seikyubi__c', record.BillingDate__c );
         requestRecord.put('Furikaebi__c', record.TransferDate__c );
-        //requestRecord.put('kanyusya_code__c', record.SubscriberCode__c );
+        requestRecord.put('DataCoordinationDate__c', Date.today() );
         //requestRecord.put('kanyusya_name__c', record.SubscriberName__c );
         requestRecord.put('Account__c', record.Opportunity__r.Account.OrgA_AccountId__c );
         //requestRecord.put('Account__r', requestRecord( 'Account', record.Opportunity__r.AccountId ) );
@@ -272,5 +276,4 @@ public class B54_SyncRecords {
     public String externalField_OrgA(String objectName){
         return 'OrgA_' + objectName.removeEnd('__c') + 'Id__c' ;        
     }
-    
 }

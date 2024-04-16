@@ -34,7 +34,7 @@
             <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
         </assignedApprover>
         <description>GM承認</description>
-        <label>ビジネスソリューショングループマネージャー承認</label>
+        <label>ビジネスソリューショングループマネージャー申込承認</label>
         <name>Step1</name>
     </approvalStep>
     <approvalStep>
@@ -55,7 +55,7 @@
             </criteriaItems>
         </entryCriteria>
         <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
-        <label>事業企画・マーケティングチームマネージャー承認</label>
+        <label>事業企画・マーケティングチームマネージャー申込承認</label>
         <name>Step2</name>
         <rejectBehavior>
             <type>RejectRequest</type>
@@ -87,7 +87,7 @@
             </criteriaItems>
         </entryCriteria>
         <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
-        <label>経理・販売管理チーム承認</label>
+        <label>経理・販売管理チーム申込承認</label>
         <name>Step3</name>
         <rejectBehavior>
             <type>RejectRequest</type>
@@ -110,7 +110,7 @@
                 <value>6</value>
             </criteriaItems>
         </entryCriteria>
-        <label>経理部 部長承認</label>
+        <label>経理部 部長申込承認</label>
         <name>Step4</name>
         <rejectBehavior>
             <type>RejectRequest</type>
@@ -185,7 +185,7 @@
     <processOrder>2</processOrder>
     <recallActions>
         <action>
-            <name>NegotiationNameUpdateBack</name>
+            <name>NegotiationNameUpdateBack_Application</name>
             <type>FieldUpdate</type>
         </action>
     </recallActions>

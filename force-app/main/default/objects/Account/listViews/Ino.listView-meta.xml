@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ino</fullName>
+    <booleanFilter>1 OR 2 OR 3</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>ACCOUNT.LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>OppStatusBLC__c</columns>
+    <columns>OppStatusBLL__c</columns>
+    <columns>OppStatusOther__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OppStatusBLC__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>OppStatusBLL__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>OppStatusOther__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Ino_取引先</label>
+    <sharedTo>
+        <role>sysAdmin</role>
+    </sharedTo>
+</ListView>

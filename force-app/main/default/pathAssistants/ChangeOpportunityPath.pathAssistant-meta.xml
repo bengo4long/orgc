@@ -30,13 +30,14 @@
     <pathAssistantSteps>
         <fieldNames>ApplicationWritingCreationMethod__c</fieldNames>
         <fieldNames>ApplicationApproved__c</fieldNames>
-        <info>&lt;p&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;&lt;u&gt;次のフェーズに進めるために必要な行動&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;画面上部の「申込承認」ボタンを押して、申請を行ってください。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;&lt;u&gt;承認されたら…&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&amp;quot;申込承認済み&amp;quot;フラグにチェックがはいっていることを確認してください&lt;/li&gt;&lt;/ul&gt;</info>
+        <info>&lt;p&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;&lt;u&gt;次のフェーズに進めるために必要な行動&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&amp;quot;申込書面作成方法&amp;quot;が空欄でないことを確認してください。&lt;/li&gt;&lt;li&gt;画面上部の「申込承認」ボタンを押して、申請を行ってください。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;&lt;u&gt;承認されたら…&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&amp;quot;申込承認済み&amp;quot;フラグにチェックがはいっていることを確認してください&lt;/li&gt;&lt;/ul&gt;</info>
         <picklistValueName>06_導入意思決定</picklistValueName>
     </pathAssistantSteps>
     <pathAssistantSteps>
+        <fieldNames>SigningMethodExceptCloudSign__c</fieldNames>
         <fieldNames>DocumentConfirmationUrl__c</fieldNames>
         <fieldNames>OrderApproved__c</fieldNames>
-        <info>&lt;p&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;&lt;u&gt;次のフェーズに進めるために必要な行動&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;クラウドサインを締結し&amp;quot;書類確認用URL&amp;quot;を入力してください&lt;/li&gt;&lt;li&gt;画面上部のボタン「受注承認をする」ボタンを押して、申請を行ってください。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;&lt;u&gt;承認されたら…&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&amp;quot;受注承認済み&amp;quot;フラグにチェックがはいっていることを確認してください。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <info>&lt;p&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;&lt;u&gt;次のフェーズに進めるために必要な行動&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;クラウドサインを締結し&amp;quot;書類確認用URL&amp;quot;を入力してください&lt;/li&gt;&lt;li&gt;クラウドサイン以外で締結した場合は、&amp;quot;（クラウドサイン以外の場合）締結方法&amp;quot;を入力してください&lt;/li&gt;&lt;li&gt;画面上部のボタン「受注承認をする」ボタンを押して、申請を行ってください。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong style=&quot;font-size: 13px;&quot;&gt;&lt;u&gt;承認されたら…&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&amp;quot;受注承認済み&amp;quot;フラグにチェックがはいっていることを確認してください。&lt;/li&gt;&lt;/ul&gt;</info>
         <picklistValueName>07_契約締結</picklistValueName>
     </pathAssistantSteps>
     <recordTypeName>PlanUpPlanDownOpportunity</recordTypeName>

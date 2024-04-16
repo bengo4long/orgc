@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cloudSign_URL_Limit</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(OrderApproved__c )
+&amp;&amp;
+NOT( ISBLANK(DocumentConfirmationUrl__c) ) &amp;&amp;
+RIGHT( DocumentConfirmationUrl__c ,8) &lt;&gt; &quot;/summary&quot;
+&amp;&amp;
+( ISNEW() || DATEVALUE( CreatedDate ) &gt;= DATE(2024,04,10) )</errorConditionFormula>
+    <errorDisplayField>DocumentConfirmationUrl__c</errorDisplayField>
+    <errorMessage>末尾が「/summary」で終わるURLを入力してください</errorMessage>
+</ValidationRule>
